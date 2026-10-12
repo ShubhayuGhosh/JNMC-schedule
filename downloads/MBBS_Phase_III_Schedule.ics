@@ -1,0 +1,3460 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//JNMC Belagavi//MBBS Phase III Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:MBBS Phase III Schedule
+X-WR-TIMEZONE:Asia/Kolkata
+X-APPLE-CALENDAR-COLOR:#BDBDBD
+COLOR:#BDBDBD
+BEGIN:VTIMEZONE
+TZID:Asia/Kolkata
+X-LIC-LOCATION:Asia/Kolkata
+BEGIN:STANDARD
+TZOFFSETFROM:+0530
+TZOFFSETTO:+0530
+TZNAME:IST
+DTSTART:19700101T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:jnmc-gm-ph3-1-1-20261005@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20261005T080000
+DTEND;TZID=Asia/Kolkata:20261005T090000
+SUMMARY:[MED] Dr. Rakesh Noubade // Parasitic Infections - Hook & Roundworm GM 16.9, 16.13
+LOCATION:Pharmacology Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: General Medicine (Theory)\nFaculty: Dr. Rakesh Noubade\nTopic: Parasitic Infections - Hook & Roundworm\nCompetency: GM 16.9, 16.13\nSection: Block I: Fever and Febrile Syndrome\nTime: 8:00 AM - 9:00 AM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-comm-med-v3-1-20261005@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20261005T120000
+DTEND;TZID=Asia/Kolkata:20261005T130000
+SUMMARY:[COMED] Yogesh Kumar S // Epidemiology - Definition, Classification of Study Designs
+LOCATION:Pathology Gallery Hall, JNMC Belagavi
+DESCRIPTION:Faculty: Yogesh Kumar S\nTopic: Epidemiology - Definition, Classification of Study Designs\nBlock I
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-surg-ph3-1-1-20261006@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20261006T080000
+DTEND;TZID=Asia/Kolkata:20261006T090000
+SUMMARY:[SURG] Dr. S.I. Neeli (Urology) // Congenital anomalies of genitourinary tract SU 29.2, AN 29.2
+LOCATION:Pharmacology Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: General Surgery (Theory)\nFaculty: Dr. S.I. Neeli (Urology)\nTopic: Congenital anomalies of genitourinary tract\nCompetency: SU 29.2, AN 29.2\nTime: 8:00 AM - 9:00 AM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-ent-ph3-1-1-20261006@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20261006T120000
+DTEND;TZID=Asia/Kolkata:20261006T130000
+SUMMARY:[ENT] Dr. A.S. Harugop // Diseases of external ear & otalgia EN 4.1, 4.2
+LOCATION:Anatomy Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: Oto-Rhino-Laryngology & HNS (ENT Theory)\nFaculty: Dr. A.S. Harugop\nTopic: Diseases of external ear & otalgia\nCompetency: EN 4.1, 4.2\nTime: 12:00 PM - 1:00 PM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-obg-ph3-1-1-20261007@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20261007T080000
+DTEND;TZID=Asia/Kolkata:20261007T090000
+SUMMARY:[OBG] Dr. Manjunath Hukkeri // Vaginal Discharge OG 22.1
+LOCATION:Pathology Big Hall, JNMC Belagavi
+DESCRIPTION:Subject: Obstetrics & Gynaecology (Theory)\nFaculty: Dr. Manjunath Hukkeri\nTopic: Vaginal Discharge\nCompetency: OG 22.1\nTime: 8:00 AM - 9:00 AM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-peds-ph3-1-1-20261007@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20261007T120000
+DTEND;TZID=Asia/Kolkata:20261007T130000
+SUMMARY:[PEDS] Faculty // Revision
+LOCATION:Pathology Gallery Hall, JNMC Belagavi
+DESCRIPTION:Subject: Pediatrics (Theory)\nFaculty: Faculty\nTopic: Revision\nCompetency: \nTime: 12:00 PM - 1:00 PM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-ophth-ph3-1-1-20261008@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20261008T120000
+DTEND;TZID=Asia/Kolkata:20261008T130000
+SUMMARY:[OPTHA] Dr. Arpita G // Anatomy of Eye & Physiology of Vision OP1.1
+LOCATION:JNMC Belagavi
+DESCRIPTION:Subject: Ophthalmology (Theory)\nFaculty: Dr. Arpita G\nTopic: Anatomy of Eye & Physiology of Vision\nCompetency: OP1.1\nTime: 12:00 PM - 1:00 PM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-comm-med-v3-2-20261009@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20261009T120000
+DTEND;TZID=Asia/Kolkata:20261009T130000
+SUMMARY:[COMED] P. R. Walvekar // Descriptive epidemiology
+LOCATION:Pathology Gallery Hall, JNMC Belagavi
+DESCRIPTION:Faculty: P. R. Walvekar\nTopic: Descriptive epidemiology\nBlock I
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-gm-ph3-1-2-20261012@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20261012T080000
+DTEND;TZID=Asia/Kolkata:20261012T090000
+SUMMARY:[MED] Dr. Rakesh Noubade // Tape Worm & Filariasis GM 16.3, 16.9
+LOCATION:Pharmacology Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: General Medicine (Theory)\nFaculty: Dr. Rakesh Noubade\nTopic: Tape Worm & Filariasis\nCompetency: GM 16.3, 16.9\nSection: Block I: Fever and Febrile Syndrome\nTime: 8:00 AM - 9:00 AM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-comm-med-v3-3-20261012@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20261012T120000
+DTEND;TZID=Asia/Kolkata:20261012T130000
+SUMMARY:[COMED] Shivaswamy M.S // Case Control Study
+LOCATION:Pathology Gallery Hall, JNMC Belagavi
+DESCRIPTION:Faculty: Shivaswamy M.S\nTopic: Case Control Study\nBlock I
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-surg-ph3-1-2-20261013@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20261013T080000
+DTEND;TZID=Asia/Kolkata:20261013T090000
+SUMMARY:[SURG] Dr. Vikram Prabha (Urology) // Urinary tract infection SU 29.3
+LOCATION:Pharmacology Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: General Surgery (Theory)\nFaculty: Dr. Vikram Prabha (Urology)\nTopic: Urinary tract infection\nCompetency: SU 29.3\nTime: 8:00 AM - 9:00 AM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-ent-ph3-1-2-20261013@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20261013T120000
+DTEND;TZID=Asia/Kolkata:20261013T130000
+SUMMARY:[ENT] Dr. Apoorva P // Acute otitis media & OME EN 4.3, 4.5
+LOCATION:Anatomy Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: Oto-Rhino-Laryngology & HNS (ENT Theory)\nFaculty: Dr. Apoorva P\nTopic: Acute otitis media & OME\nCompetency: EN 4.3, 4.5\nTime: 12:00 PM - 1:00 PM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-obg-ph3-1-2-20261014@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20261014T080000
+DTEND;TZID=Asia/Kolkata:20261014T090000
+SUMMARY:[OBG] Dr. Manjunath Hukkeri // Abortions OG 9.2
+LOCATION:Pathology Big Hall, JNMC Belagavi
+DESCRIPTION:Subject: Obstetrics & Gynaecology (Theory)\nFaculty: Dr. Manjunath Hukkeri\nTopic: Abortions\nCompetency: OG 9.2\nTime: 8:00 AM - 9:00 AM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-peds-ph3-1-2-20261014@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20261014T120000
+DTEND;TZID=Asia/Kolkata:20261014T130000
+SUMMARY:[PEDS] Dr. Supriya Patil // Fat-soluble vitamins PE 12.1, 12.2, 12.4, 12.5
+LOCATION:Pathology Gallery Hall, JNMC Belagavi
+DESCRIPTION:Subject: Pediatrics (Theory)\nFaculty: Dr. Supriya Patil\nTopic: Fat-soluble vitamins\nCompetency: PE 12.1, 12.2, 12.4, 12.5\nTime: 12:00 PM - 1:00 PM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-ophth-ph3-1-2-20261015@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20261015T120000
+DTEND;TZID=Asia/Kolkata:20261015T130000
+SUMMARY:[OPTHA] Dr. Daisy V // Refractive errors, Refractive surgeries, Amblyopia OP1.2, OP1.4, OP1.5
+LOCATION:JNMC Belagavi
+DESCRIPTION:Subject: Ophthalmology (Theory)\nFaculty: Dr. Daisy V\nTopic: Refractive errors, Refractive surgeries, Amblyopia\nCompetency: OP1.2, OP1.4, OP1.5\nTime: 12:00 PM - 1:00 PM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-comm-med-v3-4-20261016@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20261016T120000
+DTEND;TZID=Asia/Kolkata:20261016T130000
+SUMMARY:[COMED] Chandra S. Metgud // Cohort Study
+LOCATION:Pathology Gallery Hall, JNMC Belagavi
+DESCRIPTION:Faculty: Chandra S. Metgud\nTopic: Cohort Study\nBlock I
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-gm-ph3-1-3-20261019@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20261019T080000
+DTEND;TZID=Asia/Kolkata:20261019T090000
+SUMMARY:[MED] Dr. Rakesh Noubade // Amoebiasis & Giardiasis GM 16.3, 16.9
+LOCATION:Pharmacology Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: General Medicine (Theory)\nFaculty: Dr. Rakesh Noubade\nTopic: Amoebiasis & Giardiasis\nCompetency: GM 16.3, 16.9\nSection: Block I: Fever and Febrile Syndrome\nTime: 8:00 AM - 9:00 AM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-comm-med-v3-5-20261019@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20261019T120000
+DTEND;TZID=Asia/Kolkata:20261019T130000
+SUMMARY:[COMED] Girija J. Mahantshetti // Randomized Control Trial
+LOCATION:Pathology Gallery Hall, JNMC Belagavi
+DESCRIPTION:Faculty: Girija J. Mahantshetti\nTopic: Randomized Control Trial\nBlock I
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-ophth-ph3-1-3-20261022@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20261022T120000
+DTEND;TZID=Asia/Kolkata:20261022T130000
+SUMMARY:[OPTHA] Dr. Rohini D K // Lids & its Anomalies OP2.1
+LOCATION:JNMC Belagavi
+DESCRIPTION:Subject: Ophthalmology (Theory)\nFaculty: Dr. Rohini D K\nTopic: Lids & its Anomalies\nCompetency: OP2.1\nTime: 12:00 PM - 1:00 PM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-comm-med-v3-6-20261023@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20261023T120000
+DTEND;TZID=Asia/Kolkata:20261023T130000
+SUMMARY:[COMED] Deepti M. Kadeangadi // Association and Causation
+LOCATION:Pathology Gallery Hall, JNMC Belagavi
+DESCRIPTION:Faculty: Deepti M. Kadeangadi\nTopic: Association and Causation\nBlock I
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-gm-ph3-1-4-20261026@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20261026T080000
+DTEND;TZID=Asia/Kolkata:20261026T090000
+SUMMARY:[MED] Dr. Rakesh Noubade // Fat Soluble Vitamins (Vit A & D) GM 24.1
+LOCATION:Pharmacology Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: General Medicine (Theory)\nFaculty: Dr. Rakesh Noubade\nTopic: Fat Soluble Vitamins (Vit A & D)\nCompetency: GM 24.1\nSection: Block I: Nutrition and Vitamin Deficiencies\nTime: 8:00 AM - 9:00 AM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-comm-med-v3-7-20261026@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20261026T120000
+DTEND;TZID=Asia/Kolkata:20261026T130000
+SUMMARY:[COMED] Sulakshana S. Baliga // Screening - Principles, Types and Applications
+LOCATION:Pathology Gallery Hall, JNMC Belagavi
+DESCRIPTION:Faculty: Sulakshana S. Baliga\nTopic: Screening - Principles, Types and Applications\nBlock I
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-surg-ph3-1-3-20261027@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20261027T080000
+DTEND;TZID=Asia/Kolkata:20261027T090000
+SUMMARY:[SURG] Dr. Vishal Kadeli (Urology) // Urolithiasis SU 29.5
+LOCATION:Pharmacology Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: General Surgery (Theory)\nFaculty: Dr. Vishal Kadeli (Urology)\nTopic: Urolithiasis\nCompetency: SU 29.5\nTime: 8:00 AM - 9:00 AM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-ent-ph3-1-3-20261027@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20261027T120000
+DTEND;TZID=Asia/Kolkata:20261027T130000
+SUMMARY:[ENT] Dr. Prashant H. Patil // CSOM & Cholesteatoma EN 4.6, 4.8
+LOCATION:Anatomy Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: Oto-Rhino-Laryngology & HNS (ENT Theory)\nFaculty: Dr. Prashant H. Patil\nTopic: CSOM & Cholesteatoma\nCompetency: EN 4.6, 4.8\nTime: 12:00 PM - 1:00 PM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-obg-ph3-1-3-20261028@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20261028T080000
+DTEND;TZID=Asia/Kolkata:20261028T090000
+SUMMARY:[OBG] Dr. Manjunath Hukkeri // Infertility OG 28.1
+LOCATION:Pathology Big Hall, JNMC Belagavi
+DESCRIPTION:Subject: Obstetrics & Gynaecology (Theory)\nFaculty: Dr. Manjunath Hukkeri\nTopic: Infertility\nCompetency: OG 28.1\nTime: 8:00 AM - 9:00 AM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-peds-ph3-1-3-20261028@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20261028T120000
+DTEND;TZID=Asia/Kolkata:20261028T130000
+SUMMARY:[PEDS] Dr Shreya Rotti // Breast Feeding PE 7.1-7.8
+LOCATION:Pathology Gallery Hall, JNMC Belagavi
+DESCRIPTION:Subject: Pediatrics (Theory)\nFaculty: Dr Shreya Rotti\nTopic: Breast Feeding\nCompetency: PE 7.1-7.8\nTime: 12:00 PM - 1:00 PM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-ophth-ph3-1-4-20261029@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20261029T120000
+DTEND;TZID=Asia/Kolkata:20261029T130000
+SUMMARY:[OPTHA] Dr. Rohini D K // Congenital & Acquired Dacryocystitis OP2.2
+LOCATION:JNMC Belagavi
+DESCRIPTION:Subject: Ophthalmology (Theory)\nFaculty: Dr. Rohini D K\nTopic: Congenital & Acquired Dacryocystitis\nCompetency: OP2.2\nTime: 12:00 PM - 1:00 PM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-comm-med-v3-8-20261030@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20261030T120000
+DTEND;TZID=Asia/Kolkata:20261030T130000
+SUMMARY:[COMED] Asha A. Bellad // Antenatal Care, Intranatal Care and Postnatal Care
+LOCATION:Pathology Gallery Hall, JNMC Belagavi
+DESCRIPTION:Faculty: Asha A. Bellad\nTopic: Antenatal Care, Intranatal Care and Postnatal Care\nBlock I
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-gm-ph3-1-5-20261102@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20261102T080000
+DTEND;TZID=Asia/Kolkata:20261102T090000
+SUMMARY:[MED] Dr. Rakesh Noubade // Fat Soluble Vitamins (Vit E & K) GM 24.2
+LOCATION:Pharmacology Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: General Medicine (Theory)\nFaculty: Dr. Rakesh Noubade\nTopic: Fat Soluble Vitamins (Vit E & K)\nCompetency: GM 24.2\nSection: Block I: Nutrition and Vitamin Deficiencies\nTime: 8:00 AM - 9:00 AM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-comm-med-v3-9-20261102@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20261102T120000
+DTEND;TZID=Asia/Kolkata:20261102T130000
+SUMMARY:[COMED] Rajesh R. Kulkarni // Indicators of MCH Care and Maternal Mortality
+LOCATION:Pathology Gallery Hall, JNMC Belagavi
+DESCRIPTION:Faculty: Rajesh R. Kulkarni\nTopic: Indicators of MCH Care and Maternal Mortality\nBlock I
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-surg-ph3-1-4-20261103@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20261103T080000
+DTEND;TZID=Asia/Kolkata:20261103T090000
+SUMMARY:[SURG] Dr. R.B. Nerli (Urology) // Renal tumors SU 29.6
+LOCATION:Pharmacology Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: General Surgery (Theory)\nFaculty: Dr. R.B. Nerli (Urology)\nTopic: Renal tumors\nCompetency: SU 29.6\nTime: 8:00 AM - 9:00 AM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-ent-ph3-1-4-20261103@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20261103T120000
+DTEND;TZID=Asia/Kolkata:20261103T130000
+SUMMARY:[ENT] Dr. Akash P // Otosclerosis & Meniere's disease EN 4.13, 4.20
+LOCATION:Anatomy Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: Oto-Rhino-Laryngology & HNS (ENT Theory)\nFaculty: Dr. Akash P\nTopic: Otosclerosis & Meniere's disease\nCompetency: EN 4.13, 4.20\nTime: 12:00 PM - 1:00 PM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-obg-ph3-1-4-20261104@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20261104T080000
+DTEND;TZID=Asia/Kolkata:20261104T090000
+SUMMARY:[OBG] Dr. Manjunath Hukkeri // Gestational Trophoblastic Disease OG 9.5
+LOCATION:Pathology Big Hall, JNMC Belagavi
+DESCRIPTION:Subject: Obstetrics & Gynaecology (Theory)\nFaculty: Dr. Manjunath Hukkeri\nTopic: Gestational Trophoblastic Disease\nCompetency: OG 9.5\nTime: 8:00 AM - 9:00 AM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-peds-ph3-1-4-20261104@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20261104T120000
+DTEND;TZID=Asia/Kolkata:20261104T130000
+SUMMARY:[PEDS] Dr Reena // Protein Energy Malnutrition PE 10.1-10.6
+LOCATION:Pathology Gallery Hall, JNMC Belagavi
+DESCRIPTION:Subject: Pediatrics (Theory)\nFaculty: Dr Reena\nTopic: Protein Energy Malnutrition\nCompetency: PE 10.1-10.6\nTime: 12:00 PM - 1:00 PM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-ophth-ph3-1-5-20261105@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20261105T120000
+DTEND;TZID=Asia/Kolkata:20261105T130000
+SUMMARY:[OPTHA] Dr. Bhagyajyothi B K // Proptosis, Thyroid eye disease, Orbital cellulitis OP2.6, OP2.3, OP2.4
+LOCATION:JNMC Belagavi
+DESCRIPTION:Subject: Ophthalmology (Theory)\nFaculty: Dr. Bhagyajyothi B K\nTopic: Proptosis, Thyroid eye disease, Orbital cellulitis\nCompetency: OP2.6, OP2.3, OP2.4\nTime: 12:00 PM - 1:00 PM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-comm-med-v3-10-20261106@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20261106T120000
+DTEND;TZID=Asia/Kolkata:20261106T130000
+SUMMARY:[COMED] Umesh S. Charantimath // Infant Mortality
+LOCATION:Pathology Gallery Hall, JNMC Belagavi
+DESCRIPTION:Faculty: Umesh S. Charantimath\nTopic: Infant Mortality\nBlock I
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-gm-ph3-1-6-20261109@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20261109T080000
+DTEND;TZID=Asia/Kolkata:20261109T090000
+SUMMARY:[MED] Dr. Rakesh Noubade // Water Soluble Vitamins (Vit B1, B2 & B6) GM 24.3
+LOCATION:Pharmacology Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: General Medicine (Theory)\nFaculty: Dr. Rakesh Noubade\nTopic: Water Soluble Vitamins (Vit B1, B2 & B6)\nCompetency: GM 24.3\nSection: Block I: Nutrition and Vitamin Deficiencies\nTime: 8:00 AM - 9:00 AM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-comm-med-v3-11-20261109@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20261109T120000
+DTEND;TZID=Asia/Kolkata:20261109T130000
+SUMMARY:[COMED] Avinash Kavi // School health services
+LOCATION:Pathology Gallery Hall, JNMC Belagavi
+DESCRIPTION:Faculty: Avinash Kavi\nTopic: School health services\nBlock I
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-obg-ph3-1-5-20261111@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20261111T080000
+DTEND;TZID=Asia/Kolkata:20261111T090000
+SUMMARY:[OBG] Dr. Manjunath Hukkeri // Ectopic Pregnancy OG 9.4
+LOCATION:Pathology Big Hall, JNMC Belagavi
+DESCRIPTION:Subject: Obstetrics & Gynaecology (Theory)\nFaculty: Dr. Manjunath Hukkeri\nTopic: Ectopic Pregnancy\nCompetency: OG 9.4\nTime: 8:00 AM - 9:00 AM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-peds-ph3-1-5-20261111@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20261111T120000
+DTEND;TZID=Asia/Kolkata:20261111T130000
+SUMMARY:[PEDS] Dr Mrunal Kelkar // Obesity in children PE 11.1-11.4
+LOCATION:Pathology Gallery Hall, JNMC Belagavi
+DESCRIPTION:Subject: Pediatrics (Theory)\nFaculty: Dr Mrunal Kelkar\nTopic: Obesity in children\nCompetency: PE 11.1-11.4\nTime: 12:00 PM - 1:00 PM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-ophth-ph3-1-6-20261112@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20261112T120000
+DTEND;TZID=Asia/Kolkata:20261112T130000
+SUMMARY:[OPTHA] Dr. Bhagyajyothi B K // Cavernous sinus thrombosis, Orbital Tumours OP2.5, OP2.7, OP2.8
+LOCATION:JNMC Belagavi
+DESCRIPTION:Subject: Ophthalmology (Theory)\nFaculty: Dr. Bhagyajyothi B K\nTopic: Cavernous sinus thrombosis, Orbital Tumours\nCompetency: OP2.5, OP2.7, OP2.8\nTime: 12:00 PM - 1:00 PM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-comm-med-v3-12-20261113@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20261113T120000
+DTEND;TZID=Asia/Kolkata:20261113T130000
+SUMMARY:[COMED] Poornima Khot // Children in difficult circumstances and Juvenile Delinquency
+LOCATION:Pathology Gallery Hall, JNMC Belagavi
+DESCRIPTION:Faculty: Poornima Khot\nTopic: Children in difficult circumstances and Juvenile Delinquency\nBlock I
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-gm-ph3-1-7-20261116@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20261116T080000
+DTEND;TZID=Asia/Kolkata:20261116T090000
+SUMMARY:[MED] Dr. Rakesh Noubade // Total Parenteral Nutrition GM 24.4
+LOCATION:Pharmacology Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: General Medicine (Theory)\nFaculty: Dr. Rakesh Noubade\nTopic: Total Parenteral Nutrition\nCompetency: GM 24.4\nSection: Block I: Nutrition and Vitamin Deficiencies\nTime: 8:00 AM - 9:00 AM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-comm-med-v3-13-20261116@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20261116T120000
+DTEND;TZID=Asia/Kolkata:20261116T130000
+SUMMARY:[COMED] Mohammed Irfan // Preventive medicine in Geriatrics
+LOCATION:Pathology Gallery Hall, JNMC Belagavi
+DESCRIPTION:Faculty: Mohammed Irfan\nTopic: Preventive medicine in Geriatrics\nBlock I
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-surg-ph3-1-5-20261117@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20261117T080000
+DTEND;TZID=Asia/Kolkata:20261117T090000
+SUMMARY:[SURG] Dr. S.I. Neeli (Urology) // Diseases of prostate SU 29.9
+LOCATION:Pharmacology Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: General Surgery (Theory)\nFaculty: Dr. S.I. Neeli (Urology)\nTopic: Diseases of prostate\nCompetency: SU 29.9\nTime: 8:00 AM - 9:00 AM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-ent-ph3-1-5-20261117@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20261117T120000
+DTEND;TZID=Asia/Kolkata:20261117T130000
+SUMMARY:[ENT] Dr. Priti Hajare // Deafness EN 4.12, 4.14, 4.15
+LOCATION:Anatomy Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: Oto-Rhino-Laryngology & HNS (ENT Theory)\nFaculty: Dr. Priti Hajare\nTopic: Deafness\nCompetency: EN 4.12, 4.14, 4.15\nTime: 12:00 PM - 1:00 PM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-obg-ph3-1-6-20261118@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20261118T080000
+DTEND;TZID=Asia/Kolkata:20261118T090000
+SUMMARY:[OBG] Dr. Manjunath Hukkeri // Multiple Pregnancy 1 OG 11.1
+LOCATION:Pathology Big Hall, JNMC Belagavi
+DESCRIPTION:Subject: Obstetrics & Gynaecology (Theory)\nFaculty: Dr. Manjunath Hukkeri\nTopic: Multiple Pregnancy 1\nCompetency: OG 11.1\nTime: 8:00 AM - 9:00 AM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-ophth-ph3-1-7-20261119@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20261119T120000
+DTEND;TZID=Asia/Kolkata:20261119T130000
+SUMMARY:[OPTHA] Dr. Samyakta S // Trachoma, Allergic conjunctivitis, Vernal catarrh OP3.3, OP3.4
+LOCATION:JNMC Belagavi
+DESCRIPTION:Subject: Ophthalmology (Theory)\nFaculty: Dr. Samyakta S\nTopic: Trachoma, Allergic conjunctivitis, Vernal catarrh\nCompetency: OP3.3, OP3.4\nTime: 12:00 PM - 1:00 PM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-comm-med-v3-14-20261120@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20261120T120000
+DTEND;TZID=Asia/Kolkata:20261120T130000
+SUMMARY:[COMED] Akshata Chikali // Adolescent health
+LOCATION:Pathology Gallery Hall, JNMC Belagavi
+DESCRIPTION:Faculty: Akshata Chikali\nTopic: Adolescent health\nBlock I
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-gm-ph3-1-8-20261123@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20261123T080000
+DTEND;TZID=Asia/Kolkata:20261123T090000
+SUMMARY:[MED] Dr. Vijay Kaveri // Obesity GM 14.1-14.5, 14.13, 14.14
+LOCATION:Pharmacology Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: General Medicine (Theory)\nFaculty: Dr. Vijay Kaveri\nTopic: Obesity\nCompetency: GM 14.1-14.5, 14.13, 14.14\nSection: Block I: Obesity\nTime: 8:00 AM - 9:00 AM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-comm-med-v3-15-20261123@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20261123T120000
+DTEND;TZID=Asia/Kolkata:20261123T130000
+SUMMARY:[COMED] Devi Prasanthi // Integrated Child Development Services
+LOCATION:Pathology Gallery Hall, JNMC Belagavi
+DESCRIPTION:Faculty: Devi Prasanthi\nTopic: Integrated Child Development Services\nBlock I
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-surg-ph3-1-6-20261124@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20261124T080000
+DTEND;TZID=Asia/Kolkata:20261124T090000
+SUMMARY:[SURG] Dr. Vikram Prabha (Urology) // Testis & Scrotum SU 30.2-30.6, AN 46.1
+LOCATION:Pharmacology Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: General Surgery (Theory)\nFaculty: Dr. Vikram Prabha (Urology)\nTopic: Testis & Scrotum\nCompetency: SU 30.2-30.6, AN 46.1\nTime: 8:00 AM - 9:00 AM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-ent-ph3-1-6-20261124@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20261124T120000
+DTEND;TZID=Asia/Kolkata:20261124T130000
+SUMMARY:[ENT] Dr. N.R. Ankle // Tinnitus & Evaluation of dizzy patient EN 4.19, 4.21
+LOCATION:Anatomy Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: Oto-Rhino-Laryngology & HNS (ENT Theory)\nFaculty: Dr. N.R. Ankle\nTopic: Tinnitus & Evaluation of dizzy patient\nCompetency: EN 4.19, 4.21\nTime: 12:00 PM - 1:00 PM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-obg-ph3-1-7-20261125@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20261125T080000
+DTEND;TZID=Asia/Kolkata:20261125T090000
+SUMMARY:[OBG] Dr. Manjunath Hukkeri // VIA, VILI, PAP Smear, Colposcopy OG 33.4
+LOCATION:Pathology Big Hall, JNMC Belagavi
+DESCRIPTION:Subject: Obstetrics & Gynaecology (Theory)\nFaculty: Dr. Manjunath Hukkeri\nTopic: VIA, VILI, PAP Smear, Colposcopy\nCompetency: OG 33.4\nTime: 8:00 AM - 9:00 AM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-peds-ph3-1-6-20261125@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20261125T120000
+DTEND;TZID=Asia/Kolkata:20261125T130000
+SUMMARY:[PEDS] Dr Yashaswini // Growth and Development PE 1.1-2.3
+LOCATION:Pathology Gallery Hall, JNMC Belagavi
+DESCRIPTION:Subject: Pediatrics (Theory)\nFaculty: Dr Yashaswini\nTopic: Growth and Development\nCompetency: PE 1.1-2.3\nTime: 12:00 PM - 1:00 PM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-ophth-ph3-1-8-20261126@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20261126T120000
+DTEND;TZID=Asia/Kolkata:20261126T130000
+SUMMARY:[OPTHA] Dr. S C Bubanale // Anatomy, Physiology, Anomalies & Inflammations of Cornea OP4.1, OP4.2
+LOCATION:JNMC Belagavi
+DESCRIPTION:Subject: Ophthalmology (Theory)\nFaculty: Dr. S C Bubanale\nTopic: Anatomy, Physiology, Anomalies & Inflammations of Cornea\nCompetency: OP4.1, OP4.2\nTime: 12:00 PM - 1:00 PM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-comm-med-v3-16-20261127@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20261127T120000
+DTEND;TZID=Asia/Kolkata:20261127T130000
+SUMMARY:[COMED] Nagalaxmi N // Integrated Management of Neonatal and Childhood Illness and RBSK
+LOCATION:Pathology Gallery Hall, JNMC Belagavi
+DESCRIPTION:Faculty: Nagalaxmi N\nTopic: Integrated Management of Neonatal and Childhood Illness and RBSK\nBlock I
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-gm-ph3-1-9-20261130@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20261130T080000
+DTEND;TZID=Asia/Kolkata:20261130T090000
+SUMMARY:[MED] Dr. Vijay Kaveri // GERD GM 15.6
+LOCATION:Pharmacology Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: General Medicine (Theory)\nFaculty: Dr. Vijay Kaveri\nTopic: GERD\nCompetency: GM 15.6\nSection: Block I: GIT / Liver Disease\nTime: 8:00 AM - 9:00 AM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-comm-med-v3-17-20261130@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20261130T120000
+DTEND;TZID=Asia/Kolkata:20261130T130000
+SUMMARY:[COMED] Yogesh Kumar S // RMNCH+A
+LOCATION:Pathology Gallery Hall, JNMC Belagavi
+DESCRIPTION:Faculty: Yogesh Kumar S\nTopic: RMNCH+A\nBlock I
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-surg-ph3-1-7-20261201@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20261201T080000
+DTEND;TZID=Asia/Kolkata:20261201T090000
+SUMMARY:[SURG] Dr. Shivagouda Patil (Urology) // Diseases of the Penis SU 30.1
+LOCATION:Pharmacology Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: General Surgery (Theory)\nFaculty: Dr. Shivagouda Patil (Urology)\nTopic: Diseases of the Penis\nCompetency: SU 30.1\nTime: 8:00 AM - 9:00 AM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-ent-ph3-1-7-20261201@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20261201T120000
+DTEND;TZID=Asia/Kolkata:20261201T130000
+SUMMARY:[ENT] Dr. Vinita Metgudmath // Facial nerve and its disorders EN 4.18
+LOCATION:Anatomy Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: Oto-Rhino-Laryngology & HNS (ENT Theory)\nFaculty: Dr. Vinita Metgudmath\nTopic: Facial nerve and its disorders\nCompetency: EN 4.18\nTime: 12:00 PM - 1:00 PM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-obg-ph3-1-8-20261202@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20261202T080000
+DTEND;TZID=Asia/Kolkata:20261202T090000
+SUMMARY:[OBG] Dr. Manjunath Hukkeri // Abnormal Labour 1 OG 14.2
+LOCATION:Pathology Big Hall, JNMC Belagavi
+DESCRIPTION:Subject: Obstetrics & Gynaecology (Theory)\nFaculty: Dr. Manjunath Hukkeri\nTopic: Abnormal Labour 1\nCompetency: OG 14.2\nTime: 8:00 AM - 9:00 AM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-peds-ph3-1-7-20261202@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20261202T120000
+DTEND;TZID=Asia/Kolkata:20261202T130000
+SUMMARY:[PEDS] Dr. Mahantesh Patil // Fluid and electrolytes in Children PE 15.1
+LOCATION:Pathology Gallery Hall, JNMC Belagavi
+DESCRIPTION:Subject: Pediatrics (Theory)\nFaculty: Dr. Mahantesh Patil\nTopic: Fluid and electrolytes in Children\nCompetency: PE 15.1\nTime: 12:00 PM - 1:00 PM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-ophth-ph3-1-9-20261203@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20261203T120000
+DTEND;TZID=Asia/Kolkata:20261203T130000
+SUMMARY:[OPTHA] Dr. S C Bubanale // Infective Keratitis OP4.3
+LOCATION:JNMC Belagavi
+DESCRIPTION:Subject: Ophthalmology (Theory)\nFaculty: Dr. S C Bubanale\nTopic: Infective Keratitis\nCompetency: OP4.3\nTime: 12:00 PM - 1:00 PM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-comm-med-v3-18-20261204@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20261204T120000
+DTEND;TZID=Asia/Kolkata:20261204T130000
+SUMMARY:[COMED] P. R. Walvekar // Fertility Related Statistics
+LOCATION:Pathology Gallery Hall, JNMC Belagavi
+DESCRIPTION:Faculty: P. R. Walvekar\nTopic: Fertility Related Statistics\nBlock I
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-gm-ph3-1-10-20261207@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20261207T080000
+DTEND;TZID=Asia/Kolkata:20261207T090000
+SUMMARY:[MED] Dr. Vijay Kaveri // Acid Peptic Disease & H Pylori GM 15.10, 15.15, 15.16
+LOCATION:Pharmacology Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: General Medicine (Theory)\nFaculty: Dr. Vijay Kaveri\nTopic: Acid Peptic Disease & H Pylori\nCompetency: GM 15.10, 15.15, 15.16\nSection: Block I: GIT / Liver Disease\nTime: 8:00 AM - 9:00 AM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-comm-med-v3-19-20261207@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20261207T120000
+DTEND;TZID=Asia/Kolkata:20261207T130000
+SUMMARY:[COMED] Shivaswamy M.S // Family Planning Methods
+LOCATION:Pathology Gallery Hall, JNMC Belagavi
+DESCRIPTION:Faculty: Shivaswamy M.S\nTopic: Family Planning Methods\nBlock I
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-surg-ph3-1-8-20261208@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20261208T080000
+DTEND;TZID=Asia/Kolkata:20261208T090000
+SUMMARY:[SURG] Dr. Darshan D.S. (CTVS) // Coronary artery diseases SU 26.1
+LOCATION:Pharmacology Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: General Surgery (Theory)\nFaculty: Dr. Darshan D.S. (CTVS)\nTopic: Coronary artery diseases\nCompetency: SU 26.1\nTime: 8:00 AM - 9:00 AM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-ent-ph3-1-8-20261208@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20261208T120000
+DTEND;TZID=Asia/Kolkata:20261208T130000
+SUMMARY:[ENT] Dr. Shama Bellad // Disorders of nasal septum EN 4.23
+LOCATION:Anatomy Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: Oto-Rhino-Laryngology & HNS (ENT Theory)\nFaculty: Dr. Shama Bellad\nTopic: Disorders of nasal septum\nCompetency: EN 4.23\nTime: 12:00 PM - 1:00 PM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-obg-ph3-1-9-20261209@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20261209T080000
+DTEND;TZID=Asia/Kolkata:20261209T090000
+SUMMARY:[OBG] Dr. Manjunath Hukkeri // Abnormal Labour 2 OG 14.3
+LOCATION:Pathology Big Hall, JNMC Belagavi
+DESCRIPTION:Subject: Obstetrics & Gynaecology (Theory)\nFaculty: Dr. Manjunath Hukkeri\nTopic: Abnormal Labour 2\nCompetency: OG 14.3\nTime: 8:00 AM - 9:00 AM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-peds-ph3-1-8-20261209@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20261209T120000
+DTEND;TZID=Asia/Kolkata:20261209T130000
+SUMMARY:[PEDS] Dr. Zeeshan Desai // Poisoning in children PE 14.1-14.3
+LOCATION:Pathology Gallery Hall, JNMC Belagavi
+DESCRIPTION:Subject: Pediatrics (Theory)\nFaculty: Dr. Zeeshan Desai\nTopic: Poisoning in children\nCompetency: PE 14.1-14.3\nTime: 12:00 PM - 1:00 PM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-ophth-ph3-1-10-20261210@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20261210T120000
+DTEND;TZID=Asia/Kolkata:20261210T130000
+SUMMARY:[OPTHA] Dr. Samyakta S // Corneal opacity, Corneal blindness, Keratoplasty OP4.4, OP4.6, OP4.7
+LOCATION:JNMC Belagavi
+DESCRIPTION:Subject: Ophthalmology (Theory)\nFaculty: Dr. Samyakta S\nTopic: Corneal opacity, Corneal blindness, Keratoplasty\nCompetency: OP4.4, OP4.6, OP4.7\nTime: 12:00 PM - 1:00 PM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-comm-med-v3-20-20261211@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20261211T120000
+DTEND;TZID=Asia/Kolkata:20261211T130000
+SUMMARY:[COMED] Chandra S. Metgud // National Family Welfare Program
+LOCATION:Pathology Gallery Hall, JNMC Belagavi
+DESCRIPTION:Faculty: Chandra S. Metgud\nTopic: National Family Welfare Program\nBlock I
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-gm-ph3-1-11-20261214@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20261214T080000
+DTEND;TZID=Asia/Kolkata:20261214T090000
+SUMMARY:[MED] Dr. Vijay Kaveri // Physiological basis of hyperbilirubinemia GM 5.1
+LOCATION:Pharmacology Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: General Medicine (Theory)\nFaculty: Dr. Vijay Kaveri\nTopic: Physiological basis of hyperbilirubinemia\nCompetency: GM 5.1\nSection: Block I: GIT / Liver Disease\nTime: 8:00 AM - 9:00 AM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-comm-med-v3-21-20261214@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20261214T120000
+DTEND;TZID=Asia/Kolkata:20261214T130000
+SUMMARY:[COMED] Girija J. Mahantshetti // MTP Act & PCPNDT Act
+LOCATION:Pathology Gallery Hall, JNMC Belagavi
+DESCRIPTION:Faculty: Girija J. Mahantshetti\nTopic: MTP Act & PCPNDT Act\nBlock I
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-surg-ph3-1-9-20261215@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20261215T080000
+DTEND;TZID=Asia/Kolkata:20261215T090000
+SUMMARY:[SURG] Dr. Abhishek Prabhu (CTVS) // Chest Injury 1: Pneumothorax, Fracture ribs SU 17.10
+LOCATION:Pharmacology Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: General Surgery (Theory)\nFaculty: Dr. Abhishek Prabhu (CTVS)\nTopic: Chest Injury 1: Pneumothorax, Fracture ribs\nCompetency: SU 17.10\nTime: 8:00 AM - 9:00 AM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-ent-ph3-1-9-20261215@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20261215T120000
+DTEND;TZID=Asia/Kolkata:20261215T130000
+SUMMARY:[ENT] Dr. A.S. Harugop // Nasal polyps EN 4.25
+LOCATION:Anatomy Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: Oto-Rhino-Laryngology & HNS (ENT Theory)\nFaculty: Dr. A.S. Harugop\nTopic: Nasal polyps\nCompetency: EN 4.25\nTime: 12:00 PM - 1:00 PM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-obg-ph3-1-10-20261216@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20261216T080000
+DTEND;TZID=Asia/Kolkata:20261216T090000
+SUMMARY:[OBG] Dr. Manjunath Hukkeri // Normal Puberty OG 23.1
+LOCATION:Pathology Big Hall, JNMC Belagavi
+DESCRIPTION:Subject: Obstetrics & Gynaecology (Theory)\nFaculty: Dr. Manjunath Hukkeri\nTopic: Normal Puberty\nCompetency: OG 23.1\nTime: 8:00 AM - 9:00 AM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-ophth-ph3-1-11-20261217@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20261217T120000
+DTEND;TZID=Asia/Kolkata:20261217T130000
+SUMMARY:[OPTHA] Dr. Daisy V // Dry eyes, Vitamin A deficiency OP4.5, OP10.4
+LOCATION:JNMC Belagavi
+DESCRIPTION:Subject: Ophthalmology (Theory)\nFaculty: Dr. Daisy V\nTopic: Dry eyes, Vitamin A deficiency\nCompetency: OP4.5, OP10.4\nTime: 12:00 PM - 1:00 PM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-comm-med-v3-22-20261218@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20261218T120000
+DTEND;TZID=Asia/Kolkata:20261218T130000
+SUMMARY:[COMED] Deepti M. Kadeangadi // National Population Policy and National Health Policy
+LOCATION:Pathology Gallery Hall, JNMC Belagavi
+DESCRIPTION:Faculty: Deepti M. Kadeangadi\nTopic: National Population Policy and National Health Policy\nBlock I
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-gm-ph3-1-12-20261221@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20261221T080000
+DTEND;TZID=Asia/Kolkata:20261221T090000
+SUMMARY:[MED] Dr. Vijay Kaveri // Viral Hepatitis (A+E) GM 5.2, 5.3
+LOCATION:Pharmacology Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: General Medicine (Theory)\nFaculty: Dr. Vijay Kaveri\nTopic: Viral Hepatitis (A+E)\nCompetency: GM 5.2, 5.3\nSection: Block I: GIT / Liver Disease\nTime: 8:00 AM - 9:00 AM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-comm-med-v3-23-20261221@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20261221T120000
+DTEND;TZID=Asia/Kolkata:20261221T130000
+SUMMARY:[COMED] Sulakshana S. Baliga // Classification of Occupational Diseases and Pneumoconiosis
+LOCATION:Pathology Gallery Hall, JNMC Belagavi
+DESCRIPTION:Faculty: Sulakshana S. Baliga\nTopic: Classification of Occupational Diseases and Pneumoconiosis\nBlock I
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-surg-ph3-1-10-20261222@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20261222T080000
+DTEND;TZID=Asia/Kolkata:20261222T090000
+SUMMARY:[SURG] Dr. Pariswanath Patil (CTVS) // Chest Injury 2: Cardiac tamponade & mediastinal injury SU 17.8
+LOCATION:Pharmacology Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: General Surgery (Theory)\nFaculty: Dr. Pariswanath Patil (CTVS)\nTopic: Chest Injury 2: Cardiac tamponade & mediastinal injury\nCompetency: SU 17.8\nTime: 8:00 AM - 9:00 AM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-ent-ph3-1-10-20261222@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20261222T120000
+DTEND;TZID=Asia/Kolkata:20261222T130000
+SUMMARY:[ENT] Dr. Shilpa Mallapur // Allergic & vasomotor rhinitis EN 4.27, 4.28, PE 31.1, 31.3
+LOCATION:Anatomy Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: Oto-Rhino-Laryngology & HNS (ENT Theory)\nFaculty: Dr. Shilpa Mallapur\nTopic: Allergic & vasomotor rhinitis\nCompetency: EN 4.27, 4.28, PE 31.1, 31.3\nTime: 12:00 PM - 1:00 PM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-obg-ph3-1-11-20261223@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20261223T080000
+DTEND;TZID=Asia/Kolkata:20261223T090000
+SUMMARY:[OBG] Dr. Manjunath Hukkeri // Primary Amenorrhea OG 25.1
+LOCATION:Pathology Big Hall, JNMC Belagavi
+DESCRIPTION:Subject: Obstetrics & Gynaecology (Theory)\nFaculty: Dr. Manjunath Hukkeri\nTopic: Primary Amenorrhea\nCompetency: OG 25.1\nTime: 8:00 AM - 9:00 AM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-gm-ph3-1-13-20270104@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270104T080000
+DTEND;TZID=Asia/Kolkata:20270104T090000
+SUMMARY:[MED] Dr. Vijay Kaveri // Viral Hepatitis (B+D) GM 5.2, 5.3
+LOCATION:Pharmacology Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: General Medicine (Theory)\nFaculty: Dr. Vijay Kaveri\nTopic: Viral Hepatitis (B+D)\nCompetency: GM 5.2, 5.3\nSection: Block I: GIT / Liver Disease\nTime: 8:00 AM - 9:00 AM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-comm-med-v3-24-20270104@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270104T120000
+DTEND;TZID=Asia/Kolkata:20270104T130000
+SUMMARY:[COMED] Asha A. Bellad // Lead Poisoning, Occupational Cancer, Ergonomics & Sickness absenteeism
+LOCATION:Pathology Gallery Hall, JNMC Belagavi
+DESCRIPTION:Faculty: Asha A. Bellad\nTopic: Lead Poisoning, Occupational Cancer, Ergonomics & Sickness absenteeism\nBlock I
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-surg-ph3-1-11-20270105@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270105T080000
+DTEND;TZID=Asia/Kolkata:20270105T090000
+SUMMARY:[SURG] Dr. Tarun Raina Ramman (CTVS) // Congenital & Valvular heart diseases SU 26.1, PE 23.1, 23.2
+LOCATION:Pharmacology Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: General Surgery (Theory)\nFaculty: Dr. Tarun Raina Ramman (CTVS)\nTopic: Congenital & Valvular heart diseases\nCompetency: SU 26.1, PE 23.1, 23.2\nTime: 8:00 AM - 9:00 AM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-ent-ph3-1-11-20270105@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270105T120000
+DTEND;TZID=Asia/Kolkata:20270105T130000
+SUMMARY:[ENT] Dr. Suprita Savadatti // Acute & chronic Rhinosinusitis EN 4.29, 4.33
+LOCATION:Anatomy Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: Oto-Rhino-Laryngology & HNS (ENT Theory)\nFaculty: Dr. Suprita Savadatti\nTopic: Acute & chronic Rhinosinusitis\nCompetency: EN 4.29, 4.33\nTime: 12:00 PM - 1:00 PM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-obg-ph3-1-12-20270106@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270106T080000
+DTEND;TZID=Asia/Kolkata:20270106T090000
+SUMMARY:[OBG] Dr. Manjunath Hukkeri // Pelvic Inflammatory Disease (PID) OG 27.3
+LOCATION:Pathology Big Hall, JNMC Belagavi
+DESCRIPTION:Subject: Obstetrics & Gynaecology (Theory)\nFaculty: Dr. Manjunath Hukkeri\nTopic: Pelvic Inflammatory Disease (PID)\nCompetency: OG 27.3\nTime: 8:00 AM - 9:00 AM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-ophth-ph3-1-12-20270107@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270107T120000
+DTEND;TZID=Asia/Kolkata:20270107T130000
+SUMMARY:[OPTHA] Dr. Chethana W // Uveitis: Classification, Features, Diagnosis & Treatment OP6.1, OP6.2
+LOCATION:JNMC Belagavi
+DESCRIPTION:Subject: Ophthalmology (Theory)\nFaculty: Dr. Chethana W\nTopic: Uveitis: Classification, Features, Diagnosis & Treatment\nCompetency: OP6.1, OP6.2\nTime: 12:00 PM - 1:00 PM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-comm-med-v3-25-20270108@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270108T120000
+DTEND;TZID=Asia/Kolkata:20270108T130000
+SUMMARY:[COMED] Rajesh R. Kulkarni // Prevention of Occupational Diseases - Medical and Engineering Measures
+LOCATION:Pathology Gallery Hall, JNMC Belagavi
+DESCRIPTION:Faculty: Rajesh R. Kulkarni\nTopic: Prevention of Occupational Diseases - Medical and Engineering Measures\nBlock I
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-gm-ph3-1-14-20270125@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270125T080000
+DTEND;TZID=Asia/Kolkata:20270125T090000
+SUMMARY:[MED] Dr. Vijay Kaveri // Hepatitis C & HCC GM 5.2, 5.3, 5.5, 5.15
+LOCATION:Pharmacology Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: General Medicine (Theory)\nFaculty: Dr. Vijay Kaveri\nTopic: Hepatitis C & HCC\nCompetency: GM 5.2, 5.3, 5.5, 5.15\nSection: Block II\nTime: 8:00 AM - 9:00 AM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-comm-med-v3-26-20270125@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270125T120000
+DTEND;TZID=Asia/Kolkata:20270125T130000
+SUMMARY:[COMED] Umesh S. Charantimath // Prevention of Occupational Diseases - The Factory Act and The Employees State Insurance Act
+LOCATION:Pathology Gallery Hall, JNMC Belagavi
+DESCRIPTION:Faculty: Umesh S. Charantimath\nTopic: Prevention of Occupational Diseases - The Factory Act and The Employees State Insurance Act\nBlock II
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-obg-ph3-1-13-20270127@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270127T080000
+DTEND;TZID=Asia/Kolkata:20270127T090000
+SUMMARY:[OBG] Dr. Manjunath Hukkeri // Abnormal Uterine Bleeding (AUB) OG 24.1
+LOCATION:Pathology Big Hall, JNMC Belagavi
+DESCRIPTION:Subject: Obstetrics & Gynaecology (Theory)\nFaculty: Dr. Manjunath Hukkeri\nTopic: Abnormal Uterine Bleeding (AUB)\nCompetency: OG 24.1\nTime: 8:00 AM - 9:00 AM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-ophth-ph3-1-13-20270128@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270128T120000
+DTEND;TZID=Asia/Kolkata:20270128T130000
+SUMMARY:[OPTHA] Dr. Chethana W // Systemic conditions associated with Uveitis OP6.4
+LOCATION:JNMC Belagavi
+DESCRIPTION:Subject: Ophthalmology (Theory)\nFaculty: Dr. Chethana W\nTopic: Systemic conditions associated with Uveitis\nCompetency: OP6.4\nTime: 12:00 PM - 1:00 PM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-comm-med-v3-27-20270129@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270129T120000
+DTEND;TZID=Asia/Kolkata:20270129T130000
+SUMMARY:[COMED] Avinash Kavi // Genetics and Health
+LOCATION:Pathology Gallery Hall, JNMC Belagavi
+DESCRIPTION:Faculty: Avinash Kavi\nTopic: Genetics and Health\nBlock II
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-gm-ph3-1-15-20270201@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270201T080000
+DTEND;TZID=Asia/Kolkata:20270201T090000
+SUMMARY:[MED] Dr. Vijay Kaveri // Drug Induced Liver Injury (DILI) GM 5.6
+LOCATION:Pharmacology Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: General Medicine (Theory)\nFaculty: Dr. Vijay Kaveri\nTopic: Drug Induced Liver Injury (DILI)\nCompetency: GM 5.6\nSection: Block II\nTime: 8:00 AM - 9:00 AM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-comm-med-v3-28-20270201@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270201T120000
+DTEND;TZID=Asia/Kolkata:20270201T130000
+SUMMARY:[COMED] Poornima Khot // Disaster Management
+LOCATION:Pathology Gallery Hall, JNMC Belagavi
+DESCRIPTION:Faculty: Poornima Khot\nTopic: Disaster Management\nBlock II
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-surg-ph3-1-12-20270202@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270202T080000
+DTEND;TZID=Asia/Kolkata:20270202T090000
+SUMMARY:[SURG] Dr. Kiran Kurkure (CTVS) // Peripheral arterial diseases SU 27.3
+LOCATION:Pharmacology Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: General Surgery (Theory)\nFaculty: Dr. Kiran Kurkure (CTVS)\nTopic: Peripheral arterial diseases\nCompetency: SU 27.3\nTime: 8:00 AM - 9:00 AM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-ent-ph3-1-12-20270202@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270202T120000
+DTEND;TZID=Asia/Kolkata:20270202T130000
+SUMMARY:[ENT] Dr. Shama Bellad // Epistaxis & Trauma to face and neck EN 4.30, 4.31
+LOCATION:Anatomy Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: Oto-Rhino-Laryngology & HNS (ENT Theory)\nFaculty: Dr. Shama Bellad\nTopic: Epistaxis & Trauma to face and neck\nCompetency: EN 4.30, 4.31\nTime: 12:00 PM - 1:00 PM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-obg-ph3-1-14-20270203@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270203T080000
+DTEND;TZID=Asia/Kolkata:20270203T090000
+SUMMARY:[OBG] Dr. Manjunath Hukkeri // PCOD OG 30.1
+LOCATION:Pathology Big Hall, JNMC Belagavi
+DESCRIPTION:Subject: Obstetrics & Gynaecology (Theory)\nFaculty: Dr. Manjunath Hukkeri\nTopic: PCOD\nCompetency: OG 30.1\nTime: 8:00 AM - 9:00 AM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-peds-ph3-1-9-20270203@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270203T120000
+DTEND;TZID=Asia/Kolkata:20270203T130000
+SUMMARY:[PEDS] Dr. Roopa Bellad // Adolescent Health PE 10.6
+LOCATION:Pathology Gallery Hall, JNMC Belagavi
+DESCRIPTION:Subject: Pediatrics (Theory)\nFaculty: Dr. Roopa Bellad\nTopic: Adolescent Health\nCompetency: PE 10.6\nTime: 12:00 PM - 1:00 PM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-ophth-ph3-1-14-20270204@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270204T120000
+DTEND;TZID=Asia/Kolkata:20270204T130000
+SUMMARY:[OPTHA] Dr. Rekha R Mudhol // Congenital glaucoma, Primary open angle glaucoma OP7.1, OP7.2
+LOCATION:JNMC Belagavi
+DESCRIPTION:Subject: Ophthalmology (Theory)\nFaculty: Dr. Rekha R Mudhol\nTopic: Congenital glaucoma, Primary open angle glaucoma\nCompetency: OP7.1, OP7.2\nTime: 12:00 PM - 1:00 PM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-comm-med-v3-29-20270205@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270205T120000
+DTEND;TZID=Asia/Kolkata:20270205T130000
+SUMMARY:[COMED] Akshata Chikali // Health Planning & Health committees in India
+LOCATION:Pathology Gallery Hall, JNMC Belagavi
+DESCRIPTION:Faculty: Akshata Chikali\nTopic: Health Planning & Health committees in India\nBlock II
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-gm-ph3-1-16-20270208@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270208T080000
+DTEND;TZID=Asia/Kolkata:20270208T090000
+SUMMARY:[MED] Dr. Prashant Rathod // Alcoholic Liver Disease (Fatty Liver & Hepatitis) GM 5.2, 5.4
+LOCATION:Pharmacology Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: General Medicine (Theory)\nFaculty: Dr. Prashant Rathod\nTopic: Alcoholic Liver Disease (Fatty Liver & Hepatitis)\nCompetency: GM 5.2, 5.4\nSection: Block II\nTime: 8:00 AM - 9:00 AM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-comm-med-v3-30-20270208@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270208T120000
+DTEND;TZID=Asia/Kolkata:20270208T130000
+SUMMARY:[COMED] Nagalaxmi N // Mental Health and Comprehensive Mental health Action Plan
+LOCATION:Pathology Gallery Hall, JNMC Belagavi
+DESCRIPTION:Faculty: Nagalaxmi N\nTopic: Mental Health and Comprehensive Mental health Action Plan\nBlock II
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-surg-ph3-1-13-20270209@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270209T080000
+DTEND;TZID=Asia/Kolkata:20270209T090000
+SUMMARY:[SURG] Dr. M.G. Dhorigol (Anaesthesiology) // Pre-operative assessment SU 11.1, AS 3.1
+LOCATION:Pharmacology Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: General Surgery (Theory)\nFaculty: Dr. M.G. Dhorigol (Anaesthesiology)\nTopic: Pre-operative assessment\nCompetency: SU 11.1, AS 3.1\nTime: 8:00 AM - 9:00 AM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-ent-ph3-1-13-20270209@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270209T120000
+DTEND;TZID=Asia/Kolkata:20270209T130000
+SUMMARY:[ENT] Dr. R.B. Metgudmath // Tumors of nose, PNS & nasopharynx EN 4.32, 4.34, 4.35
+LOCATION:Anatomy Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: Oto-Rhino-Laryngology & HNS (ENT Theory)\nFaculty: Dr. R.B. Metgudmath\nTopic: Tumors of nose, PNS & nasopharynx\nCompetency: EN 4.32, 4.34, 4.35\nTime: 12:00 PM - 1:00 PM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-obg-ph3-1-15-20270210@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270210T080000
+DTEND;TZID=Asia/Kolkata:20270210T090000
+SUMMARY:[OBG] Dr. Manjunath Hukkeri // Genital Tuberculosis OG 27.2
+LOCATION:Pathology Big Hall, JNMC Belagavi
+DESCRIPTION:Subject: Obstetrics & Gynaecology (Theory)\nFaculty: Dr. Manjunath Hukkeri\nTopic: Genital Tuberculosis\nCompetency: OG 27.2\nTime: 8:00 AM - 9:00 AM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-peds-ph3-1-10-20270210@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270210T120000
+DTEND;TZID=Asia/Kolkata:20270210T130000
+SUMMARY:[PEDS] Dr Santosh // Failure to thrive PE 2.1-2.2
+LOCATION:Pathology Gallery Hall, JNMC Belagavi
+DESCRIPTION:Subject: Pediatrics (Theory)\nFaculty: Dr Santosh\nTopic: Failure to thrive\nCompetency: PE 2.1-2.2\nTime: 12:00 PM - 1:00 PM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-ophth-ph3-1-15-20270211@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270211T120000
+DTEND;TZID=Asia/Kolkata:20270211T130000
+SUMMARY:[OPTHA] Dr. Rekha R Mudhol // Primary angle closure glaucoma OP7.3
+LOCATION:JNMC Belagavi
+DESCRIPTION:Subject: Ophthalmology (Theory)\nFaculty: Dr. Rekha R Mudhol\nTopic: Primary angle closure glaucoma\nCompetency: OP7.3\nTime: 12:00 PM - 1:00 PM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-comm-med-v3-31-20270212@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270212T120000
+DTEND;TZID=Asia/Kolkata:20270212T130000
+SUMMARY:[COMED] Yogesh Kumar S // Health Information System
+LOCATION:Pathology Gallery Hall, JNMC Belagavi
+DESCRIPTION:Faculty: Yogesh Kumar S\nTopic: Health Information System\nBlock II
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-gm-ph3-1-17-20270215@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270215T080000
+DTEND;TZID=Asia/Kolkata:20270215T090000
+SUMMARY:[MED] Dr. Prashant Rathod // Cirrhosis of Liver (C/F, Etiology & Pathogenesis) GM 5.2, 5.6, 5.15
+LOCATION:Pharmacology Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: General Medicine (Theory)\nFaculty: Dr. Prashant Rathod\nTopic: Cirrhosis of Liver (C/F, Etiology & Pathogenesis)\nCompetency: GM 5.2, 5.6, 5.15\nSection: Block II\nTime: 8:00 AM - 9:00 AM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-comm-med-v3-32-20270215@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270215T120000
+DTEND;TZID=Asia/Kolkata:20270215T130000
+SUMMARY:[COMED] P. R. Walvekar // Health Education - Definition, Approach, Model and Principles
+LOCATION:Pathology Gallery Hall, JNMC Belagavi
+DESCRIPTION:Faculty: P. R. Walvekar\nTopic: Health Education - Definition, Approach, Model and Principles\nBlock II
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-surg-ph3-1-14-20270216@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270216T080000
+DTEND;TZID=Asia/Kolkata:20270216T090000
+SUMMARY:[SURG] Dr. C.S. Sanikop (Anaesthesiology) // General, regional, spinal & epidural anesthesia SU 11.2, AS 5.1
+LOCATION:Pharmacology Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: General Surgery (Theory)\nFaculty: Dr. C.S. Sanikop (Anaesthesiology)\nTopic: General, regional, spinal & epidural anesthesia\nCompetency: SU 11.2, AS 5.1\nTime: 8:00 AM - 9:00 AM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-ent-ph3-1-14-20270216@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270216T120000
+DTEND;TZID=Asia/Kolkata:20270216T130000
+SUMMARY:[ENT] Dr. A.S. Harugop // Disease of salivary glands EN 4.36
+LOCATION:Anatomy Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: Oto-Rhino-Laryngology & HNS (ENT Theory)\nFaculty: Dr. A.S. Harugop\nTopic: Disease of salivary glands\nCompetency: EN 4.36\nTime: 12:00 PM - 1:00 PM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-obg-ph3-1-16-20270217@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270217T080000
+DTEND;TZID=Asia/Kolkata:20270217T090000
+SUMMARY:[OBG] Dr. Farzana Begaum // Genital Tract Infections & STDs OG 27.1
+LOCATION:Pathology Big Hall, JNMC Belagavi
+DESCRIPTION:Subject: Obstetrics & Gynaecology (Theory)\nFaculty: Dr. Farzana Begaum\nTopic: Genital Tract Infections & STDs\nCompetency: OG 27.1\nTime: 8:00 AM - 9:00 AM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-peds-ph3-1-11-20270217@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270217T120000
+DTEND;TZID=Asia/Kolkata:20270217T130000
+SUMMARY:[PEDS] Dr Smruthi R // Universal Immunization Programme (UIP) PE 18.6-18.11, CM 10.5
+LOCATION:Pathology Gallery Hall, JNMC Belagavi
+DESCRIPTION:Subject: Pediatrics (Theory)\nFaculty: Dr Smruthi R\nTopic: Universal Immunization Programme (UIP)\nCompetency: PE 18.6-18.11, CM 10.5\nTime: 12:00 PM - 1:00 PM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-ophth-ph3-1-16-20270218@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270218T120000
+DTEND;TZID=Asia/Kolkata:20270218T130000
+SUMMARY:[OPTHA] Dr. Farheen // Secondary glaucoma OP7.4
+LOCATION:JNMC Belagavi
+DESCRIPTION:Subject: Ophthalmology (Theory)\nFaculty: Dr. Farheen\nTopic: Secondary glaucoma\nCompetency: OP7.4\nTime: 12:00 PM - 1:00 PM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-comm-med-v3-33-20270219@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270219T120000
+DTEND;TZID=Asia/Kolkata:20270219T130000
+SUMMARY:[COMED] Shivaswamy M.S // Communication - Process, Types and Barriers
+LOCATION:Pathology Gallery Hall, JNMC Belagavi
+DESCRIPTION:Faculty: Shivaswamy M.S\nTopic: Communication - Process, Types and Barriers\nBlock II
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-gm-ph3-1-18-20270222@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270222T080000
+DTEND;TZID=Asia/Kolkata:20270222T090000
+SUMMARY:[MED] Dr. Prashant Rathod // NAFLD GM 5.2, 5.15
+LOCATION:Pharmacology Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: General Medicine (Theory)\nFaculty: Dr. Prashant Rathod\nTopic: NAFLD\nCompetency: GM 5.2, 5.15\nSection: Block II\nTime: 8:00 AM - 9:00 AM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-comm-med-v3-34-20270222@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270222T120000
+DTEND;TZID=Asia/Kolkata:20270222T130000
+SUMMARY:[COMED] Chandra S. Metgud // Health Management Techniques
+LOCATION:Pathology Gallery Hall, JNMC Belagavi
+DESCRIPTION:Faculty: Chandra S. Metgud\nTopic: Health Management Techniques\nBlock II
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-surg-ph3-1-15-20270223@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270223T080000
+DTEND;TZID=Asia/Kolkata:20270223T090000
+SUMMARY:[SURG] Dr. Santosh Kurbet (Pediatric Surgery) // Congenital Anomalies: Hepatobiliary system & Pancreas SU 28.10, 28.12
+LOCATION:Pharmacology Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: General Surgery (Theory)\nFaculty: Dr. Santosh Kurbet (Pediatric Surgery)\nTopic: Congenital Anomalies: Hepatobiliary system & Pancreas\nCompetency: SU 28.10, 28.12\nTime: 8:00 AM - 9:00 AM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-ent-ph3-1-15-20270223@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270223T120000
+DTEND;TZID=Asia/Kolkata:20270223T130000
+SUMMARY:[ENT] Dr. Gouri Lingaraddi // Deep neck space infections EN 4.37, 4.41
+LOCATION:Anatomy Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: Oto-Rhino-Laryngology & HNS (ENT Theory)\nFaculty: Dr. Gouri Lingaraddi\nTopic: Deep neck space infections\nCompetency: EN 4.37, 4.41\nTime: 12:00 PM - 1:00 PM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-obg-ph3-1-17-20270224@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270224T080000
+DTEND;TZID=Asia/Kolkata:20270224T090000
+SUMMARY:[OBG] Dr. Farzana Begaum // Preterm Labour OG 13.4
+LOCATION:Pathology Big Hall, JNMC Belagavi
+DESCRIPTION:Subject: Obstetrics & Gynaecology (Theory)\nFaculty: Dr. Farzana Begaum\nTopic: Preterm Labour\nCompetency: OG 13.4\nTime: 8:00 AM - 9:00 AM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-peds-ph3-1-12-20270224@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270224T120000
+DTEND;TZID=Asia/Kolkata:20270224T130000
+SUMMARY:[PEDS] Dr. S.M. Dhaded // Newborn Care & Classification in Neonatology PE 19.1
+LOCATION:Pathology Gallery Hall, JNMC Belagavi
+DESCRIPTION:Subject: Pediatrics (Theory)\nFaculty: Dr. S.M. Dhaded\nTopic: Newborn Care & Classification in Neonatology\nCompetency: PE 19.1\nTime: 12:00 PM - 1:00 PM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-ophth-ph3-1-17-20270225@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270225T120000
+DTEND;TZID=Asia/Kolkata:20270225T130000
+SUMMARY:[OPTHA] Dr. A L Tenagi // Anatomy of lens & Senile cataract OP8.1, OP8.2
+LOCATION:JNMC Belagavi
+DESCRIPTION:Subject: Ophthalmology (Theory)\nFaculty: Dr. A L Tenagi\nTopic: Anatomy of lens & Senile cataract\nCompetency: OP8.1, OP8.2\nTime: 12:00 PM - 1:00 PM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-comm-med-v3-35-20270226@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270226T120000
+DTEND;TZID=Asia/Kolkata:20270226T130000
+SUMMARY:[COMED] Girija J. Mahantshetti // Health Systems in India(AYUSH)
+LOCATION:Pathology Gallery Hall, JNMC Belagavi
+DESCRIPTION:Faculty: Girija J. Mahantshetti\nTopic: Health Systems in India(AYUSH)\nBlock II
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-gm-ph3-1-19-20270301@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270301T080000
+DTEND;TZID=Asia/Kolkata:20270301T090000
+SUMMARY:[MED] Dr. Prashant Rathod // Portal Hypertension GM 5.2, 5.15
+LOCATION:Pharmacology Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: General Medicine (Theory)\nFaculty: Dr. Prashant Rathod\nTopic: Portal Hypertension\nCompetency: GM 5.2, 5.15\nSection: Block II\nTime: 8:00 AM - 9:00 AM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-comm-med-v3-36-20270301@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270301T120000
+DTEND;TZID=Asia/Kolkata:20270301T130000
+SUMMARY:[COMED] Deepti M. Kadeangadi // Primary Health Care - Definition, elements and principles
+LOCATION:Pathology Gallery Hall, JNMC Belagavi
+DESCRIPTION:Faculty: Deepti M. Kadeangadi\nTopic: Primary Health Care - Definition, elements and principles\nBlock II
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-surg-ph3-1-16-20270302@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270302T080000
+DTEND;TZID=Asia/Kolkata:20270302T090000
+SUMMARY:[SURG] Dr. Bharath Naik (Plastic Surgery) // Skin grafting SU 5.3
+LOCATION:Pharmacology Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: General Surgery (Theory)\nFaculty: Dr. Bharath Naik (Plastic Surgery)\nTopic: Skin grafting\nCompetency: SU 5.3\nTime: 8:00 AM - 9:00 AM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-obg-ph3-1-18-20270303@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270303T080000
+DTEND;TZID=Asia/Kolkata:20270303T090000
+SUMMARY:[OBG] Dr. Farzana Begaum // Premature Rupture of Membranes (PROM) OG 13.4
+LOCATION:Pathology Big Hall, JNMC Belagavi
+DESCRIPTION:Subject: Obstetrics & Gynaecology (Theory)\nFaculty: Dr. Farzana Begaum\nTopic: Premature Rupture of Membranes (PROM)\nCompetency: OG 13.4\nTime: 8:00 AM - 9:00 AM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-peds-ph3-1-13-20270303@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270303T120000
+DTEND;TZID=Asia/Kolkata:20270303T130000
+SUMMARY:[PEDS] Dr. Manisha Bhandankar // Thermoregulation in Newborn PE 19.3, 19.9
+LOCATION:Pathology Gallery Hall, JNMC Belagavi
+DESCRIPTION:Subject: Pediatrics (Theory)\nFaculty: Dr. Manisha Bhandankar\nTopic: Thermoregulation in Newborn\nCompetency: PE 19.3, 19.9\nTime: 12:00 PM - 1:00 PM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-ophth-ph3-1-18-20270304@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270304T120000
+DTEND;TZID=Asia/Kolkata:20270304T130000
+SUMMARY:[OPTHA] Dr. A L Tenagi // Cataract surgery OP8.4
+LOCATION:JNMC Belagavi
+DESCRIPTION:Subject: Ophthalmology (Theory)\nFaculty: Dr. A L Tenagi\nTopic: Cataract surgery\nCompetency: OP8.4\nTime: 12:00 PM - 1:00 PM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-comm-med-v3-37-20270305@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270305T120000
+DTEND;TZID=Asia/Kolkata:20270305T130000
+SUMMARY:[COMED] Sulakshana S. Baliga // Health care delivery System in India
+LOCATION:Pathology Gallery Hall, JNMC Belagavi
+DESCRIPTION:Faculty: Sulakshana S. Baliga\nTopic: Health care delivery System in India\nBlock II
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-gm-ph3-1-20-20270308@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270308T080000
+DTEND;TZID=Asia/Kolkata:20270308T090000
+SUMMARY:[MED] Dr. Prashant Rathod // SBP, Hepatic Encephalopathy & Hepatorenal Syndrome GM 5.5, 5.15
+LOCATION:Pharmacology Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: General Medicine (Theory)\nFaculty: Dr. Prashant Rathod\nTopic: SBP, Hepatic Encephalopathy & Hepatorenal Syndrome\nCompetency: GM 5.5, 5.15\nSection: Block II\nTime: 8:00 AM - 9:00 AM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-comm-med-v3-38-20270308@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270308T120000
+DTEND;TZID=Asia/Kolkata:20270308T130000
+SUMMARY:[COMED] Asha A. Bellad // Health Planning & Health committees in India
+LOCATION:Pathology Gallery Hall, JNMC Belagavi
+DESCRIPTION:Faculty: Asha A. Bellad\nTopic: Health Planning & Health committees in India\nBlock II
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-surg-ph3-1-17-20270309@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270309T080000
+DTEND;TZID=Asia/Kolkata:20270309T090000
+SUMMARY:[SURG] Dr. Manoj D Togale // Basic concepts of transplantation SU 13.1-13.3
+LOCATION:Pharmacology Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: General Surgery (Theory)\nFaculty: Dr. Manoj D Togale\nTopic: Basic concepts of transplantation\nCompetency: SU 13.1-13.3\nTime: 8:00 AM - 9:00 AM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-ent-ph3-1-16-20270309@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270309T120000
+DTEND;TZID=Asia/Kolkata:20270309T130000
+SUMMARY:[ENT] Dr. Shubham Malawadi // Vestibular schwannoma EN 4.21
+LOCATION:Anatomy Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: Oto-Rhino-Laryngology & HNS (ENT Theory)\nFaculty: Dr. Shubham Malawadi\nTopic: Vestibular schwannoma\nCompetency: EN 4.21\nTime: 12:00 PM - 1:00 PM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-obg-ph3-1-19-20270310@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270310T080000
+DTEND;TZID=Asia/Kolkata:20270310T090000
+SUMMARY:[OBG] Dr. Farzana Begaum // Postpartum Hemorrhage 1 (PPH 1) OG 16.1
+LOCATION:Pathology Big Hall, JNMC Belagavi
+DESCRIPTION:Subject: Obstetrics & Gynaecology (Theory)\nFaculty: Dr. Farzana Begaum\nTopic: Postpartum Hemorrhage 1 (PPH 1)\nCompetency: OG 16.1\nTime: 8:00 AM - 9:00 AM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-ophth-ph3-1-19-20270311@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270311T120000
+DTEND;TZID=Asia/Kolkata:20270311T130000
+SUMMARY:[OPTHA] Dr. Mounesh P // Anatomy of Normal Retina, Direct & indirect Ophthalmoscopy OP9.1
+LOCATION:JNMC Belagavi
+DESCRIPTION:Subject: Ophthalmology (Theory)\nFaculty: Dr. Mounesh P\nTopic: Anatomy of Normal Retina, Direct & indirect Ophthalmoscopy\nCompetency: OP9.1\nTime: 12:00 PM - 1:00 PM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-comm-med-v3-39-20270312@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270312T120000
+DTEND;TZID=Asia/Kolkata:20270312T130000
+SUMMARY:[COMED] Rajesh R. Kulkarni // Tribal Health in India
+LOCATION:Pathology Gallery Hall, JNMC Belagavi
+DESCRIPTION:Faculty: Rajesh R. Kulkarni\nTopic: Tribal Health in India\nBlock II
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-gm-ph3-1-21-20270315@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270315T080000
+DTEND;TZID=Asia/Kolkata:20270315T090000
+SUMMARY:[MED] Dr. Prashant Rathod // Wilson's Disease & Hemochromatosis GM 5.2, 5.8
+LOCATION:Pharmacology Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: General Medicine (Theory)\nFaculty: Dr. Prashant Rathod\nTopic: Wilson's Disease & Hemochromatosis\nCompetency: GM 5.2, 5.8\nSection: Block II\nTime: 8:00 AM - 9:00 AM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-comm-med-v3-40-20270315@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270315T120000
+DTEND;TZID=Asia/Kolkata:20270315T130000
+SUMMARY:[COMED] Umesh S. Charantimath // Essential Medicines & Counterfeit Medicines
+LOCATION:Pathology Gallery Hall, JNMC Belagavi
+DESCRIPTION:Faculty: Umesh S. Charantimath\nTopic: Essential Medicines & Counterfeit Medicines\nBlock II
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-surg-ph3-1-18-20270316@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270316T080000
+DTEND;TZID=Asia/Kolkata:20270316T090000
+SUMMARY:[SURG] Dr. Ramesh S Koujalagi // Mass Casualties SU 17.3
+LOCATION:Pharmacology Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: General Surgery (Theory)\nFaculty: Dr. Ramesh S Koujalagi\nTopic: Mass Casualties\nCompetency: SU 17.3\nTime: 8:00 AM - 9:00 AM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-ent-ph3-1-17-20270316@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270316T120000
+DTEND;TZID=Asia/Kolkata:20270316T130000
+SUMMARY:[ENT] Dr. Gouri Lingaraddi // Granulomatous Diseases of Nose EN 2.9
+LOCATION:Anatomy Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: Oto-Rhino-Laryngology & HNS (ENT Theory)\nFaculty: Dr. Gouri Lingaraddi\nTopic: Granulomatous Diseases of Nose\nCompetency: EN 2.9\nTime: 12:00 PM - 1:00 PM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-obg-ph3-1-20-20270317@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270317T080000
+DTEND;TZID=Asia/Kolkata:20270317T090000
+SUMMARY:[OBG] Dr. Farzana Begaum // Postpartum Hemorrhage 2 (PPH 2) OG 16.1
+LOCATION:Pathology Big Hall, JNMC Belagavi
+DESCRIPTION:Subject: Obstetrics & Gynaecology (Theory)\nFaculty: Dr. Farzana Begaum\nTopic: Postpartum Hemorrhage 2 (PPH 2)\nCompetency: OG 16.1\nTime: 8:00 AM - 9:00 AM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-peds-ph3-1-14-20270317@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270317T120000
+DTEND;TZID=Asia/Kolkata:20270317T130000
+SUMMARY:[PEDS] Dr. Ramchandra Bhat // Management of LBW newborns PE 19.8
+LOCATION:Pathology Gallery Hall, JNMC Belagavi
+DESCRIPTION:Subject: Pediatrics (Theory)\nFaculty: Dr. Ramchandra Bhat\nTopic: Management of LBW newborns\nCompetency: PE 19.8\nTime: 12:00 PM - 1:00 PM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-ophth-ph3-1-20-20270318@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270318T120000
+DTEND;TZID=Asia/Kolkata:20270318T130000
+SUMMARY:[OPTHA] Dr. Deepashri M // Diabetic Retinopathy OP9.2
+LOCATION:JNMC Belagavi
+DESCRIPTION:Subject: Ophthalmology (Theory)\nFaculty: Dr. Deepashri M\nTopic: Diabetic Retinopathy\nCompetency: OP9.2\nTime: 12:00 PM - 1:00 PM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-comm-med-v3-41-20270319@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270319T120000
+DTEND;TZID=Asia/Kolkata:20270319T130000
+SUMMARY:[COMED] Avinash Kavi // International Health
+LOCATION:Pathology Gallery Hall, JNMC Belagavi
+DESCRIPTION:Faculty: Avinash Kavi\nTopic: International Health\nBlock II
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-gm-ph3-1-22-20270322@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270322T080000
+DTEND;TZID=Asia/Kolkata:20270322T090000
+SUMMARY:[MED] Dr. Prashant Rathod // Cholelithiasis & Cholecystitis GM 5.7
+LOCATION:Pharmacology Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: General Medicine (Theory)\nFaculty: Dr. Prashant Rathod\nTopic: Cholelithiasis & Cholecystitis\nCompetency: GM 5.7\nSection: Block II\nTime: 8:00 AM - 9:00 AM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-surg-ph3-1-19-20270323@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270323T080000
+DTEND;TZID=Asia/Kolkata:20270323T090000
+SUMMARY:[SURG] Dr. Prashant Hombal // Management of Musculoskeletal disorders SU 17.3
+LOCATION:Pharmacology Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: General Surgery (Theory)\nFaculty: Dr. Prashant Hombal\nTopic: Management of Musculoskeletal disorders\nCompetency: SU 17.3\nTime: 8:00 AM - 9:00 AM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-ent-ph3-1-18-20270323@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270323T120000
+DTEND;TZID=Asia/Kolkata:20270323T130000
+SUMMARY:[ENT] Dr. Shubham Malawadi // Anatomy of Oral cavity, Oropharynx & Larynx EN 1.1, AN 36.4, 38.1
+LOCATION:Anatomy Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: Oto-Rhino-Laryngology & HNS (ENT Theory)\nFaculty: Dr. Shubham Malawadi\nTopic: Anatomy of Oral cavity, Oropharynx & Larynx\nCompetency: EN 1.1, AN 36.4, 38.1\nTime: 12:00 PM - 1:00 PM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-peds-ph3-1-15-20270324@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270324T120000
+DTEND;TZID=Asia/Kolkata:20270324T130000
+SUMMARY:[PEDS] Dr. Dnyanesh D K // Childhood Asthma PE 28.2, 28.3
+LOCATION:Pathology Gallery Hall, JNMC Belagavi
+DESCRIPTION:Subject: Pediatrics (Theory)\nFaculty: Dr. Dnyanesh D K\nTopic: Childhood Asthma\nCompetency: PE 28.2, 28.3\nTime: 12:00 PM - 1:00 PM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-ophth-ph3-1-21-20270325@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270325T120000
+DTEND;TZID=Asia/Kolkata:20270325T130000
+SUMMARY:[OPTHA] Dr. Deepashri M // Vascular occlusions of retina OP9.3
+LOCATION:JNMC Belagavi
+DESCRIPTION:Subject: Ophthalmology (Theory)\nFaculty: Dr. Deepashri M\nTopic: Vascular occlusions of retina\nCompetency: OP9.3\nTime: 12:00 PM - 1:00 PM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-comm-med-v3-42-20270326@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270326T120000
+DTEND;TZID=Asia/Kolkata:20270326T130000
+SUMMARY:[COMED] Poornima Khot // Clinical establishment Act and Human Organ Transplantation Act & its implications
+LOCATION:Pathology Gallery Hall, JNMC Belagavi
+DESCRIPTION:Faculty: Poornima Khot\nTopic: Clinical establishment Act and Human Organ Transplantation Act & its implications\nBlock II
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-gm-ph3-1-23-20270329@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270329T080000
+DTEND;TZID=Asia/Kolkata:20270329T090000
+SUMMARY:[MED] Dr. Faisal Jamadar // Upper GI Bleed GM 15.1-15.3, 15.6, 15.8, 15.11-15.16
+LOCATION:Pharmacology Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: General Medicine (Theory)\nFaculty: Dr. Faisal Jamadar\nTopic: Upper GI Bleed\nCompetency: GM 15.1-15.3, 15.6, 15.8, 15.11-15.16\nSection: Block II: GI Bleeding\nTime: 8:00 AM - 9:00 AM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-comm-med-v3-43-20270329@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270329T120000
+DTEND;TZID=Asia/Kolkata:20270329T130000
+SUMMARY:[COMED] Shirin A Hukkeri // Concept in Sociology & Social Organization
+LOCATION:Pathology Gallery Hall, JNMC Belagavi
+DESCRIPTION:Faculty: Shirin A Hukkeri\nTopic: Concept in Sociology & Social Organization\nBlock II
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-surg-ph3-1-20-20270330@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270330T080000
+DTEND;TZID=Asia/Kolkata:20270330T090000
+SUMMARY:[SURG] Dr. Shrishail C Metgud // Abdominal Tuberculosis SU 6.1
+LOCATION:Pharmacology Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: General Surgery (Theory)\nFaculty: Dr. Shrishail C Metgud\nTopic: Abdominal Tuberculosis\nCompetency: SU 6.1\nTime: 8:00 AM - 9:00 AM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-ent-ph3-1-19-20270330@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270330T120000
+DTEND;TZID=Asia/Kolkata:20270330T130000
+SUMMARY:[ENT] Dr. Suprita Savadatti // Pharyngitis & Adenotonsillar disease EN 4.26, 4.39, PE 28.1-28.3
+LOCATION:Anatomy Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: Oto-Rhino-Laryngology & HNS (ENT Theory)\nFaculty: Dr. Suprita Savadatti\nTopic: Pharyngitis & Adenotonsillar disease\nCompetency: EN 4.26, 4.39, PE 28.1-28.3\nTime: 12:00 PM - 1:00 PM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-peds-ph3-1-16-20270331@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270331T120000
+DTEND;TZID=Asia/Kolkata:20270331T130000
+SUMMARY:[PEDS] Dr. Tanmaya Metgud // Shock in children PE 24.12, 24.14
+LOCATION:Pathology Gallery Hall, JNMC Belagavi
+DESCRIPTION:Subject: Pediatrics (Theory)\nFaculty: Dr. Tanmaya Metgud\nTopic: Shock in children\nCompetency: PE 24.12, 24.14\nTime: 12:00 PM - 1:00 PM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-ophth-ph3-1-22-20270401@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270401T120000
+DTEND;TZID=Asia/Kolkata:20270401T130000
+SUMMARY:[OPTHA] Dr. Mounesh P // Hypertensive retinopathy & other retinal diseases OP9.4
+LOCATION:JNMC Belagavi
+DESCRIPTION:Subject: Ophthalmology (Theory)\nFaculty: Dr. Mounesh P\nTopic: Hypertensive retinopathy & other retinal diseases\nCompetency: OP9.4\nTime: 12:00 PM - 1:00 PM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-comm-med-v3-44-20270402@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270402T120000
+DTEND;TZID=Asia/Kolkata:20270402T130000
+SUMMARY:[COMED] Shirin A Hukkeri // Hospital Sociology
+LOCATION:Pathology Gallery Hall, JNMC Belagavi
+DESCRIPTION:Faculty: Shirin A Hukkeri\nTopic: Hospital Sociology\nBlock II
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-gm-ph3-1-24-20270405@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270405T080000
+DTEND;TZID=Asia/Kolkata:20270405T090000
+SUMMARY:[MED] Dr. Faisal Jamadar // Lower GI Bleed GM 15.1, 15.3, 15.6, 15.11, 15.16
+LOCATION:Pharmacology Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: General Medicine (Theory)\nFaculty: Dr. Faisal Jamadar\nTopic: Lower GI Bleed\nCompetency: GM 15.1, 15.3, 15.6, 15.11, 15.16\nSection: Block II: GI Bleeding\nTime: 8:00 AM - 9:00 AM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-comm-med-v3-45-20270405@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270405T120000
+DTEND;TZID=Asia/Kolkata:20270405T130000
+SUMMARY:[COMED] Anjali Patil // Statistical averages & Measures of dispersion
+LOCATION:Pathology Gallery Hall, JNMC Belagavi
+DESCRIPTION:Faculty: Anjali Patil\nTopic: Statistical averages & Measures of dispersion\nBlock II
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-surg-ph3-1-21-20270406@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270406T080000
+DTEND;TZID=Asia/Kolkata:20270406T090000
+SUMMARY:[SURG] Dr. Ravi Kerur (Anesthesiology) // Pain management SU 11.5
+LOCATION:Pharmacology Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: General Surgery (Theory)\nFaculty: Dr. Ravi Kerur (Anesthesiology)\nTopic: Pain management\nCompetency: SU 11.5\nTime: 8:00 AM - 9:00 AM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-ent-ph3-1-20-20270406@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270406T120000
+DTEND;TZID=Asia/Kolkata:20270406T130000
+SUMMARY:[ENT] Dr. Shilpa Mallapur // Lesions of Oral cavity & Oropharynx EN 2.11, 4.1-4.3, 20.1
+LOCATION:Anatomy Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: Oto-Rhino-Laryngology & HNS (ENT Theory)\nFaculty: Dr. Shilpa Mallapur\nTopic: Lesions of Oral cavity & Oropharynx\nCompetency: EN 2.11, 4.1-4.3, 20.1\nTime: 12:00 PM - 1:00 PM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-peds-ph3-1-17-20270407@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270407T120000
+DTEND;TZID=Asia/Kolkata:20270407T130000
+SUMMARY:[PEDS] Dr. Deepanjali G // Diarrhea in Children PE 23.4
+LOCATION:Pathology Gallery Hall, JNMC Belagavi
+DESCRIPTION:Subject: Pediatrics (Theory)\nFaculty: Dr. Deepanjali G\nTopic: Diarrhea in Children\nCompetency: PE 23.4\nTime: 12:00 PM - 1:00 PM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-ophth-ph3-1-23-20270408@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270408T120000
+DTEND;TZID=Asia/Kolkata:20270408T130000
+SUMMARY:[OPTHA] Dr. Zarafshan J // Diseases of the optic nerve OP9.5
+LOCATION:JNMC Belagavi
+DESCRIPTION:Subject: Ophthalmology (Theory)\nFaculty: Dr. Zarafshan J\nTopic: Diseases of the optic nerve\nCompetency: OP9.5\nTime: 12:00 PM - 1:00 PM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-comm-med-v3-46-20270409@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270409T120000
+DTEND;TZID=Asia/Kolkata:20270409T130000
+SUMMARY:[COMED] Anjali Patil // Elementary Statistical methods
+LOCATION:Pathology Gallery Hall, JNMC Belagavi
+DESCRIPTION:Faculty: Anjali Patil\nTopic: Elementary Statistical methods\nBlock II
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-gm-ph3-1-25-20270426@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270426T080000
+DTEND;TZID=Asia/Kolkata:20270426T090000
+SUMMARY:[MED] Dr. Faisal Jamadar // Acute Diarrhea GM 16.1, 16.2, 16.11, 16.14
+LOCATION:Pharmacology Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: General Medicine (Theory)\nFaculty: Dr. Faisal Jamadar\nTopic: Acute Diarrhea\nCompetency: GM 16.1, 16.2, 16.11, 16.14\nSection: Block III: Diarrheal Disorders\nTime: 8:00 AM - 9:00 AM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-surg-ph3-1-22-20270427@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270427T080000
+DTEND;TZID=Asia/Kolkata:20270427T090000
+SUMMARY:[SURG] Dr. Rahul Kenawadekar // Day care surgery SU 11.4
+LOCATION:Pharmacology Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: General Surgery (Theory)\nFaculty: Dr. Rahul Kenawadekar\nTopic: Day care surgery\nCompetency: SU 11.4\nTime: 8:00 AM - 9:00 AM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-ent-ph3-1-21-20270427@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270427T120000
+DTEND;TZID=Asia/Kolkata:20270427T130000
+SUMMARY:[ENT] Dr. Apoorva P // Acute & chronic laryngitis EN 4.43
+LOCATION:Anatomy Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: Oto-Rhino-Laryngology & HNS (ENT Theory)\nFaculty: Dr. Apoorva P\nTopic: Acute & chronic laryngitis\nCompetency: EN 4.43\nTime: 12:00 PM - 1:00 PM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-ophth-ph3-1-24-20270429@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270429T120000
+DTEND;TZID=Asia/Kolkata:20270429T130000
+SUMMARY:[OPTHA] Dr. Farheen M // Diseases of the visual pathway OP9.5
+LOCATION:JNMC Belagavi
+DESCRIPTION:Subject: Ophthalmology (Theory)\nFaculty: Dr. Farheen M\nTopic: Diseases of the visual pathway\nCompetency: OP9.5\nTime: 12:00 PM - 1:00 PM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-comm-med-v3-47-20270430@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270430T120000
+DTEND;TZID=Asia/Kolkata:20270430T130000
+SUMMARY:[COMED] Akshata Chikali // Antimicrobial resistance as a public health threat
+LOCATION:Pathology Gallery Hall, JNMC Belagavi
+DESCRIPTION:Faculty: Akshata Chikali\nTopic: Antimicrobial resistance as a public health threat\nBlock III
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-gm-ph3-1-26-20270503@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270503T080000
+DTEND;TZID=Asia/Kolkata:20270503T090000
+SUMMARY:[MED] Dr. Faisal Jamadar // Chronic Diarrhea GM 16.2, 16.3, 16.12, 16.14
+LOCATION:Pharmacology Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: General Medicine (Theory)\nFaculty: Dr. Faisal Jamadar\nTopic: Chronic Diarrhea\nCompetency: GM 16.2, 16.3, 16.12, 16.14\nSection: Block III: Diarrheal Disorders\nTime: 8:00 AM - 9:00 AM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-surg-ph3-1-23-20270504@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270504T080000
+DTEND;TZID=Asia/Kolkata:20270504T090000
+SUMMARY:[SURG] Dr. Swapnil Pattanshetti (Pediatric Surgery) // Anorectal anomalies SU 28.16
+LOCATION:Pharmacology Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: General Surgery (Theory)\nFaculty: Dr. Swapnil Pattanshetti (Pediatric Surgery)\nTopic: Anorectal anomalies\nCompetency: SU 28.16\nTime: 8:00 AM - 9:00 AM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-ent-ph3-1-22-20270504@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270504T120000
+DTEND;TZID=Asia/Kolkata:20270504T130000
+SUMMARY:[ENT] Dr. N.R. Ankle // Benign lesions of vocal cord EN 4.44
+LOCATION:Anatomy Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: Oto-Rhino-Laryngology & HNS (ENT Theory)\nFaculty: Dr. N.R. Ankle\nTopic: Benign lesions of vocal cord\nCompetency: EN 4.44\nTime: 12:00 PM - 1:00 PM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-ophth-ph3-1-25-20270506@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270506T120000
+DTEND;TZID=Asia/Kolkata:20270506T130000
+SUMMARY:[OPTHA] Dr. Smitha K. S. // Extraocular Muscles & Binocular single vision OP10.1
+LOCATION:JNMC Belagavi
+DESCRIPTION:Subject: Ophthalmology (Theory)\nFaculty: Dr. Smitha K. S.\nTopic: Extraocular Muscles & Binocular single vision\nCompetency: OP10.1\nTime: 12:00 PM - 1:00 PM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-comm-med-v3-48-20270507@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270507T120000
+DTEND;TZID=Asia/Kolkata:20270507T130000
+SUMMARY:[COMED] Nagalaxmi N // International health regulations
+LOCATION:Pathology Gallery Hall, JNMC Belagavi
+DESCRIPTION:Faculty: Nagalaxmi N\nTopic: International health regulations\nBlock III
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-gm-ph3-1-27-20270510@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270510T080000
+DTEND;TZID=Asia/Kolkata:20270510T090000
+SUMMARY:[MED] Dr. Faisal Jamadar // Malabsorption Syndrome (MAS) GM 16.3
+LOCATION:Pharmacology Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: General Medicine (Theory)\nFaculty: Dr. Faisal Jamadar\nTopic: Malabsorption Syndrome (MAS)\nCompetency: GM 16.3\nSection: Block III: Diarrheal Disorders\nTime: 8:00 AM - 9:00 AM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-surg-ph3-1-24-20270511@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270511T080000
+DTEND;TZID=Asia/Kolkata:20270511T090000
+SUMMARY:[SURG] Dr. Santosh Kurbet (Pediatric Surgery) // Congenital anomalies of GIT SU 28.14
+LOCATION:Pharmacology Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: General Surgery (Theory)\nFaculty: Dr. Santosh Kurbet (Pediatric Surgery)\nTopic: Congenital anomalies of GIT\nCompetency: SU 28.14\nTime: 8:00 AM - 9:00 AM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-ent-ph3-1-23-20270511@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270511T120000
+DTEND;TZID=Asia/Kolkata:20270511T130000
+SUMMARY:[ENT] Dr. Priti Hajare // Neurological disorder of larynx EN 4.45, AN
+LOCATION:Anatomy Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: Oto-Rhino-Laryngology & HNS (ENT Theory)\nFaculty: Dr. Priti Hajare\nTopic: Neurological disorder of larynx\nCompetency: EN 4.45, AN\nTime: 12:00 PM - 1:00 PM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-ophth-ph3-1-26-20270513@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270513T120000
+DTEND;TZID=Asia/Kolkata:20270513T130000
+SUMMARY:[OPTHA] Dr. Smitha K. S. // Diagnosis of Heterotropia / Strabismus OP10.2
+LOCATION:JNMC Belagavi
+DESCRIPTION:Subject: Ophthalmology (Theory)\nFaculty: Dr. Smitha K. S.\nTopic: Diagnosis of Heterotropia / Strabismus\nCompetency: OP10.2\nTime: 12:00 PM - 1:00 PM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-comm-med-v3-49-20270514@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270514T120000
+DTEND;TZID=Asia/Kolkata:20270514T130000
+SUMMARY:[COMED] Yogesh Kumar S // Emerging & Reemerging infections
+LOCATION:Pathology Gallery Hall, JNMC Belagavi
+DESCRIPTION:Faculty: Yogesh Kumar S\nTopic: Emerging & Reemerging infections\nBlock III
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-gm-ph3-1-28-20270517@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270517T080000
+DTEND;TZID=Asia/Kolkata:20270517T090000
+SUMMARY:[MED] Dr. Faisal Jamadar // Irritable Bowel Syndrome (IBS) GM 16.3, 16.12
+LOCATION:Pharmacology Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: General Medicine (Theory)\nFaculty: Dr. Faisal Jamadar\nTopic: Irritable Bowel Syndrome (IBS)\nCompetency: GM 16.3, 16.12\nSection: Block III: Diarrheal Disorders\nTime: 8:00 AM - 9:00 AM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-surg-ph3-1-25-20270518@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270518T080000
+DTEND;TZID=Asia/Kolkata:20270518T090000
+SUMMARY:[SURG] Dr. Prakash Mahantshetti (Neurosurgery) // EDH, SDH, SAH SU 17.6
+LOCATION:Pharmacology Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: General Surgery (Theory)\nFaculty: Dr. Prakash Mahantshetti (Neurosurgery)\nTopic: EDH, SDH, SAH\nCompetency: SU 17.6\nTime: 8:00 AM - 9:00 AM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-ent-ph3-1-24-20270518@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270518T120000
+DTEND;TZID=Asia/Kolkata:20270518T130000
+SUMMARY:[ENT] Dr. R.B. Metgudmath // Malignancy of larynx & hypopharynx EN 4.46
+LOCATION:Anatomy Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: Oto-Rhino-Laryngology & HNS (ENT Theory)\nFaculty: Dr. R.B. Metgudmath\nTopic: Malignancy of larynx & hypopharynx\nCompetency: EN 4.46\nTime: 12:00 PM - 1:00 PM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-peds-ph3-1-18-20270519@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270519T120000
+DTEND;TZID=Asia/Kolkata:20270519T130000
+SUMMARY:[PEDS] Dr. Sujata Jali // TB in children & Adolescents PE 31.1-31.4
+LOCATION:Pathology Gallery Hall, JNMC Belagavi
+DESCRIPTION:Subject: Pediatrics (Theory)\nFaculty: Dr. Sujata Jali\nTopic: TB in children & Adolescents\nCompetency: PE 31.1-31.4\nTime: 12:00 PM - 1:00 PM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-ophth-ph3-1-27-20270520@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270520T120000
+DTEND;TZID=Asia/Kolkata:20270520T130000
+SUMMARY:[OPTHA] Dr. Anjanabai O // Enucleation, evisceration and exenteration OP10.5
+LOCATION:JNMC Belagavi
+DESCRIPTION:Subject: Ophthalmology (Theory)\nFaculty: Dr. Anjanabai O\nTopic: Enucleation, evisceration and exenteration\nCompetency: OP10.5\nTime: 12:00 PM - 1:00 PM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-comm-med-v3-50-20270521@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270521T120000
+DTEND;TZID=Asia/Kolkata:20270521T130000
+SUMMARY:[COMED] P. R. Walvekar // Health Economics
+LOCATION:Pathology Gallery Hall, JNMC Belagavi
+DESCRIPTION:Faculty: P. R. Walvekar\nTopic: Health Economics\nBlock III
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-gm-ph3-1-29-20270524@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270524T080000
+DTEND;TZID=Asia/Kolkata:20270524T090000
+SUMMARY:[MED] Dr. Faisal Jamadar // Inflammatory Bowel Disease (IBD) GM 16.15, 16.16, 16.17
+LOCATION:Pharmacology Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: General Medicine (Theory)\nFaculty: Dr. Faisal Jamadar\nTopic: Inflammatory Bowel Disease (IBD)\nCompetency: GM 16.15, 16.16, 16.17\nSection: Block III: Diarrheal Disorders\nTime: 8:00 AM - 9:00 AM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-surg-ph3-1-26-20270525@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270525T080000
+DTEND;TZID=Asia/Kolkata:20270525T090000
+SUMMARY:[SURG] Dr. S.I. Neeli (Urology) // Investigation of Urological Disorders SU 29.1, PE 21.4
+LOCATION:Pharmacology Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: General Surgery (Theory)\nFaculty: Dr. S.I. Neeli (Urology)\nTopic: Investigation of Urological Disorders\nCompetency: SU 29.1, PE 21.4\nTime: 8:00 AM - 9:00 AM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-ent-ph3-1-25-20270525@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270525T120000
+DTEND;TZID=Asia/Kolkata:20270525T130000
+SUMMARY:[ENT] Dr. Prashant H. Patil // Stridor & Hoarseness of Voice EN 4.47, 4.42, CE 28.7
+LOCATION:Anatomy Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: Oto-Rhino-Laryngology & HNS (ENT Theory)\nFaculty: Dr. Prashant H. Patil\nTopic: Stridor & Hoarseness of Voice\nCompetency: EN 4.47, 4.42, CE 28.7\nTime: 12:00 PM - 1:00 PM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-peds-ph3-1-19-20270526@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270526T120000
+DTEND;TZID=Asia/Kolkata:20270526T130000
+SUMMARY:[PEDS] Dr. Smruthi R // Chromosomal Abnormalities PE 29.1-29.5
+LOCATION:Pathology Gallery Hall, JNMC Belagavi
+DESCRIPTION:Subject: Pediatrics (Theory)\nFaculty: Dr. Smruthi R\nTopic: Chromosomal Abnormalities\nCompetency: PE 29.1-29.5\nTime: 12:00 PM - 1:00 PM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-ophth-ph3-1-28-20270527@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270527T120000
+DTEND;TZID=Asia/Kolkata:20270527T130000
+SUMMARY:[OPTHA] Dr. Anjanabai O // Ocular injuries OP10.6
+LOCATION:JNMC Belagavi
+DESCRIPTION:Subject: Ophthalmology (Theory)\nFaculty: Dr. Anjanabai O\nTopic: Ocular injuries\nCompetency: OP10.6\nTime: 12:00 PM - 1:00 PM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-comm-med-v3-51-20270528@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270528T120000
+DTEND;TZID=Asia/Kolkata:20270528T130000
+SUMMARY:[COMED] Shivaswamy M.S // Social Media & Health promotion
+LOCATION:Pathology Gallery Hall, JNMC Belagavi
+DESCRIPTION:Faculty: Shivaswamy M.S\nTopic: Social Media & Health promotion\nBlock III
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-gm-ph3-1-30-20270531@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270531T080000
+DTEND;TZID=Asia/Kolkata:20270531T090000
+SUMMARY:[MED] Dr. Faisal Jamadar // Revision / MCQ
+LOCATION:Pharmacology Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: General Medicine (Theory)\nFaculty: Dr. Faisal Jamadar\nTopic: Revision / MCQ\nCompetency: \nSection: Block III\nTime: 8:00 AM - 9:00 AM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-surg-ph3-1-27-20270601@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270601T080000
+DTEND;TZID=Asia/Kolkata:20270601T090000
+SUMMARY:[SURG] Dr. Vikram Prabha (Urology) // Hematuria SU 29.1, PE 21.4
+LOCATION:Pharmacology Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: General Surgery (Theory)\nFaculty: Dr. Vikram Prabha (Urology)\nTopic: Hematuria\nCompetency: SU 29.1, PE 21.4\nTime: 8:00 AM - 9:00 AM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-ent-ph3-1-26-20270601@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270601T120000
+DTEND;TZID=Asia/Kolkata:20270601T130000
+SUMMARY:[ENT] Dr. Akash P // Airway emergencies & Tracheostomy EN 4.48, 2.13, 3.6, 4.5, 4.51
+LOCATION:Anatomy Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: Oto-Rhino-Laryngology & HNS (ENT Theory)\nFaculty: Dr. Akash P\nTopic: Airway emergencies & Tracheostomy\nCompetency: EN 4.48, 2.13, 3.6, 4.5, 4.51\nTime: 12:00 PM - 1:00 PM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-ophth-ph3-1-29-20270603@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270603T120000
+DTEND;TZID=Asia/Kolkata:20270603T130000
+SUMMARY:[OPTHA] Dr. Arpita G // NPCB, Vision 2020 OP10.7
+LOCATION:JNMC Belagavi
+DESCRIPTION:Subject: Ophthalmology (Theory)\nFaculty: Dr. Arpita G\nTopic: NPCB, Vision 2020\nCompetency: OP10.7\nTime: 12:00 PM - 1:00 PM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-comm-med-v3-52-20270604@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270604T120000
+DTEND;TZID=Asia/Kolkata:20270604T130000
+SUMMARY:[COMED] Chandra S. Metgud // Recent event of important in health of Community- COVID-19
+LOCATION:Pathology Gallery Hall, JNMC Belagavi
+DESCRIPTION:Faculty: Chandra S. Metgud\nTopic: Recent event of important in health of Community- COVID-19\nBlock III
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-surg-ph3-1-28-20270608@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270608T080000
+DTEND;TZID=Asia/Kolkata:20270608T090000
+SUMMARY:[SURG] Dr. Swapnil Pattanshetti (Pediatric Surgery) // Pediatric intestinal obstruction SU 28.14
+LOCATION:Pharmacology Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: General Surgery (Theory)\nFaculty: Dr. Swapnil Pattanshetti (Pediatric Surgery)\nTopic: Pediatric intestinal obstruction\nCompetency: SU 28.14\nTime: 8:00 AM - 9:00 AM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-ent-ph3-1-27-20270608@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270608T120000
+DTEND;TZID=Asia/Kolkata:20270608T130000
+SUMMARY:[ENT] ENT Faculty // Foreign bodies in ear, nose & throat EN 4.49
+LOCATION:Anatomy Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: Oto-Rhino-Laryngology & HNS (ENT Theory)\nFaculty: ENT Faculty\nTopic: Foreign bodies in ear, nose & throat\nCompetency: EN 4.49\nTime: 12:00 PM - 1:00 PM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-peds-ph3-1-20-20270609@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270609T120000
+DTEND;TZID=Asia/Kolkata:20270609T130000
+SUMMARY:[PEDS] Dr. Vineeta G // Fever & Viral Exanthemata (Measles, Rubella, etc.) PE 31.10
+LOCATION:Pathology Gallery Hall, JNMC Belagavi
+DESCRIPTION:Subject: Pediatrics (Theory)\nFaculty: Dr. Vineeta G\nTopic: Fever & Viral Exanthemata (Measles, Rubella, etc.)\nCompetency: PE 31.10\nTime: 12:00 PM - 1:00 PM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-ophth-ph3-1-30-20270610@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270610T120000
+DTEND;TZID=Asia/Kolkata:20270610T130000
+SUMMARY:[OPTHA] Dr. Zarafshan J // Ocular Pharmacology
+LOCATION:JNMC Belagavi
+DESCRIPTION:Subject: Ophthalmology (Theory)\nFaculty: Dr. Zarafshan J\nTopic: Ocular Pharmacology\nCompetency: \nTime: 12:00 PM - 1:00 PM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-comm-med-v3-53-20270611@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270611T120000
+DTEND;TZID=Asia/Kolkata:20270611T130000
+SUMMARY:[COMED] Girija J. Mahantshetti // One World One Health in India
+LOCATION:Pathology Gallery Hall, JNMC Belagavi
+DESCRIPTION:Faculty: Girija J. Mahantshetti\nTopic: One World One Health in India\nBlock III
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-ent-ph3-1-28-20270615@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270615T120000
+DTEND;TZID=Asia/Kolkata:20270615T130000
+SUMMARY:[ENT] Dr. Vinita Metgudmath // Anatomy & Physiology of Pharynx and Esophagus EN 1.1, 1.2
+LOCATION:Anatomy Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: Oto-Rhino-Laryngology & HNS (ENT Theory)\nFaculty: Dr. Vinita Metgudmath\nTopic: Anatomy & Physiology of Pharynx and Esophagus\nCompetency: EN 1.1, 1.2\nTime: 12:00 PM - 1:00 PM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-peds-ph3-1-21-20270616@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270616T120000
+DTEND;TZID=Asia/Kolkata:20270616T130000
+SUMMARY:[PEDS] Dr Shreya Patted // Diphtheria, Pertussis, Tetanus PE 31.11
+LOCATION:Pathology Gallery Hall, JNMC Belagavi
+DESCRIPTION:Subject: Pediatrics (Theory)\nFaculty: Dr Shreya Patted\nTopic: Diphtheria, Pertussis, Tetanus\nCompetency: PE 31.11\nTime: 12:00 PM - 1:00 PM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-comm-med-v3-54-20270618@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270618T120000
+DTEND;TZID=Asia/Kolkata:20270618T130000
+SUMMARY:[COMED] Deepti M. Kadeangadi // Revision Class
+LOCATION:Pathology Gallery Hall, JNMC Belagavi
+DESCRIPTION:Faculty: Deepti M. Kadeangadi\nTopic: Revision Class\nBlock III
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-ent-ph3-1-29-20270622@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270622T120000
+DTEND;TZID=Asia/Kolkata:20270622T130000
+SUMMARY:[ENT] ENT Faculty // Dysphagia & disorders of oesophagus EN 4.38, 4.52
+LOCATION:Anatomy Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: Oto-Rhino-Laryngology & HNS (ENT Theory)\nFaculty: ENT Faculty\nTopic: Dysphagia & disorders of oesophagus\nCompetency: EN 4.38, 4.52\nTime: 12:00 PM - 1:00 PM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-peds-ph3-1-22-20270623@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270623T120000
+DTEND;TZID=Asia/Kolkata:20270623T130000
+SUMMARY:[PEDS] Dr. Zeeshan // Enteric Fever PE 31.12
+LOCATION:Pathology Gallery Hall, JNMC Belagavi
+DESCRIPTION:Subject: Pediatrics (Theory)\nFaculty: Dr. Zeeshan\nTopic: Enteric Fever\nCompetency: PE 31.12\nTime: 12:00 PM - 1:00 PM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-comm-med-v3-55-20270625@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270625T120000
+DTEND;TZID=Asia/Kolkata:20270625T130000
+SUMMARY:[COMED] Sulakshana S. Baliga // Revision Class
+LOCATION:Pathology Gallery Hall, JNMC Belagavi
+DESCRIPTION:Faculty: Sulakshana S. Baliga\nTopic: Revision Class\nBlock III
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:jnmc-ent-ph3-1-30-20270629@jnmc.edu
+DTSTAMP:20261012T191333Z
+DTSTART;TZID=Asia/Kolkata:20270629T120000
+DTEND;TZID=Asia/Kolkata:20270629T130000
+SUMMARY:[ENT] Dr. Gouri Lingaraddi // Pollution, National programmes & HIV in ENT EN 4.53, CM 3.1, EN 2.15
+LOCATION:Anatomy Lecture Hall, JNMC Belagavi
+DESCRIPTION:Subject: Oto-Rhino-Laryngology & HNS (ENT Theory)\nFaculty: Dr. Gouri Lingaraddi\nTopic: Pollution, National programmes & HIV in ENT\nCompetency: EN 4.53, CM 3.1, EN 2.15\nTime: 12:00 PM - 1:00 PM
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Class in 15 minutes
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+END:VCALENDAR
