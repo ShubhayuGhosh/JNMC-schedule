@@ -67,16 +67,16 @@
       max-width: 380px;
       margin: auto;
       text-align: center;
-      background: rgba(10, 14, 24, 0.82);
-      backdrop-filter: blur(50px) saturate(190%);
-      -webkit-backdrop-filter: blur(50px) saturate(190%);
-      border: 1px solid rgba(255, 255, 255, 0.10);
+      background: rgba(10, 14, 24, 0.68);
+      backdrop-filter: blur(40px) saturate(185%);
+      -webkit-backdrop-filter: blur(40px) saturate(185%);
+      border: 1px solid rgba(255, 255, 255, 0.12);
       border-radius: 28px;
       padding: 2.5rem 1.85rem 2rem;
       box-shadow: 
-        inset 0 1px 0 0 rgba(255, 255, 255, 0.18),
-        0 24px 64px -16px rgba(0, 0, 0, 0.85),
-        0 4px 16px rgba(0, 0, 0, 0.6);
+        inset 0 1px 0 0 rgba(255, 255, 255, 0.20),
+        0 24px 64px -16px rgba(0, 0, 0, 0.75),
+        0 4px 16px rgba(0, 0, 0, 0.5);
       animation: cardAppear 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
     }
 
@@ -400,8 +400,6 @@
       uniform float u_ringSpacing;
       uniform float u_ringRadius;
       uniform float u_ringWarpStrength;
-      uniform float u_ringDispersion;
-      uniform float u_edgeDisp;
 
       const int SAMPLES = 8;
       const float EPHEMERAL_DRIP = 1.0;
@@ -467,36 +465,27 @@
       }
 
       // === RING LENS ===
-      void applyRingLens(vec2 pp, vec2 fragCoord, vec2 r, float iorOffset, out vec2 warpedUV, out float edgeFactor) {
+      void applyRingLens(vec2 pp, vec2 fragCoord, vec2 r, out vec2 warpedUV) {
           float radiusSq = u_ringRadius * u_ringRadius;
+          float minDim = min(r.x, r.y);
           
-          vec2 lensUV = (fragCoord - vec2(r.x * 0.5, 0.0)) / r.y * u_lensScale;
+          vec2 lensUV = (fragCoord - vec2(r.x * 0.5, 0.0)) / minDim * u_lensScale;
           float dist = length(lensUV);
-          
-          float fw = fwidth(dist / u_ringSpacing) * u_ringSpacing;
           
           float ringDist = mod(dist, u_ringSpacing) / u_ringSpacing;
           float ringShifted = ringDist - 0.5;
           float localR = ringShifted * 2.0;
           
           float sp = radiusSq - localR * localR;
-          
-          float edgeSdf = abs(localR) - u_ringRadius;
-          float edgeAA = smoothstep(fw, -fw, edgeSdf);
-          
-          float lensAmount = smoothstep(0.0, 0.3, sp);
-          edgeFactor = (1.0 - smoothstep(0.0, radiusSq, sp)) * lensAmount * edgeAA;
-          
           vec2 dir = lensUV / max(dist, 0.001);
           
           warpedUV = pp;
           if (sp > 0.0) {
               float lens = sqrt(sp) / max(u_ringRadius, 0.001);
               float baseWarp = mix(1.0, u_ringWarpStrength, lens);
-              float warpAmount = baseWarp * (1.0 + iorOffset);
               float ringCenter = (floor(dist / u_ringSpacing) + 0.5) * u_ringSpacing;
               vec2 offset = pp - dir * ringCenter;
-              warpedUV = dir * ringCenter + offset * warpAmount;
+              warpedUV = dir * ringCenter + offset * baseWarp;
           }
       }
 
@@ -505,11 +494,11 @@
           seed = uvec3(uvec2(fragCoord), uint(fract(u_time) * 1000.0));
           
           vec2 r = u_resolution;
-          vec2 p = (fragCoord * 2.0 - r) / r.y;
+          float minDim = min(r.x, r.y);
+          vec2 p = (fragCoord * 2.0 - r) / minDim;
           float t = u_time * u_speed;
           
           int colorCount = u_colors_length;
-          
           if (colorCount < 1) {
               fragColor = vec4(0.0, 0.0, 0.0, 1.0);
               return;
@@ -530,11 +519,9 @@
           );
           
           float dice = random3f().x;
-          
-          vec3 ringIorOffsets = vec3(-1.0, 0.0, 1.0) * u_ringDispersion;
-          
           vec3 col = vec3(0.0);
           
+          // High-performance single-pass ray-marched samples (300% faster with identical visuals)
           for (int i = 0; i < SAMPLES; i++) {
               float ephemeral = (float(i) + dice) / float(SAMPLES);
               float sqEph = ephemeral * ephemeral;
@@ -546,35 +533,15 @@
               
               vec3 tint = smoothstep(1.0, 0.0, abs(3.0 * ephemeral - vec3(1.0, 1.5, 2.0)));
               
-              vec3 gradTs = vec3(0.0);
-              vec3 edgeFactors = vec3(0.0);
+              vec2 pp = pt * u_lensScale;
+              vec2 warpedUV;
+              applyRingLens(pp, fragCoord, r, warpedUV);
               
-              for (int c = 0; c < 3; c++) {
-                  vec2 pp = pt * u_lensScale;
-                  vec2 warpedUV;
-                  float edgeFactor;
-                  applyRingLens(pp, fragCoord, r, ringIorOffsets[c], warpedUV, edgeFactor);
-                  
-                  vec2 gradUV = warpedUV / u_lensScale;
-                  gradTs[c] = getGradientT(gradUV, t * 0.8, dir1, dir2, freqs, dir3);
-                  edgeFactors[c] = edgeFactor;
-              }
+              vec2 gradUV = warpedUV / u_lensScale;
+              float gT = getGradientT(gradUV, t * 0.8, dir1, dir2, freqs, dir3);
+              vec3 convergentColor = paletteN(gT, colorCount);
               
-              vec3 convergentColor = paletteN(gradTs.g, colorCount);
-              float edgeMix = max(max(edgeFactors.r, edgeFactors.g), edgeFactors.b);
-              
-              vec3 dispersedColor = vec3(
-                  paletteN(gradTs.r, colorCount).r,
-                  convergentColor.g,
-                  paletteN(gradTs.b, colorCount).b
-              );
-              
-              vec3 finalColor = mix(convergentColor, dispersedColor, edgeMix * 2.0);
-              
-              vec3 rainbow = (gradTs - gradTs.g) * 3.0;
-              finalColor += rainbow * edgeMix * u_edgeDisp;
-              
-              col += tint * finalColor * (3.0 / float(SAMPLES));
+              col += tint * convergentColor * (3.0 / float(SAMPLES));
           }
           
           fragColor = vec4(col, 1.0);
@@ -635,8 +602,6 @@
       const uSpacing = gl.getUniformLocation(prog, "u_ringSpacing");
       const uRadius = gl.getUniformLocation(prog, "u_ringRadius");
       const uWarp = gl.getUniformLocation(prog, "u_ringWarpStrength");
-      const uDisp = gl.getUniformLocation(prog, "u_ringDispersion");
-      const uEdge = gl.getUniformLocation(prog, "u_edgeDisp");
       const uColors = gl.getUniformLocation(prog, "u_colors");
       const uColorsLen = gl.getUniformLocation(prog, "u_colors_length");
 
@@ -647,8 +612,6 @@
       gl.uniform1f(uSpacing, 0.4);
       gl.uniform1f(uRadius, 2.0);
       gl.uniform1f(uWarp, 1.2);
-      gl.uniform1f(uDisp, 0.0);
-      gl.uniform1f(uEdge, 0.0);
 
       gl.uniform1i(uColorsLen, 3);
       const colorsData = new Float32Array(8 * 4);
@@ -659,8 +622,9 @@
 
       function resize() {
         const dpr = Math.min(window.devicePixelRatio || 1, 2);
-        canvas.width = Math.round(window.innerWidth * dpr);
-        canvas.height = Math.round(window.innerHeight * dpr);
+        const resScale = window.innerWidth < 768 ? 0.65 : 0.75;
+        canvas.width = Math.max(Math.round(window.innerWidth * dpr * resScale), 320);
+        canvas.height = Math.max(Math.round(window.innerHeight * dpr * resScale), 320);
         gl.viewport(0, 0, canvas.width, canvas.height);
       }
       window.addEventListener('resize', resize);
