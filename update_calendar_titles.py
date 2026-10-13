@@ -239,7 +239,7 @@ for idx, (dt, fac, top, code) in enumerate(ent_raw, start=1):
         "dtstart": f"{dt}T120000",
         "dtend": f"{dt}T130000",
         "summary": f"[ENT] {fac} // {top}{c_str}",
-        "location": "Anatomy Lecture Hall",
+        "location": "Pathology Lecture Hall",
         "description": f"Subject: Oto-Rhino-Laryngology & HNS (ENT Theory)\nFaculty: {fac}\nTopic: {top}\nCompetency: {code}\nTime: 12:00 PM - 1:00 PM"
     })
 
