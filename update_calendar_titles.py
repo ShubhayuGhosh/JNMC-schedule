@@ -1,5 +1,6 @@
 import os
 import re
+import shutil
 from datetime import datetime
 
 BASE_DIR = "/Users/shubhayu/Documents/antigravity/splendid-raman"
@@ -16,6 +17,7 @@ def write_master_ics(filepath, cal_name, prod_id, color, events):
         "CALSCALE:GREGORIAN",
         "METHOD:PUBLISH",
         f"X-WR-CALNAME:{cal_name}",
+        f"NAME:{cal_name}",
         "X-WR-TIMEZONE:Asia/Kolkata",
         f"X-APPLE-CALENDAR-COLOR:{color}",
         f"COLOR:{color}",
@@ -339,8 +341,9 @@ for block in vevent_matches:
         })
 
 # Write updated General Schedule ICS
-general_ics_path = os.path.join(DOWNLOADS_DIR, "MBBS_Phase_III_Schedule.ics")
+general_ics_path = os.path.join(DOWNLOADS_DIR, "MBBS_Phase_III_I_Schedule.ics")
 write_master_ics(general_ics_path, "MBBS Phase III/I Schedule", "-//JNMC Belagavi//MBBS Phase III/I Schedule//EN", UNIFIED_COLOR, all_gen_events)
+shutil.copyfile(general_ics_path, os.path.join(DOWNLOADS_DIR, "MBBS_Phase_III_Schedule.ics"))
 
 # ==========================================
 # BATCH B ADDITIONAL SCHEDULE
@@ -389,7 +392,8 @@ for idx, (dt, tstart, tend, fac, top, code, loc, desc) in enumerate(fmt_b_raw, s
     })
 
 # Write updated Batch B Schedule ICS
-batch_b_ics_path = os.path.join(DOWNLOADS_DIR, "MBBS_Phase_III_Batch_B_Additional.ics")
+batch_b_ics_path = os.path.join(DOWNLOADS_DIR, "MBBS_Phase_III_I_Batch_B_Additional.ics")
 write_master_ics(batch_b_ics_path, "MBBS Phase III/I Batch B Additional", "-//JNMC Belagavi//MBBS Phase III/I Batch B//EN", UNIFIED_COLOR, batch_b_events)
+shutil.copyfile(batch_b_ics_path, os.path.join(DOWNLOADS_DIR, "MBBS_Phase_III_Batch_B_Additional.ics"))
 
 print("Regeneration complete!")

@@ -1,8 +1,8 @@
 import os, base64
 
 BASE_DIR = "/Users/shubhayu/Documents/antigravity/splendid-raman"
-gen_ics_path = os.path.join(BASE_DIR, "downloads", "MBBS_Phase_III_Schedule.ics")
-batch_b_ics_path = os.path.join(BASE_DIR, "downloads", "MBBS_Phase_III_Batch_B_Additional.ics")
+gen_ics_path = os.path.join(BASE_DIR, "downloads", "MBBS_Phase_III_I_Schedule.ics")
+batch_b_ics_path = os.path.join(BASE_DIR, "downloads", "MBBS_Phase_III_I_Batch_B_Additional.ics")
 
 with open(gen_ics_path, "rb") as f:
     gen_b64 = base64.b64encode(f.read()).decode("utf-8")
@@ -655,14 +655,14 @@ html = f"""<!DOCTYPE html>
 
     const files = {{
       general: {{
-        name: "MBBS_Phase_III_Schedule.ics",
+        name: "MBBS_Phase_III_I_Schedule.ics",
         b64: "{gen_b64}",
-        path: "downloads/MBBS_Phase_III_Schedule.ics"
+        path: "downloads/MBBS_Phase_III_I_Schedule.ics"
       }},
       batch_b: {{
-        name: "MBBS_Phase_III_Batch_B_Additional.ics",
+        name: "MBBS_Phase_III_I_Batch_B_Additional.ics",
         b64: "{batch_b_b64}",
-        path: "downloads/MBBS_Phase_III_Batch_B_Additional.ics"
+        path: "downloads/MBBS_Phase_III_I_Batch_B_Additional.ics"
       }}
     }};
 
