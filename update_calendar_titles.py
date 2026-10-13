@@ -155,46 +155,46 @@ for idx, (dt, fac, top, code, blk) in enumerate(med_raw, start=1):
         "description": f"Subject: General Medicine (Theory)\nFaculty: {fac}\nTopic: {top}\nCompetency: {code}\nSection: {blk}\nTime: 8:00 AM - 9:00 AM"
     })
 
-# 3. GENERAL SURGERY ([SURG])
+# 3. SURGICAL DISCIPLINES (Urology, CTVS, Anaesthesiology, Pediatric Surgery, Plastic Surgery, Neurosurgery, General Surgery)
 surg_raw = [
-    ("20261006", "Dr. S.I. Neeli (Urology)", "Congenital anomalies of genitourinary tract", "SU 29.2, AN 29.2"),
-    ("20261013", "Dr. Vikram Prabha (Urology)", "Urinary tract infection", "SU 29.3"),
-    ("20261027", "Dr. Vishal Kadeli (Urology)", "Urolithiasis", "SU 29.5"),
-    ("20261103", "Dr. R.B. Nerli (Urology)", "Renal tumors", "SU 29.6"),
-    ("20261117", "Dr. S.I. Neeli (Urology)", "Diseases of prostate", "SU 29.9"),
-    ("20261124", "Dr. Vikram Prabha (Urology)", "Testis & Scrotum", "SU 30.2-30.6, AN 46.1"),
-    ("20261201", "Dr. Shivagouda Patil (Urology)", "Diseases of the Penis", "SU 30.1"),
-    ("20261208", "Dr. Darshan D.S. (CTVS)", "Coronary artery diseases", "SU 26.1"),
-    ("20261215", "Dr. Abhishek Prabhu (CTVS)", "Chest Injury 1: Pneumothorax, Fracture ribs", "SU 17.10"),
-    ("20261222", "Dr. Pariswanath Patil (CTVS)", "Chest Injury 2: Cardiac tamponade & mediastinal injury", "SU 17.8"),
-    ("20270105", "Dr. Tarun Raina Ramman (CTVS)", "Congenital & Valvular heart diseases", "SU 26.1, PE 23.1, 23.2"),
-    ("20270202", "Dr. Kiran Kurkure (CTVS)", "Peripheral arterial diseases", "SU 27.3"),
-    ("20270209", "Dr. M.G. Dhorigol (Anaesthesiology)", "Pre-operative assessment", "SU 11.1, AS 3.1"),
-    ("20270216", "Dr. C.S. Sanikop (Anaesthesiology)", "General, regional, spinal & epidural anesthesia", "SU 11.2, AS 5.1"),
-    ("20270223", "Dr. Santosh Kurbet (Pediatric Surgery)", "Congenital Anomalies: Hepatobiliary system & Pancreas", "SU 28.10, 28.12"),
-    ("20270302", "Dr. Bharath Naik (Plastic Surgery)", "Skin grafting", "SU 5.3"),
-    ("20270309", "Dr. Manoj D Togale", "Basic concepts of transplantation", "SU 13.1-13.3"),
-    ("20270316", "Dr. Ramesh S Koujalagi", "Mass Casualties", "SU 17.3"),
-    ("20270323", "Dr. Prashant Hombal", "Management of Musculoskeletal disorders", "SU 17.3"),
-    ("20270330", "Dr. Shrishail C Metgud", "Abdominal Tuberculosis", "SU 6.1"),
-    ("20270406", "Dr. Ravi Kerur (Anesthesiology)", "Pain management", "SU 11.5"),
-    ("20270427", "Dr. Rahul Kenawadekar", "Day care surgery", "SU 11.4"),
-    ("20270504", "Dr. Swapnil Pattanshetti (Pediatric Surgery)", "Anorectal anomalies", "SU 28.16"),
-    ("20270511", "Dr. Santosh Kurbet (Pediatric Surgery)", "Congenital anomalies of GIT", "SU 28.14"),
-    ("20270518", "Dr. Prakash Mahantshetti (Neurosurgery)", "EDH, SDH, SAH", "SU 17.6"),
-    ("20270525", "Dr. S.I. Neeli (Urology)", "Investigation of Urological Disorders", "SU 29.1, PE 21.4"),
-    ("20270601", "Dr. Vikram Prabha (Urology)", "Hematuria", "SU 29.1, PE 21.4"),
-    ("20270608", "Dr. Swapnil Pattanshetti (Pediatric Surgery)", "Pediatric intestinal obstruction", "SU 28.14")
+    ("20261006", "URO", "Dr. S.I. Neeli", "Congenital anomalies of genitourinary tract", "SU 29.2, AN 29.2", "Urology"),
+    ("20261013", "URO", "Dr. Vikram Prabha", "Urinary tract infection", "SU 29.3", "Urology"),
+    ("20261027", "URO", "Dr. Vishal Kadeli", "Urolithiasis", "SU 29.5", "Urology"),
+    ("20261103", "URO", "Dr. R.B. Nerli", "Renal tumors", "SU 29.6", "Urology"),
+    ("20261117", "URO", "Dr. S.I. Neeli", "Diseases of prostate", "SU 29.9", "Urology"),
+    ("20261124", "URO", "Dr. Vikram Prabha", "Testis & Scrotum", "SU 30.2-30.6, AN 46.1", "Urology"),
+    ("20261201", "URO", "Dr. Shivagouda Patil", "Diseases of the Penis", "SU 30.1", "Urology"),
+    ("20261208", "CTVS", "Dr. Darshan D.S.", "Coronary artery diseases", "SU 26.1", "CTVS"),
+    ("20261215", "CTVS", "Dr. Abhishek Prabhu", "Chest Injury 1: Pneumothorax, Fracture ribs", "SU 17.10", "CTVS"),
+    ("20261222", "CTVS", "Dr. Pariswanath Patil", "Chest Injury 2: Cardiac tamponade & mediastinal injury", "SU 17.8", "CTVS"),
+    ("20270105", "CTVS", "Dr. Tarun Raina Ramman", "Congenital & Valvular heart diseases", "SU 26.1, PE 23.1, 23.2", "CTVS"),
+    ("20270202", "CTVS", "Dr. Kiran Kurkure", "Peripheral arterial diseases", "SU 27.3", "CTVS"),
+    ("20270209", "ANAESTH", "Dr. M.G. Dhorigol", "Pre-operative assessment", "SU 11.1, AS 3.1", "Anaesthesiology"),
+    ("20270216", "ANAESTH", "Dr. C.S. Sanikop", "General, regional, spinal & epidural anesthesia", "SU 11.2, AS 5.1", "Anaesthesiology"),
+    ("20270223", "PED SURG", "Dr. Santosh Kurbet", "Congenital Anomalies: Hepatobiliary system & Pancreas", "SU 28.10, 28.12", "Pediatric Surgery"),
+    ("20270302", "PLAST SURG", "Dr. Bharath Naik", "Skin grafting", "SU 5.3", "Plastic Surgery"),
+    ("20270309", "SURG", "Dr. Manoj D Togale", "Basic concepts of transplantation", "SU 13.1-13.3", "General Surgery"),
+    ("20270316", "SURG", "Dr. Ramesh S Koujalagi", "Mass Casualties", "SU 17.3", "General Surgery"),
+    ("20270323", "SURG", "Dr. Prashant Hombal", "Management of Musculoskeletal disorders", "SU 17.3", "General Surgery"),
+    ("20270330", "SURG", "Dr. Shrishail C Metgud", "Abdominal Tuberculosis", "SU 6.1", "General Surgery"),
+    ("20270406", "ANAESTH", "Dr. Ravi Kerur", "Pain management", "SU 11.5", "Anaesthesiology"),
+    ("20270427", "SURG", "Dr. Rahul Kenawadekar", "Day care surgery", "SU 11.4", "General Surgery"),
+    ("20270504", "PED SURG", "Dr. Swapnil Pattanshetti", "Anorectal anomalies", "SU 28.16", "Pediatric Surgery"),
+    ("20270511", "PED SURG", "Dr. Santosh Kurbet", "Congenital anomalies of GIT", "SU 28.14", "Pediatric Surgery"),
+    ("20270518", "NEURO SURG", "Dr. Prakash Mahantshetti", "EDH, SDH, SAH", "SU 17.6", "Neurosurgery"),
+    ("20270525", "URO", "Dr. S.I. Neeli", "Investigation of Urological Disorders", "SU 29.1, PE 21.4", "Urology"),
+    ("20270601", "URO", "Dr. Vikram Prabha", "Hematuria", "SU 29.1, PE 21.4", "Urology"),
+    ("20270608", "PED SURG", "Dr. Swapnil Pattanshetti", "Pediatric intestinal obstruction", "SU 28.14", "Pediatric Surgery")
 ]
-for idx, (dt, fac, top, code) in enumerate(surg_raw, start=1):
+for idx, (dt, tag, fac, top, code, sub_name) in enumerate(surg_raw, start=1):
     c_str = f" {code}" if code else ""
     all_gen_events.append({
         "uid": f"jnmc-surg-ph3-1-{idx}-{dt}@jnmc.edu",
         "dtstart": f"{dt}T080000",
         "dtend": f"{dt}T090000",
-        "summary": f"[SURG] {fac} // {top}{c_str}",
+        "summary": f"[{tag}] {fac} // {top}{c_str}",
         "location": "Pharmacology Lecture Hall, JNMC Belagavi",
-        "description": f"Subject: General Surgery (Theory)\nFaculty: {fac}\nTopic: {top}\nCompetency: {code}\nTime: 8:00 AM - 9:00 AM"
+        "description": f"Subject: {sub_name} (Theory)\nFaculty: {fac}\nTopic: {top}\nCompetency: {code}\nTime: 8:00 AM - 9:00 AM"
     })
 
 # 4. ENT ([ENT])
