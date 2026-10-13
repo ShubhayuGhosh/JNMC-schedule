@@ -296,12 +296,12 @@ html = f"""<!DOCTYPE html>
 
     .btn-secondary:disabled,
     .btn-secondary[disabled] {{
-      opacity: 0.42;
+      opacity: 0.55;
       cursor: not-allowed;
       transform: none !important;
       box-shadow: none !important;
-      background: rgba(255, 255, 255, 0.02) !important;
-      border-color: rgba(255, 255, 255, 0.06) !important;
+      background: rgba(255, 255, 255, 0.025) !important;
+      border-color: rgba(255, 255, 255, 0.08) !important;
       color: #94a3b8 !important;
     }}
 
@@ -312,8 +312,25 @@ html = f"""<!DOCTYPE html>
 
     .btn-secondary:disabled .pill-tag,
     .btn-secondary[disabled] .pill-tag {{
-      background: rgba(255, 255, 255, 0.03) !important;
-      color: #64748b !important;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      background: rgba(255, 255, 255, 0.05) !important;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      color: #cbd5e1 !important;
+      font-size: 0.70rem;
+      font-weight: 500;
+      letter-spacing: 0.015em;
+      padding: 0.22rem 0.55rem;
+    }}
+
+    .btn-secondary:disabled .pill-tag .status-dot {{
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: #f59e0b;
+      box-shadow: 0 0 6px rgba(245, 158, 11, 0.6);
+      flex-shrink: 0;
     }}
 
     .btn-secondary .label {{
@@ -383,9 +400,9 @@ html = f"""<!DOCTYPE html>
         <span class="pill-tag">Roll 1 to 202</span>
       </button>
 
-      <button class="btn btn-secondary" disabled aria-disabled="true" title="Temporarily disabled pending FMT routine confirmation" aria-label="Additional Schedule for Batch B (Temporarily disabled pending confirmation)">
+      <button class="btn btn-secondary" disabled aria-disabled="true" title="Coming Soon: Pending confirmation of the FMT routine" aria-label="Additional Schedule for Batch B (Coming Soon)">
         <span class="label">Additional for B batch</span>
-        <span class="pill-tag">Ophth SDL & FMT</span>
+        <span class="pill-tag"><span class="status-dot"></span>Coming Soon</span>
       </button>
     </div>
 
