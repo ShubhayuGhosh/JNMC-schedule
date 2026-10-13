@@ -37,7 +37,7 @@ html = f"""<!DOCTYPE html>
 
     body {{
       font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      background-color: #03050a;
+      background-color: #00030b;
       color: #e2e8f0;
       width: 100%;
       min-height: 100%;
@@ -66,8 +66,8 @@ html = f"""<!DOCTYPE html>
       position: fixed;
       inset: 0;
       width: 100%;
-      height: 60vh;
-      background: radial-gradient(ellipse at center top, rgba(56, 189, 248, 0.08) 0%, rgba(30, 58, 138, 0.04) 50%, rgba(3, 5, 10, 0) 80%);
+      height: 65vh;
+      background: radial-gradient(ellipse at center top, rgba(162, 188, 216, 0.10) 0%, rgba(30, 58, 138, 0.04) 50%, rgba(0, 3, 11, 0) 80%);
       z-index: 1;
       pointer-events: none;
     }}
@@ -76,19 +76,19 @@ html = f"""<!DOCTYPE html>
       position: relative;
       z-index: 10;
       width: 100%;
-      max-width: 410px;
+      max-width: 380px;
       margin: auto;
       text-align: center;
-      background: rgba(10, 13, 22, 0.78);
-      backdrop-filter: blur(50px) saturate(200%);
-      -webkit-backdrop-filter: blur(50px) saturate(200%);
-      border: 1px solid rgba(255, 255, 255, 0.09);
-      border-radius: 30px;
-      padding: 2.6rem 2rem 2.15rem;
+      background: rgba(10, 14, 24, 0.82);
+      backdrop-filter: blur(50px) saturate(190%);
+      -webkit-backdrop-filter: blur(50px) saturate(190%);
+      border: 1px solid rgba(255, 255, 255, 0.10);
+      border-radius: 28px;
+      padding: 2.5rem 1.85rem 2rem;
       box-shadow: 
-        inset 0 1px 0 0 rgba(255, 255, 255, 0.16),
-        0 24px 64px -16px rgba(0, 0, 0, 0.8),
-        0 4px 16px rgba(0, 0, 0, 0.5);
+        inset 0 1px 0 0 rgba(255, 255, 255, 0.18),
+        0 24px 64px -16px rgba(0, 0, 0, 0.85),
+        0 4px 16px rgba(0, 0, 0, 0.6);
       animation: cardAppear 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
     }}
 
@@ -105,12 +105,14 @@ html = f"""<!DOCTYPE html>
 
     @media (max-width: 480px) {{
       body {{
-        padding: max(1.2rem, env(safe-area-inset-top)) 0.85rem max(1.2rem, env(safe-area-inset-bottom)) 0.85rem;
+        padding: max(1rem, env(safe-area-inset-top)) 0.75rem max(1rem, env(safe-area-inset-bottom)) 0.75rem;
       }}
       .card {{
-        padding: 2.15rem 1.25rem 1.85rem;
+        width: 100%;
+        max-width: 360px;
+        padding: 2.1rem 1.25rem 1.75rem;
         border-radius: 24px;
-        max-width: 100%;
+        margin: auto;
       }}
     }}
 
@@ -121,8 +123,8 @@ html = f"""<!DOCTYPE html>
       gap: 0.45rem;
       padding: 0.35rem 0.85rem;
       border-radius: 9999px;
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba(255, 255, 255, 0.12);
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.14);
       font-size: 0.6875rem;
       font-weight: 600;
       letter-spacing: 0.075em;
@@ -158,7 +160,8 @@ html = f"""<!DOCTYPE html>
 
     @media (max-width: 480px) {{
       h1 {{
-        font-size: 2.05rem;
+        font-size: 1.95rem;
+        line-height: 1.18;
       }}
     }}
 
@@ -210,14 +213,15 @@ html = f"""<!DOCTYPE html>
 
     @media (max-width: 480px) {{
       .btn {{
-        padding: 0.9rem 1rem;
+        padding: 0.88rem 1rem;
         border-radius: 13px;
+        gap: 0.4rem;
       }}
     }}
 
     @media (max-width: 360px) {{
       .btn {{
-        padding: 0.85rem 0.8rem;
+        padding: 0.82rem 0.85rem;
         gap: 0.35rem;
       }}
     }}
@@ -249,9 +253,12 @@ html = f"""<!DOCTYPE html>
     .btn-primary .label {{
       font-size: 0.95rem;
       font-weight: 600;
-      letter-spacing: -0.015em;
+      letter-spacing: -0.01em;
       color: #080a11;
+      min-width: 0;
       white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }}
 
     .btn-primary .pill-tag {{
@@ -259,14 +266,14 @@ html = f"""<!DOCTYPE html>
       font-weight: 600;
       padding: 0.25rem 0.6rem;
       border-radius: 9999px;
-      background: rgba(8, 10, 17, 0.08);
-      color: #334155;
+      background: rgba(0, 0, 0, 0.08);
+      color: #080a11;
       letter-spacing: 0.01em;
       white-space: nowrap;
       flex-shrink: 0;
     }}
 
-    /* Secondary CTA (Refined Frosted Charcoal Glass) */
+    /* Secondary CTA (Glass Slate) */
     .btn-secondary {{
       background: rgba(255, 255, 255, 0.04);
       border: 1px solid rgba(255, 255, 255, 0.11);
@@ -292,7 +299,10 @@ html = f"""<!DOCTYPE html>
       font-weight: 500;
       letter-spacing: -0.01em;
       color: #f1f5f9;
+      min-width: 0;
       white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }}
 
     .btn-secondary .pill-tag {{
@@ -307,15 +317,15 @@ html = f"""<!DOCTYPE html>
       flex-shrink: 0;
     }}
 
-    @media (max-width: 380px) {{
+    @media (max-width: 480px) {{
       .btn-primary .label,
       .btn-secondary .label {{
-        font-size: 0.885rem;
+        font-size: 0.90rem;
       }}
       .btn-primary .pill-tag,
       .btn-secondary .pill-tag {{
         font-size: 0.6875rem;
-        padding: 0.2rem 0.5rem;
+        padding: 0.2rem 0.52rem;
       }}
     }}
 
@@ -331,8 +341,8 @@ html = f"""<!DOCTYPE html>
 </head>
 <body>
 
-  <canvas id="gl-canvas"></canvas>
   <div class="ambient-glow"></div>
+  <canvas id="gl-canvas"></canvas>
 
   <main class="card">
     <div class="badge-pill">
@@ -341,7 +351,7 @@ html = f"""<!DOCTYPE html>
     </div>
 
     <header>
-      <h1>MBBS Phase III/I Schedule</h1>
+      <h1>MBBS Phase III/I</h1>
       <p class="subtitle">Download the schedule files below and open it with your calendar app of choice</p>
     </header>
 
@@ -372,7 +382,8 @@ html = f"""<!DOCTYPE html>
         }}
       `;
 
-      // Adapted Framer Rings Concentric Dispersion Lens Shader
+      // Framer-calibrated Rings Concentric Dispersion Lens Shader
+      // Radial wave flow is continuous, origin is off-screen (no eye/pupil), and base tone never dips to black
       const fsSource = `
         precision highp float;
         uniform vec2 u_resolution;
@@ -393,51 +404,71 @@ html = f"""<!DOCTYPE html>
             return hash3(vec3(s, s * 1.5 + 7.31, s * 2.7 + 13.37));
         }}
 
-        // Luxury Ethereal Palette: Midnight Obsidian, Deep Electric Sapphire, Luminous Ice Cyan, Champagne Caustic
-        vec3 palette(float t) {{
-            vec3 c0 = vec3(0.012, 0.020, 0.045); // Velvet Obsidian
-            vec3 c1 = vec3(0.060, 0.220, 0.650); // Deep Electric Sapphire
-            vec3 c2 = vec3(0.180, 0.720, 0.880); // Luminous Ice Cyan
-            vec3 c3 = vec3(0.960, 0.930, 0.860); // Champagne Platinum Highlight
+        // Luxury Ethereal Palette matched to Framer reference:
+        // Deep velvet midnight base, electric sapphire, cerulean cyan, champagne platinum
+        vec3 palette(float t, float yNorm) {{
+            vec3 c0 = vec3(0.005, 0.015, 0.055); // Rich midnight navy base (never pitch black)
+            vec3 c1 = vec3(0.045, 0.160, 0.480); // Royal oceanic sapphire
+            vec3 c2 = vec3(0.200, 0.580, 0.820); // Luminous cerulean cyan
+            vec3 c3 = vec3(0.920, 0.880, 0.820); // Champagne platinum caustic highlight
             
             t = clamp(t, 0.0, 1.0);
-            if (t < 0.35) {{
-                float f = t / 0.35;
+            vec3 base;
+            if (t < 0.42) {{
+                float f = t / 0.42;
                 f = f * f * (3.0 - 2.0 * f);
-                return mix(c0, c1, f);
-            }} else if (t < 0.70) {{
-                float f = (t - 0.35) / 0.35;
+                base = mix(c0, c1, f);
+            }} else if (t < 0.80) {{
+                float f = (t - 0.42) / 0.38;
                 f = f * f * (3.0 - 2.0 * f);
-                return mix(c1, c2, f);
+                base = mix(c1, c2, f);
             }} else {{
-                float f = (t - 0.70) / 0.30;
+                float f = (t - 0.80) / 0.20;
                 f = f * f * (3.0 - 2.0 * f);
-                return mix(c2, c3, f);
+                base = mix(c2, c3, f);
             }}
+            
+            // Reference top sky glow: soft silvery pearl and champagne light
+            float skyGlow = smoothstep(0.48, 1.05, yNorm);
+            vec3 skyTint = vec3(0.40, 0.46, 0.54) * skyGlow * 0.70;
+            base = mix(base, base + skyTint, skyGlow * 0.85);
+            
+            return base;
         }}
 
-        float getGradientT(vec2 uv, float t, vec2 dir1, vec2 dir2, vec3 freqs, vec2 dir3) {{
+        // Continuous multi-wave radiating flow:
+        // Ensures that as one radiant wave crest sweeps toward the top, the next is already rising from the bottom
+        float getGradientT(vec2 uv, float dist, float t, vec2 dir1, vec2 dir2, vec3 freqs, vec2 dir3) {{
             vec2 suv = uv * 1.0;
-            float flow = dot(suv, dir1) + sin(dot(suv, dir2) * freqs.x + t) * 0.32 + t * 0.18;
-            float flow2 = dot(suv, dir2.yx) + cos(dot(suv, dir1.yx) * freqs.y - t * 0.75) * 0.22;
             
-            float gradT = sin(flow * 1.4) * 0.5 + 0.5;
-            gradT += cos(flow2 * 1.15) * 1.25;
-            gradT += sin(dot(suv, dir3) * freqs.z + t * 3.2) * 1.15;
+            float flow1 = dot(suv, dir1) + sin(dot(suv, dir2) * freqs.x + t * 0.7) * 0.28 + t * 0.18;
+            float flow2 = dot(suv, dir2.yx) + cos(dot(suv, dir1.yx) * freqs.y - t * 0.5) * 0.22;
             
-            return smoothstep(0.0, 4.0, gradT);
+            // Radiating wave trains outward from bottom
+            float waveA = sin(dist * 2.4 - t * 1.25) * 0.5 + 0.5;
+            float waveB = sin(dist * 1.7 - t * 0.85 + 1.5708) * 0.5 + 0.5;
+            
+            float grad = 0.52 * waveA + 0.48 * waveB;
+            grad += (sin(flow1 * 1.35) * 0.5 + 0.5) * 0.45;
+            grad += (cos(flow2 * 1.15) * 0.5 + 0.5) * 0.35;
+            grad += sin(dot(suv, dir3) * freqs.z + t * 2.2) * 0.28;
+            
+            return smoothstep(0.08, 1.95, grad);
         }}
 
-        void applyRingLens(vec2 pp, vec2 fragCoord, vec2 r, float iorOffset, vec2 mouseOffset, out vec2 warpedUV, out float edgeFactor) {{
-            float u_ringRadius = 1.0;
-            float u_ringSpacing = 1.45;
-            float u_ringWarpStrength = 3.8;
-            float u_lensScale = 10.0;
+        void applyRingLens(vec2 pp, vec2 fragCoord, vec2 r, float iorOffset, vec2 mouseOffset, out vec2 warpedUV, out float edgeFactor, out float distOut) {{
+            float u_ringRadius = 2.0;
+            float u_ringSpacing = 0.46;
+            float u_ringWarpStrength = 1.30;
+            float u_lensScale = 4.8;
             
             float radiusSq = u_ringRadius * u_ringRadius;
-            vec2 centerPos = vec2(r.x * 0.5, r.y * 0.82) + mouseOffset;
+            
+            // Lens center placed below viewport bottom so the center eye circle is off-screen
+            vec2 centerPos = vec2(r.x * 0.5, -0.16 * r.y) + mouseOffset;
             vec2 lensUV = (fragCoord - centerPos) / r.y * u_lensScale;
             float dist = length(lensUV);
+            distOut = dist;
             
             float fw = 0.007 * u_ringSpacing;
             float ringDist = mod(dist, u_ringSpacing) / u_ringSpacing;
@@ -467,8 +498,9 @@ html = f"""<!DOCTYPE html>
             vec2 fragCoord = gl_FragCoord.xy;
             vec2 r = u_resolution;
             vec2 p = (fragCoord * 2.0 - r) / r.y;
+            float yNorm = fragCoord.y / r.y;
             
-            float u_speed = 0.42;
+            float u_speed = 0.28;
             float t = u_time * u_speed;
             
             float u_seed = 47.0;
@@ -486,14 +518,14 @@ html = f"""<!DOCTYPE html>
                 1.5 + seedOff2.y * 2.0
             );
             
-            float u_ringDispersion = 0.38;
+            float u_ringDispersion = 0.18;
             vec3 ringIorOffsets = vec3(-1.0, 0.0, 1.0) * u_ringDispersion;
             
-            float u_lensScale = 10.0;
-            float u_ephemeralAmp = 0.12;
-            float u_edgeDisp = 1.25;
+            float u_lensScale = 4.8;
+            float u_ephemeralAmp = 0.35;
+            float u_edgeDisp = 0.55;
             
-            vec2 mouseOffset = (u_mouse - 0.5 * r) * 0.15;
+            vec2 mouseOffset = (u_mouse - 0.5 * r) * 0.06;
             
             vec3 col = vec3(0.0);
             
@@ -504,7 +536,7 @@ html = f"""<!DOCTYPE html>
                 vec2 pt = p;
                 pt.x += u_ephemeralAmp * sqEph * sin(p.y * 2.0 + t);
                 pt.y += u_ephemeralAmp * sqEph * cos(p.x * 1.5 - t) * 0.5;
-                pt.y -= (1.0 - exp(-EPHEMERAL_DRIP * sqEph)) * abs(pt.y) * sign(pt.y) * 0.28;
+                pt.y -= (1.0 - exp(-EPHEMERAL_DRIP * sqEph)) * abs(pt.y) * sign(pt.y) * 0.22;
                 
                 vec3 tint = smoothstep(1.0, 0.0, abs(3.0 * ephemeral - vec3(1.0, 1.5, 2.0)));
                 
@@ -516,38 +548,35 @@ html = f"""<!DOCTYPE html>
                     vec2 pp = pt * u_lensScale;
                     vec2 warpedUV;
                     float edgeFactor;
-                    applyRingLens(pp, fragCoord, r, ior, mouseOffset, warpedUV, edgeFactor);
+                    float distOut;
+                    applyRingLens(pp, fragCoord, r, ior, mouseOffset, warpedUV, edgeFactor, distOut);
                     
                     vec2 gradUV = warpedUV / u_lensScale;
-                    float gT = getGradientT(gradUV, t * 0.8, dir1, dir2, freqs, dir3);
+                    float gT = getGradientT(gradUV, distOut, t * 0.8, dir1, dir2, freqs, dir3);
                     if (c == 0) {{ gradTs.r = gT; edgeFactors.r = edgeFactor; }}
                     else if (c == 1) {{ gradTs.g = gT; edgeFactors.g = edgeFactor; }}
                     else {{ gradTs.b = gT; edgeFactors.b = edgeFactor; }}
                 }}
                 
-                vec3 convergentColor = palette(gradTs.g);
+                vec3 convergentColor = palette(gradTs.g, yNorm);
                 float edgeMix = max(max(edgeFactors.r, edgeFactors.g), edgeFactors.b);
                 
                 vec3 dispersedColor = vec3(
-                    palette(gradTs.r).r,
+                    palette(gradTs.r, yNorm).r,
                     convergentColor.g,
-                    palette(gradTs.b).b
+                    palette(gradTs.b, yNorm).b
                 );
                 
-                vec3 finalColor = mix(convergentColor, dispersedColor, edgeMix * 2.0);
-                vec3 rainbow = (gradTs - gradTs.g) * 3.0;
+                vec3 finalColor = mix(convergentColor, dispersedColor, edgeMix * 1.5);
+                vec3 rainbow = (gradTs - gradTs.g) * 1.8;
                 finalColor += rainbow * edgeMix * u_edgeDisp;
                 
                 col += tint * finalColor * (3.0 / float(SAMPLES));
             }}
             
-            // Vignette
-            vec2 st = (fragCoord - 0.5 * r) / min(r.x, r.y);
-            col *= smoothstep(1.8, 0.35, length(st) * 0.85);
-            
-            // Film Grain
+            // Fine luxury micro-grain
             float noise = fract(sin(dot(fragCoord, vec2(12.9898, 78.233))) * 43758.5453);
-            col += (noise - 0.5) * 0.014;
+            col += (noise - 0.5) * 0.010;
             
             gl_FragColor = vec4(col, 1.0);
         }}
@@ -691,4 +720,4 @@ out_path = os.path.join(BASE_DIR, "index.html")
 with open(out_path, "w", encoding="utf-8") as f:
     f.write(html)
 
-print("Generated index.html with centered mobile box and JNMC 2024 to 2029 badge!")
+print("Generated index.html with Framer-calibrated shader and centered card!")
