@@ -366,7 +366,7 @@ for idx, (dt, top, code, staff) in enumerate(ophth_b_raw, start=1):
         "dtstart": f"{dt}T140000",
         "dtend": f"{dt}T170000",
         "summary": f"[OPTHA SDL] Clinical Staff // {top}{c_str}",
-        "location": "Dept. of Ophthalmology / Skill Lab",
+        "location": "Dept. of Ophthalmology",
         "description": f"Subject: Ophthalmology SDL & AETCOM (Batch B: Roll 101-202)\nTopic: {top}\nCompetency: {code}\nStaff Distribution:\n{staff}\nTime: 2:00 PM - 5:00 PM"
     })
 
