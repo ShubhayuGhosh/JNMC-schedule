@@ -107,7 +107,7 @@ for idx, (dt, fac, top, code) in enumerate(ophth_raw, start=1):
         "dtstart": f"{dt}T120000",
         "dtend": f"{dt}T130000",
         "summary": f"[OPTHA] {fac} // {top}{c_str}",
-        "location": "JNMC Belagavi",
+        "location": "",
         "description": f"Subject: Ophthalmology (Theory)\nFaculty: {fac}\nTopic: {top}\nCompetency: {code}\nTime: 12:00 PM - 1:00 PM"
     })
 
@@ -151,7 +151,7 @@ for idx, (dt, fac, top, code, blk) in enumerate(med_raw, start=1):
         "dtstart": f"{dt}T080000",
         "dtend": f"{dt}T090000",
         "summary": f"[MED] {fac} // {top}{c_str}",
-        "location": "Pathology Lecture Hall, JNMC Belagavi",
+        "location": "Pathology Lecture Hall",
         "description": f"Subject: General Medicine (Theory)\nFaculty: {fac}\nTopic: {top}\nCompetency: {code}\nSection: {blk}\nTime: 8:00 AM - 9:00 AM"
     })
 
@@ -193,7 +193,7 @@ for idx, (dt, tag, fac, top, code, sub_name) in enumerate(surg_raw, start=1):
         "dtstart": f"{dt}T080000",
         "dtend": f"{dt}T090000",
         "summary": f"[{tag}] {fac} // {top}{c_str}",
-        "location": "Pathology Lecture Hall, JNMC Belagavi",
+        "location": "Pathology Lecture Hall",
         "description": f"Subject: {sub_name} (Theory)\nFaculty: {fac}\nTopic: {top}\nCompetency: {code}\nTime: 8:00 AM - 9:00 AM"
     })
 
@@ -237,7 +237,7 @@ for idx, (dt, fac, top, code) in enumerate(ent_raw, start=1):
         "dtstart": f"{dt}T120000",
         "dtend": f"{dt}T130000",
         "summary": f"[ENT] {fac} // {top}{c_str}",
-        "location": "Anatomy Lecture Hall, JNMC Belagavi",
+        "location": "Anatomy Lecture Hall",
         "description": f"Subject: Oto-Rhino-Laryngology & HNS (ENT Theory)\nFaculty: {fac}\nTopic: {top}\nCompetency: {code}\nTime: 12:00 PM - 1:00 PM"
     })
 
@@ -271,7 +271,7 @@ for idx, (dt, fac, top, code) in enumerate(obg_raw, start=1):
         "dtstart": f"{dt}T080000",
         "dtend": f"{dt}T090000",
         "summary": f"[OBG] {fac} // {top}{c_str}",
-        "location": "Pathology Lecture Hall, JNMC Belagavi",
+        "location": "Pathology Lecture Hall",
         "description": f"Subject: Obstetrics & Gynaecology (Theory)\nFaculty: {fac}\nTopic: {top}\nCompetency: {code}\nTime: 8:00 AM - 9:00 AM"
     })
 
@@ -307,7 +307,7 @@ for idx, (dt, fac, top, code) in enumerate(peds_raw, start=1):
         "dtstart": f"{dt}T120000",
         "dtend": f"{dt}T130000",
         "summary": f"[PEDS] {fac} // {top}{c_str}",
-        "location": "Pathology Lecture Hall, JNMC Belagavi",
+        "location": "Pathology Lecture Hall",
         "description": f"Subject: Pediatrics (Theory)\nFaculty: {fac}\nTopic: {top}\nCompetency: {code}\nTime: 12:00 PM - 1:00 PM"
     })
 
@@ -334,7 +334,7 @@ for block in vevent_matches:
             "dtstart": dtstart_m.group(1).strip(),
             "dtend": dtend_m.group(1).strip(),
             "summary": f"[COMED] {s_val}",
-            "location": "Pathology Lecture Hall, JNMC Belagavi",
+            "location": "Pathology Lecture Hall",
             "description": desc
         })
 
@@ -366,16 +366,16 @@ for idx, (dt, top, code, staff) in enumerate(ophth_b_raw, start=1):
         "dtstart": f"{dt}T140000",
         "dtend": f"{dt}T170000",
         "summary": f"[OPTHA SDL] Clinical Staff // {top}{c_str}",
-        "location": "Dept. of Ophthalmology / Skill Lab, JNMC Belagavi",
+        "location": "Dept. of Ophthalmology / Skill Lab",
         "description": f"Subject: Ophthalmology SDL & AETCOM (Batch B: Roll 101-202)\nTopic: {top}\nCompetency: {code}\nStaff Distribution:\n{staff}\nTime: 2:00 PM - 5:00 PM"
     })
 
 # 2. FMT Batch B ([FMT])
 fmt_b_raw = [
-    ("20261013", "140000", "170000", "Dr. VVK, Dr. VB", "Medical Certificate of Cause of Death (MCCD)", "", "Dept. of FMT, JNMC Belagavi", "MCCD training for Batch B (2 PM - 5 PM). Faculty: Dr. VVK, Dr. VB."),
-    ("20261015", "140000", "170000", "Dr. PSJ", "Skull Identification (SGT)", "", "Dept. of FMT, JNMC Belagavi", "Small Group Teaching (SGT): Skull Identification. Faculty: Dr. PSJ."),
-    ("20261016", "140000", "170000", "Dr. PSJ", "Skeletal Remains & Identification (SGT)", "", "Dept. of FMT, JNMC Belagavi", "Small Group Teaching (SGT): Identification & Skeletal Remains. Faculty: Dr. PSJ."),
-    ("20261017", "120000", "130000", "Dr. VVK", "Virginity and Defloration", "", "Dept. of FMT, JNMC Belagavi", "Lecture on Virginity and Defloration (12 PM - 1 PM). Faculty: Dr. VVK.")
+    ("20261013", "140000", "170000", "Dr. VVK, Dr. VB", "Medical Certificate of Cause of Death (MCCD)", "", "Dept. of FMT", "MCCD training for Batch B (2 PM - 5 PM). Faculty: Dr. VVK, Dr. VB."),
+    ("20261015", "140000", "170000", "Dr. PSJ", "Skull Identification (SGT)", "", "Dept. of FMT", "Small Group Teaching (SGT): Skull Identification. Faculty: Dr. PSJ."),
+    ("20261016", "140000", "170000", "Dr. PSJ", "Skeletal Remains & Identification (SGT)", "", "Dept. of FMT", "Small Group Teaching (SGT): Identification & Skeletal Remains. Faculty: Dr. PSJ."),
+    ("20261017", "120000", "130000", "Dr. VVK", "Virginity and Defloration", "", "Dept. of FMT", "Lecture on Virginity and Defloration (12 PM - 1 PM). Faculty: Dr. VVK.")
 ]
 for idx, (dt, tstart, tend, fac, top, code, loc, desc) in enumerate(fmt_b_raw, start=1):
     c_str = f" {code}" if code else ""
