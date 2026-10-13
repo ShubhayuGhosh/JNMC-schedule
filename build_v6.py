@@ -294,6 +294,28 @@ html = f"""<!DOCTYPE html>
       border-color: rgba(255, 255, 255, 0.08);
     }}
 
+    .btn-secondary:disabled,
+    .btn-secondary[disabled] {{
+      opacity: 0.42;
+      cursor: not-allowed;
+      transform: none !important;
+      box-shadow: none !important;
+      background: rgba(255, 255, 255, 0.02) !important;
+      border-color: rgba(255, 255, 255, 0.06) !important;
+      color: #94a3b8 !important;
+    }}
+
+    .btn-secondary:disabled .label,
+    .btn-secondary[disabled] .label {{
+      color: #94a3b8 !important;
+    }}
+
+    .btn-secondary:disabled .pill-tag,
+    .btn-secondary[disabled] .pill-tag {{
+      background: rgba(255, 255, 255, 0.03) !important;
+      color: #64748b !important;
+    }}
+
     .btn-secondary .label {{
       font-size: 0.95rem;
       font-weight: 500;
@@ -361,7 +383,7 @@ html = f"""<!DOCTYPE html>
         <span class="pill-tag">Roll 1 to 202</span>
       </button>
 
-      <button class="btn btn-secondary" onclick="download('batch_b')" aria-label="Download Additional Schedule for Batch B">
+      <button class="btn btn-secondary" disabled aria-disabled="true" title="Temporarily disabled pending FMT routine confirmation" aria-label="Additional Schedule for Batch B (Temporarily disabled pending confirmation)">
         <span class="label">Additional for B batch</span>
         <span class="pill-tag">Ophth SDL & FMT</span>
       </button>
@@ -667,6 +689,7 @@ html = f"""<!DOCTYPE html>
     }};
 
     function download(type) {{
+      if (type === 'batch_b') return;
       const file = files[type];
       if (!file) return;
 
