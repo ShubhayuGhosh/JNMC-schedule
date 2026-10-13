@@ -8,45 +8,54 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
-    * {
+    *, *::before, *::after {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
       -webkit-tap-highlight-color: transparent;
     }
 
+    html {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      -webkit-text-size-adjust: 100%;
+    }
+
     body {
       font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       background-color: #03050a;
       color: #e2e8f0;
+      width: 100%;
+      min-height: 100%;
       min-height: 100vh;
-      min-height: -webkit-fill-available;
+      min-height: 100dvh;
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
-      padding: max(1.5rem, env(safe-area-inset-top)) 1.25rem max(1.5rem, env(safe-area-inset-bottom)) 1.25rem;
+      margin: 0;
+      padding: max(1.5rem, env(safe-area-inset-top)) 1rem max(1.5rem, env(safe-area-inset-bottom)) 1rem;
       overflow-x: hidden;
       position: relative;
     }
 
     #gl-canvas {
       position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
+      inset: 0;
+      width: 100%;
+      height: 100%;
       z-index: 0;
       pointer-events: none;
     }
 
     .ambient-glow {
       position: fixed;
-      top: 10vh;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 90vw;
+      inset: 0;
+      width: 100%;
       height: 60vh;
-      background: radial-gradient(ellipse at center, rgba(56, 189, 248, 0.08) 0%, rgba(30, 58, 138, 0.04) 50%, rgba(3, 5, 10, 0) 80%);
+      background: radial-gradient(ellipse at center top, rgba(56, 189, 248, 0.08) 0%, rgba(30, 58, 138, 0.04) 50%, rgba(3, 5, 10, 0) 80%);
       z-index: 1;
       pointer-events: none;
     }
@@ -55,14 +64,15 @@
       position: relative;
       z-index: 10;
       width: 100%;
-      max-width: 430px;
-      min-width: 0;
+      max-width: 410px;
+      margin: auto;
+      text-align: center;
       background: rgba(10, 13, 22, 0.78);
       backdrop-filter: blur(50px) saturate(200%);
       -webkit-backdrop-filter: blur(50px) saturate(200%);
       border: 1px solid rgba(255, 255, 255, 0.09);
-      border-radius: 32px;
-      padding: 2.75rem 2.25rem 2.25rem;
+      border-radius: 30px;
+      padding: 2.6rem 2rem 2.15rem;
       box-shadow: 
         inset 0 1px 0 0 rgba(255, 255, 255, 0.16),
         0 24px 64px -16px rgba(0, 0, 0, 0.8),
@@ -82,15 +92,20 @@
     }
 
     @media (max-width: 480px) {
+      body {
+        padding: max(1.2rem, env(safe-area-inset-top)) 0.85rem max(1.2rem, env(safe-area-inset-bottom)) 0.85rem;
+      }
       .card {
-        padding: 2.15rem 1.45rem 1.85rem;
-        border-radius: 26px;
+        padding: 2.15rem 1.25rem 1.85rem;
+        border-radius: 24px;
+        max-width: 100%;
       }
     }
 
     .badge-pill {
       display: inline-flex;
       align-items: center;
+      justify-content: center;
       gap: 0.45rem;
       padding: 0.35rem 0.85rem;
       border-radius: 9999px;
@@ -101,7 +116,7 @@
       letter-spacing: 0.075em;
       text-transform: uppercase;
       color: #94a3b8;
-      margin-bottom: 1.25rem;
+      margin: 0 auto 1.35rem;
     }
 
     .badge-pill .dot {
@@ -113,8 +128,8 @@
     }
 
     header {
-      margin-bottom: 2rem;
-      text-align: left;
+      margin-bottom: 1.85rem;
+      text-align: center;
     }
 
     h1 {
@@ -124,7 +139,8 @@
       letter-spacing: -0.015em;
       color: #ffffff;
       line-height: 1.15;
-      margin-bottom: 0.75rem;
+      margin: 0 auto 0.75rem;
+      text-align: center;
       text-wrap: balance;
     }
 
@@ -139,12 +155,17 @@
       color: #94a3b8;
       line-height: 1.55;
       font-weight: 400;
+      text-align: center;
+      margin: 0 auto;
+      max-width: 320px;
+      text-wrap: pretty;
     }
 
     @media (max-width: 480px) {
       .subtitle {
         font-size: 0.825rem;
         line-height: 1.5;
+        max-width: 290px;
       }
     }
 
@@ -153,7 +174,7 @@
       flex-direction: column;
       gap: 0.85rem;
       margin-top: 1.75rem;
-      min-width: 0;
+      width: 100%;
     }
 
     .btn {
@@ -172,6 +193,21 @@
       transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
       line-height: 1.25;
       text-align: left;
+      gap: 0.5rem;
+    }
+
+    @media (max-width: 480px) {
+      .btn {
+        padding: 0.9rem 1rem;
+        border-radius: 13px;
+      }
+    }
+
+    @media (max-width: 360px) {
+      .btn {
+        padding: 0.85rem 0.8rem;
+        gap: 0.35rem;
+      }
     }
 
     /* Primary Hero CTA (Pure Porcelain White) */
@@ -203,6 +239,7 @@
       font-weight: 600;
       letter-spacing: -0.015em;
       color: #080a11;
+      white-space: nowrap;
     }
 
     .btn-primary .pill-tag {
@@ -214,6 +251,7 @@
       color: #334155;
       letter-spacing: 0.01em;
       white-space: nowrap;
+      flex-shrink: 0;
     }
 
     /* Secondary CTA (Refined Frosted Charcoal Glass) */
@@ -242,6 +280,7 @@
       font-weight: 500;
       letter-spacing: -0.01em;
       color: #f1f5f9;
+      white-space: nowrap;
     }
 
     .btn-secondary .pill-tag {
@@ -253,10 +292,23 @@
       color: #94a3b8;
       letter-spacing: 0.01em;
       white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    @media (max-width: 380px) {
+      .btn-primary .label,
+      .btn-secondary .label {
+        font-size: 0.885rem;
+      }
+      .btn-primary .pill-tag,
+      .btn-secondary .pill-tag {
+        font-size: 0.6875rem;
+        padding: 0.2rem 0.5rem;
+      }
     }
 
     .footer {
-      margin-top: 2rem;
+      margin-top: 1.85rem;
       text-align: center;
       font-size: 0.75rem;
       font-weight: 500;
@@ -273,7 +325,7 @@
   <main class="card">
     <div class="badge-pill">
       <span class="dot"></span>
-      <span>JNMC • 2026 to 2027</span>
+      <span>JNMC 2024 to 2029</span>
     </div>
 
     <header>
