@@ -106,7 +106,7 @@ for idx, (dt, fac, top, blk) in enumerate(med_raw, start=1):
         "dtstart": f"{dt}T080000",
         "dtend": f"{dt}T090000",
         "summary": f"Medicine: {fac} // {top}",
-        "location": "Pharmacology Lecture Hall, JNMC Belagavi",
+        "location": "Pathology Lecture Hall, JNMC Belagavi",
         "description": f"Subject: General Medicine (Theory)\nFaculty: {fac}\nTopic: {top}\nSection: {blk}\nTime: 8:00 AM - 9:00 AM"
     })
 
@@ -147,7 +147,7 @@ for idx, (dt, fac, top) in enumerate(surg_raw, start=1):
         "dtstart": f"{dt}T080000",
         "dtend": f"{dt}T090000",
         "summary": f"Surgery: {fac} // {top}",
-        "location": "Pharmacology Lecture Hall, JNMC Belagavi",
+        "location": "Pathology Lecture Hall, JNMC Belagavi",
         "description": f"Subject: General Surgery (Theory)\nFaculty: {fac}\nTopic: {top}\nTime: 8:00 AM - 9:00 AM"
     })
 
@@ -223,7 +223,7 @@ for idx, (dt, fac, top) in enumerate(obg_raw, start=1):
         "dtstart": f"{dt}T080000",
         "dtend": f"{dt}T090000",
         "summary": f"OBG: {fac} // {top}",
-        "location": "Pathology Big Hall, JNMC Belagavi",
+        "location": "Pathology Lecture Hall, JNMC Belagavi",
         "description": f"Subject: Obstetrics & Gynaecology (Theory)\nFaculty: {fac}\nTopic: {top}\nTime: 8:00 AM - 9:00 AM"
     })
 
@@ -258,7 +258,7 @@ for idx, (dt, fac, top) in enumerate(peds_raw, start=1):
         "dtstart": f"{dt}T120000",
         "dtend": f"{dt}T130000",
         "summary": f"Pediatrics: {fac} // {top}",
-        "location": "Pathology Gallery Hall, JNMC Belagavi",
+        "location": "Pathology Lecture Hall, JNMC Belagavi",
         "description": f"Subject: Pediatrics (Theory)\nFaculty: {fac}\nTopic: {top}\nTime: 12:00 PM - 1:00 PM"
     })
 
@@ -328,7 +328,7 @@ for block in vevent_matches:
             "dtstart": dtstart_m.group(1).strip(),
             "dtend": dtend_m.group(1).strip(),
             "summary": s_val,
-            "location": "Pathology Gallery Hall, JNMC Belagavi",
+            "location": "Pathology Lecture Hall, JNMC Belagavi",
             "description": desc
         })
 

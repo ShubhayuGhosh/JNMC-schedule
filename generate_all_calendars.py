@@ -78,7 +78,7 @@ def write_ics(filepath, cal_name, prod_id, color, events):
 
 # ==========================================
 # 1. GENERAL MEDICINE (Mondays 8:00 - 9:00 AM)
-# Venue: Pharmacology Lecture Hall
+# Venue: Pathology Lecture Hall
 # ==========================================
 med_raw = [
     # Block I
@@ -123,7 +123,7 @@ for idx, (dt, fac, top, blk) in enumerate(med_raw, start=1):
         "dtstart": f"{dt}T080000",
         "dtend": f"{dt}T090000",
         "summary": f"{fac} // {top}",
-        "location": "Pharmacology Lecture Hall, JNMC Belagavi",
+        "location": "Pathology Lecture Hall, JNMC Belagavi",
         "description": f"Subject: General Medicine (Theory)\nFaculty: {fac}\nTopic: {top}\nSection: {blk}\nTime: 8:00 AM - 9:00 AM"
     })
 
@@ -131,7 +131,7 @@ write_ics(os.path.join(GEN_DIR, "01_General_Medicine.ics"), "MBBS General Medici
 
 # ==========================================
 # 2. GENERAL SURGERY (Tuesdays 8:00 - 9:00 AM)
-# Venue: Pharmacology Lecture Hall
+# Venue: Pathology Lecture Hall
 # ==========================================
 surg_raw = [
     ("20261006", "Dr. S.I. Neeli (Urology)", "SU.29.2 AN 29.2- Congenital anomalies of genitourinary tract"),
@@ -171,7 +171,7 @@ for idx, (dt, fac, top) in enumerate(surg_raw, start=1):
         "dtstart": f"{dt}T080000",
         "dtend": f"{dt}T090000",
         "summary": f"{fac} // {top}",
-        "location": "Pharmacology Lecture Hall, JNMC Belagavi",
+        "location": "Pathology Lecture Hall, JNMC Belagavi",
         "description": f"Subject: General Surgery (Theory)\nFaculty: {fac}\nTopic: {top}\nTime: 8:00 AM - 9:00 AM"
     })
 
@@ -229,7 +229,7 @@ write_ics(os.path.join(GEN_DIR, "03_ENT.ics"), "MBBS ENT", "-//JNMC Belagavi//MB
 
 # ==========================================
 # 4. OBG THEORY (Wednesdays 8:00 - 9:00 AM)
-# Venue: Pathology Big Hall
+# Venue: Pathology Lecture Hall
 # ==========================================
 obg_raw = [
     ("20261007", "Dr. Manjunath Hukkeri", "OG 22.1 -Vaginal Discharge"),
@@ -261,7 +261,7 @@ for idx, (dt, fac, top) in enumerate(obg_raw, start=1):
         "dtstart": f"{dt}T080000",
         "dtend": f"{dt}T090000",
         "summary": f"{fac} // {top}",
-        "location": "Pathology Big Hall, JNMC Belagavi",
+        "location": "Pathology Lecture Hall, JNMC Belagavi",
         "description": f"Subject: Obstetrics & Gynaecology (Theory)\nFaculty: {fac}\nTopic: {top}\nTime: 8:00 AM - 9:00 AM"
     })
 
@@ -269,7 +269,7 @@ write_ics(os.path.join(GEN_DIR, "04_OBG.ics"), "MBBS Obstetrics & Gynaecology", 
 
 # ==========================================
 # 5. PEDIATRICS (Wednesdays 12:00 - 1:00 PM)
-# Venue: Pathology Gallery Hall
+# Venue: Pathology Lecture Hall
 # ==========================================
 peds_raw = [
     ("20261007", "Faculty", "Revision"),
@@ -303,7 +303,7 @@ for idx, (dt, fac, top) in enumerate(peds_raw, start=1):
         "dtstart": f"{dt}T120000",
         "dtend": f"{dt}T130000",
         "summary": f"{fac} // {top}",
-        "location": "Pathology Gallery Hall, JNMC Belagavi",
+        "location": "Pathology Lecture Hall, JNMC Belagavi",
         "description": f"Subject: Pediatrics (Theory)\nFaculty: {fac}\nTopic: {top}\nTime: 12:00 PM - 1:00 PM"
     })
 
@@ -384,7 +384,7 @@ for block in vevent_matches:
             "dtstart": dtstart_m.group(1).strip(),
             "dtend": dtend_m.group(1).strip(),
             "summary": summary_m.group(1).strip(),
-            "location": "Pathology Gallery Hall, JNMC Belagavi",
+            "location": "Pathology Lecture Hall, JNMC Belagavi",
             "description": desc
         })
 
