@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
   <title>MBBS Phase III Schedule</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,13 +17,20 @@
 
     body {
       font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      background-color: #060709;
+      background-color: #07090e;
+      background-image: 
+        radial-gradient(circle at 15% 25%, rgba(99, 102, 241, 0.22) 0%, transparent 45%),
+        radial-gradient(circle at 85% 15%, rgba(14, 165, 233, 0.18) 0%, transparent 45%),
+        radial-gradient(circle at 80% 85%, rgba(244, 63, 94, 0.14) 0%, transparent 50%),
+        radial-gradient(circle at 20% 85%, rgba(139, 92, 246, 0.18) 0%, transparent 50%);
+      background-attachment: fixed;
       color: #e5e7eb;
       min-height: 100vh;
+      min-height: -webkit-fill-available;
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 1.5rem 1rem;
+      padding: max(1.5rem, env(safe-area-inset-top)) 1rem max(1.5rem, env(safe-area-inset-bottom)) 1rem;
       overflow-x: hidden;
       position: relative;
     }
@@ -40,12 +47,12 @@
 
     .ambient-glow {
       position: fixed;
-      top: -25vh;
+      top: -20vh;
       left: 50%;
       transform: translateX(-50%);
-      width: 90vw;
-      height: 60vh;
-      background: radial-gradient(ellipse at center, rgba(148, 163, 184, 0.07) 0%, rgba(6, 7, 9, 0) 70%);
+      width: 100vw;
+      height: 70vh;
+      background: radial-gradient(ellipse at center, rgba(99, 102, 241, 0.12) 0%, rgba(56, 189, 248, 0.06) 40%, rgba(7, 9, 14, 0) 75%);
       z-index: 1;
       pointer-events: none;
     }
@@ -54,129 +61,181 @@
       position: relative;
       z-index: 10;
       width: 100%;
-      max-width: 440px;
-      background: rgba(15, 17, 23, 0.68);
-      backdrop-filter: blur(40px) saturate(200%);
-      -webkit-backdrop-filter: blur(40px) saturate(200%);
-      border: 1px solid rgba(255, 255, 255, 0.11);
-      border-radius: 24px;
-      padding: 2.75rem 2.25rem;
+      max-width: 400px;
+      min-width: 0;
+      background: rgba(13, 16, 24, 0.76);
+      backdrop-filter: blur(44px) saturate(210%);
+      -webkit-backdrop-filter: blur(44px) saturate(210%);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 26px;
+      padding: 2.5rem 2rem;
       box-shadow: 
-        inset 0 1px 0 0 rgba(255, 255, 255, 0.16),
-        0 24px 48px -12px rgba(0, 0, 0, 0.5);
+        inset 0 1px 0 0 rgba(255, 255, 255, 0.2),
+        0 24px 48px -12px rgba(0, 0, 0, 0.65),
+        0 4px 16px rgba(0, 0, 0, 0.4);
+    }
+
+    @media (max-width: 600px) {
+      .card {
+        padding: 2.15rem 1.35rem;
+        border-radius: 22px;
+      }
     }
 
     header {
-      margin-bottom: 2rem;
+      margin-bottom: 1.75rem;
+      text-align: left;
     }
 
     h1 {
-      font-size: 1.65rem;
+      font-size: 1.625rem;
       font-weight: 700;
       letter-spacing: -0.035em;
       color: #f8fafc;
-      line-height: 1.2;
-      margin-bottom: 0.85rem;
+      line-height: 1.22;
+      margin-bottom: 0.65rem;
     }
 
-    .import-guide {
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.45rem;
+      }
+    }
+
+    .subtitle {
       font-size: 0.875rem;
       color: #94a3b8;
       line-height: 1.55;
-    }
-
-    .import-guide p {
-      margin-bottom: 0.45rem;
       font-weight: 400;
-      color: #cbd5e1;
     }
 
-    .import-steps {
-      margin-top: 0.6rem;
-      list-style-type: none;
-      font-size: 0.8125rem;
-      color: #94a3b8;
-      line-height: 1.5;
-    }
-
-    .import-steps li {
-      margin-bottom: 0.35rem;
-      position: relative;
-      padding-left: 1rem;
-    }
-
-    .import-steps li::before {
-      content: "•";
-      position: absolute;
-      left: 0;
-      color: #64748b;
-    }
-
-    .import-steps strong {
-      color: #f1f5f9;
-      font-weight: 500;
+    @media (max-width: 600px) {
+      .subtitle {
+        font-size: 0.84rem;
+        line-height: 1.5;
+      }
     }
 
     .actions {
       display: flex;
       flex-direction: column;
       gap: 0.875rem;
-      margin-top: 2rem;
+      margin-top: 1.5rem;
+      min-width: 0;
     }
 
     .btn {
       display: block;
       width: 100%;
-      background: linear-gradient(180deg, #262933 0%, #1c1e26 100%);
-      color: #f8fafc;
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      border-radius: 14px;
-      padding: 1.1rem 1.25rem;
+      min-width: 0;
+      border-radius: 16px;
+      padding: 1.125rem 1.15rem;
       text-align: center;
       cursor: pointer;
       text-decoration: none;
-      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
-      line-height: 1.3;
-      box-shadow: 
-        inset 0 1px 0 0 rgba(255, 255, 255, 0.12),
-        0 2px 4px rgba(0, 0, 0, 0.2);
+      transition: transform 0.18s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.18s cubic-bezier(0.16, 1, 0.3, 1), background 0.18s ease;
+      line-height: 1.35;
+      user-select: none;
+      -webkit-user-select: none;
     }
 
-    .btn:hover {
-      background: linear-gradient(180deg, #2f333f 0%, #232630 100%);
-      border-color: rgba(255, 255, 255, 0.18);
+    @media (max-width: 600px) {
+      .btn {
+        padding: 1rem 0.875rem;
+        border-radius: 14px;
+      }
+    }
+
+    /* Primary high-affordance button (Bright Pearl White) */
+    .btn-primary {
+      background: linear-gradient(180deg, #FFFFFF 0%, #F1F4F9 100%);
+      border: 1px solid rgba(255, 255, 255, 0.95);
+      box-shadow: 
+        inset 0 1px 0 rgba(255, 255, 255, 1),
+        0 4px 8px -1px rgba(0, 0, 0, 0.2),
+        0 12px 28px -4px rgba(0, 0, 0, 0.38);
+    }
+
+    .btn-primary:hover {
+      background: linear-gradient(180deg, #FFFFFF 0%, #E5EBF4 100%);
       transform: translateY(-1px);
       box-shadow: 
-        inset 0 1px 0 0 rgba(255, 255, 255, 0.18),
-        0 6px 16px rgba(0, 0, 0, 0.3);
+        inset 0 1px 0 rgba(255, 255, 255, 1),
+        0 8px 16px -2px rgba(0, 0, 0, 0.25),
+        0 16px 36px -4px rgba(0, 0, 0, 0.45);
     }
 
-    .btn:active {
-      background: linear-gradient(180deg, #1c1e25 0%, #15171d 100%);
-      transform: translateY(0);
-      box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.4);
+    .btn-primary:active {
+      background: linear-gradient(180deg, #EAEFF6 0%, #DCE3ED 100%);
+      transform: scale(0.985);
+      box-shadow: 
+        inset 0 1px 2px rgba(0, 0, 0, 0.15),
+        0 2px 6px rgba(0, 0, 0, 0.3);
     }
 
-    .btn .label {
+    .btn-primary .label {
       display: block;
-      font-size: 0.975rem;
-      font-weight: 600;
-      letter-spacing: -0.015em;
-      color: #ffffff;
+      font-size: 1.025rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: #090d16;
     }
 
-    .btn .caption {
+    .btn-primary .caption {
       display: block;
       font-size: 0.8125rem;
-      font-weight: 400;
-      color: #94a3b8;
+      font-weight: 500;
+      color: #475569;
+      margin-top: 0.25rem;
+    }
+
+    /* Secondary high-affordance button (Luminous Ice Platinum) */
+    .btn-secondary {
+      background: linear-gradient(180deg, #E6EDF5 0%, #D5DFEB 100%);
+      border: 1px solid rgba(255, 255, 255, 0.65);
+      box-shadow: 
+        inset 0 1px 0 rgba(255, 255, 255, 0.9),
+        0 4px 8px -1px rgba(0, 0, 0, 0.18),
+        0 10px 24px -4px rgba(0, 0, 0, 0.32);
+    }
+
+    .btn-secondary:hover {
+      background: linear-gradient(180deg, #EDF3FA 0%, #CBD7E5 100%);
+      transform: translateY(-1px);
+      box-shadow: 
+        inset 0 1px 0 rgba(255, 255, 255, 0.95),
+        0 6px 14px -2px rgba(0, 0, 0, 0.22),
+        0 14px 32px -4px rgba(0, 0, 0, 0.38);
+    }
+
+    .btn-secondary:active {
+      background: linear-gradient(180deg, #CCD7E4 0%, #BFCFDF 100%);
+      transform: scale(0.985);
+      box-shadow: 
+        inset 0 1px 2px rgba(0, 0, 0, 0.15),
+        0 2px 6px rgba(0, 0, 0, 0.25);
+    }
+
+    .btn-secondary .label {
+      display: block;
+      font-size: 1.025rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: #0b1120;
+    }
+
+    .btn-secondary .caption {
+      display: block;
+      font-size: 0.8125rem;
+      font-weight: 500;
+      color: #4b5563;
       margin-top: 0.25rem;
     }
 
     .footer {
       margin-top: 2rem;
       text-align: center;
-      font-size: 0.725rem;
+      font-size: 0.75rem;
       font-weight: 500;
       color: #64748b;
       letter-spacing: 0.025em;
@@ -191,28 +250,22 @@
   <main class="card">
     <header>
       <h1>MBBS Phase III Schedule</h1>
-      <div class="import-guide">
-        <p>Tap below to download your calendar file.</p>
-        <ul class="import-steps">
-          <li><strong>Apple Calendar:</strong> Tap the file to add all classes directly.</li>
-          <li><strong>Google Calendar:</strong> Open Settings, click Import, and select the file.</li>
-        </ul>
-      </div>
+      <p class="subtitle">Download the schedule files below and open it with your calendar app of choice</p>
     </header>
 
     <div class="actions">
-      <button class="btn" onclick="download('general')">
+      <button class="btn btn-primary" onclick="download('general')" aria-label="Download General Schedule for Roll 1 to 202">
         <span class="label">Download Schedule</span>
         <span class="caption">For Roll 1 to 202 (Single .ics file)</span>
       </button>
 
-      <button class="btn" onclick="download('batch_b')">
+      <button class="btn btn-secondary" onclick="download('batch_b')" aria-label="Download Additional Schedule for Batch B">
         <span class="label">Additional for B batch</span>
         <span class="caption">Ophthalmology SDL and FMT (Single .ics file)</span>
       </button>
     </div>
 
-    <footer class="footer">Made by Shubhayu</footer>
+    <footer class="footer">Made by Shubhayu :)</footer>
   </main>
 
   <script>
@@ -234,70 +287,94 @@
         uniform vec2 u_mouse;
 
         float height(vec2 p, float t, vec2 mouse) {
-          // Gentle interaction pulling with mouse
           float mDist = length(p - mouse);
-          float mFactor = exp(-mDist * 1.5) * 0.25;
+          float mFactor = exp(-mDist * 1.8) * 0.32;
 
-          float h1 = sin(p.x * 1.35 + t * 0.4) * cos(p.y * 1.15 - t * 0.3);
+          float h1 = sin(p.x * 1.35 + t * 0.45) * cos(p.y * 1.15 - t * 0.35);
           
           vec2 w1 = vec2(
-            sin(p.y * 2.0 + t * 0.35 + mFactor),
-            cos(p.x * 1.8 - t * 0.25 - mFactor)
+            sin(p.y * 2.1 + t * 0.40 + mFactor),
+            cos(p.x * 1.85 - t * 0.30 - mFactor)
           );
-          float h2 = sin((p.x + w1.x * 0.85) * 2.1 - t * 0.45) * cos((p.y + w1.y * 0.85) * 1.9 + t * 0.35);
+          float h2 = sin((p.x + w1.x * 0.82) * 2.2 - t * 0.50) * cos((p.y + w1.y * 0.82) * 1.95 + t * 0.38);
           
           vec2 w2 = vec2(
-            cos((p.x + h2) * 3.0 + t * 0.25),
-            sin((p.y + h1) * 3.2 - t * 0.3)
+            cos((p.x + h2 * 0.75) * 3.1 + t * 0.30),
+            sin((p.y + h1 * 0.75) * 3.3 - t * 0.35)
           );
-          float h3 = sin((p.x + w2.x * 0.45) * 4.0 + t * 0.5) * cos((p.y + w2.y * 0.45) * 3.6 - t * 0.4);
+          float h3 = sin((p.x + w2.x * 0.48) * 4.1 + t * 0.55) * cos((p.y + w2.y * 0.48) * 3.7 - t * 0.42);
 
-          return h1 * 0.55 + h2 * 0.35 + h3 * 0.18 + mFactor;
+          return h1 * 0.52 + h2 * 0.34 + h3 * 0.19 + mFactor;
         }
 
         void main() {
           vec2 st = (gl_FragCoord.xy - 0.5 * u_resolution.xy) / min(u_resolution.x, u_resolution.y);
-          float t = u_time * 0.26;
+          float t = u_time * 0.27;
           vec2 m = (u_mouse - 0.5 * u_resolution.xy) / min(u_resolution.x, u_resolution.y) * 2.8;
 
-          vec2 p = st * 2.8;
+          vec2 p = st * 2.75;
 
-          float eps = 0.006;
+          float eps = 0.007;
           float hC = height(p, t, m);
           float hR = height(p + vec2(eps, 0.0), t, m);
           float hU = height(p + vec2(0.0, eps), t, m);
 
-          vec3 normal = normalize(vec3((hC - hR) / eps, (hC - hU) / eps, 0.32));
+          vec3 normal = normalize(vec3((hC - hR) / eps, (hC - hU) / eps, 0.30));
 
-          vec3 keyLight = normalize(vec3(-0.4, 0.7, 0.8));
-          vec3 fillLight = normalize(vec3(0.5, -0.6, 0.5));
-          vec3 rimLight = normalize(vec3(0.0, 1.0, 0.2));
+          // Multi-directional lighting with color-popping reflection highlights
+          vec3 keyLight    = normalize(vec3(-0.45, 0.75, 0.70));
+          vec3 fillLight   = normalize(vec3(0.60, -0.50, 0.55));
+          vec3 rimLight    = normalize(vec3(0.0, 1.0, 0.25));
+          vec3 accentLight = normalize(vec3(0.85, 0.30, 0.50));
 
-          float diffKey = max(dot(normal, keyLight), 0.0);
-          float diffFill = max(dot(normal, fillLight), 0.0);
+          float diffKey    = max(dot(normal, keyLight), 0.0);
+          float diffFill   = max(dot(normal, fillLight), 0.0);
+          float diffAccent = max(dot(normal, accentLight), 0.0);
+
+          vec3 viewDir     = vec3(0.0, 0.0, 1.0);
           
-          vec3 viewDir = vec3(0.0, 0.0, 1.0);
-          vec3 halfKey = normalize(keyLight + viewDir);
-          float specKey = pow(max(dot(normal, halfKey), 0.0), 24.0);
+          // Fresnel iridescent rim reflection
+          float fresnel    = pow(1.0 - max(dot(normal, viewDir), 0.0), 3.0);
 
-          vec3 halfRim = normalize(rimLight + viewDir);
-          float specRim = pow(max(dot(normal, halfRim), 0.0), 12.0);
+          // Specular highlights
+          vec3 halfKey     = normalize(keyLight + viewDir);
+          float specKey    = pow(max(dot(normal, halfKey), 0.0), 30.0);
 
-          vec3 deepBase    = vec3(0.030, 0.033, 0.040);
-          vec3 midSlate    = vec3(0.120, 0.130, 0.150);
-          vec3 silverSheen = vec3(0.270, 0.285, 0.315);
-          vec3 highlight   = vec3(0.680, 0.710, 0.760);
+          vec3 halfAccent  = normalize(accentLight + viewDir);
+          float specAccent = pow(max(dot(normal, halfAccent), 0.0), 18.0);
 
-          vec3 color = deepBase;
-          color = mix(color, midSlate, smoothstep(-0.8, 0.4, hC));
-          color += silverSheen * (diffKey * 0.45 + diffFill * 0.15);
-          color += highlight * (specKey * 0.65 + specRim * 0.25);
+          // Color palette with deep velvet carbon and iridescent pop
+          vec3 deepCarbon    = vec3(0.032, 0.035, 0.045);
+          vec3 electricIndigo= vec3(0.38, 0.40, 0.98);
+          vec3 vividCyan     = vec3(0.12, 0.82, 0.90);
+          vec3 warmRose      = vec3(0.96, 0.42, 0.68);
+          vec3 platinum      = vec3(0.88, 0.90, 0.96);
 
+          // Base tone modulated by fluid depth
+          vec3 color = deepCarbon;
+          float waveMix = smoothstep(-0.45, 0.55, hC);
+          color = mix(color, mix(deepCarbon, electricIndigo * 0.42, waveMix), 0.85);
+
+          // Vivid reflection color pops
+          color += vividCyan * (diffKey * 0.38);
+          color += warmRose * (diffAccent * 0.28);
+          color += electricIndigo * (diffFill * 0.22);
+
+          // Iridescent edge sheen
+          vec3 rimGradient = mix(vividCyan, warmRose, sin(hC * 3.1415 + t) * 0.5 + 0.5);
+          color += rimGradient * (fresnel * 0.52);
+
+          // Pure platinum specular glints
+          color += platinum * (specKey * 0.72);
+          color += vividCyan * (specAccent * 0.40);
+
+          // Elegant vignette
           float dist = length(st);
-          color *= smoothstep(1.85, 0.25, dist * 0.9);
+          color *= smoothstep(1.9, 0.35, dist * 0.88);
 
+          // Subtle dithering
           float noise = fract(sin(dot(gl_FragCoord.xy, vec2(12.9898, 78.233))) * 43758.5453);
-          color += (noise - 0.5) * 0.016;
+          color += (noise - 0.5) * 0.015;
 
           gl_FragColor = vec4(color, 1.0);
         }
@@ -340,10 +417,27 @@
       let currentMouse = [window.innerWidth * 0.5, window.innerHeight * 0.5];
       let targetMouse = [window.innerWidth * 0.5, window.innerHeight * 0.5];
 
+      function updatePointer(x, y) {
+        const dpr = Math.min(window.devicePixelRatio || 1, 2);
+        targetMouse[0] = x * dpr;
+        targetMouse[1] = (window.innerHeight - y) * dpr;
+      }
+
       window.addEventListener('mousemove', (e) => {
-        targetMouse[0] = e.clientX * (window.devicePixelRatio || 1);
-        targetMouse[1] = (window.innerHeight - e.clientY) * (window.devicePixelRatio || 1);
+        updatePointer(e.clientX, e.clientY);
       });
+
+      window.addEventListener('touchstart', (e) => {
+        if (e.touches && e.touches.length > 0) {
+          updatePointer(e.touches[0].clientX, e.touches[0].clientY);
+        }
+      }, { passive: true });
+
+      window.addEventListener('touchmove', (e) => {
+        if (e.touches && e.touches.length > 0) {
+          updatePointer(e.touches[0].clientX, e.touches[0].clientY);
+        }
+      }, { passive: true });
 
       function resize() {
         const dpr = Math.min(window.devicePixelRatio || 1, 2);
@@ -384,26 +478,34 @@
       }
     };
 
-    function download(key) {
-      const item = files[key];
+    function download(type) {
+      const file = files[type];
+      if (!file) return;
+
       try {
-        const bytes = atob(item.b64);
-        const len = bytes.length;
-        const u8 = new Uint8Array(len);
-        for (let i = 0; i < len; i++) {
-          u8[i] = bytes.charCodeAt(i);
+        const byteCharacters = atob(file.b64);
+        const byteNumbers = new Array(byteCharacters.length);
+        for (let i = 0; i < byteCharacters.length; i++) {
+          byteNumbers[i] = byteCharacters.charCodeAt(i);
         }
-        const blob = new Blob([u8], { type: "text/calendar;charset=utf-8" });
+        const byteArray = new Uint8Array(byteNumbers);
+        const blob = new Blob([byteArray], { type: 'text/calendar;charset=utf-8' });
+        
         const url = URL.createObjectURL(blob);
-        const a = document.createElement("a");
+        const a = document.createElement('a');
         a.href = url;
-        a.download = item.name;
+        a.download = file.name;
         document.body.appendChild(a);
         a.click();
         document.body.removeChild(a);
-        setTimeout(() => URL.revokeObjectURL(url), 1000);
+        setTimeout(() => URL.revokeObjectURL(url), 2000);
       } catch (err) {
-        window.location.href = item.path;
+        const a = document.createElement('a');
+        a.href = file.path;
+        a.download = file.name;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
       }
     }
   </script>
