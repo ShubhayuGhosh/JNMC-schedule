@@ -340,7 +340,7 @@ for block in vevent_matches:
 
 # Write updated General Schedule ICS
 general_ics_path = os.path.join(DOWNLOADS_DIR, "MBBS_Phase_III_Schedule.ics")
-write_master_ics(general_ics_path, "MBBS Phase III Schedule", "-//JNMC Belagavi//MBBS Phase III Schedule//EN", UNIFIED_COLOR, all_gen_events)
+write_master_ics(general_ics_path, "MBBS Phase III/I Schedule", "-//JNMC Belagavi//MBBS Phase III/I Schedule//EN", UNIFIED_COLOR, all_gen_events)
 
 # ==========================================
 # BATCH B ADDITIONAL SCHEDULE
@@ -390,6 +390,6 @@ for idx, (dt, tstart, tend, fac, top, code, loc, desc) in enumerate(fmt_b_raw, s
 
 # Write updated Batch B Schedule ICS
 batch_b_ics_path = os.path.join(DOWNLOADS_DIR, "MBBS_Phase_III_Batch_B_Additional.ics")
-write_master_ics(batch_b_ics_path, "MBBS Phase III Batch B Additional", "-//JNMC Belagavi//MBBS Phase III Batch B//EN", UNIFIED_COLOR, batch_b_events)
+write_master_ics(batch_b_ics_path, "MBBS Phase III/I Batch B Additional", "-//JNMC Belagavi//MBBS Phase III/I Batch B//EN", UNIFIED_COLOR, batch_b_events)
 
 print("Regeneration complete!")

@@ -1,6 +1,6 @@
-# JNMC MBBS Phase III Schedule
+# JNMC MBBS Phase III/I Schedule
 
-A streamlined, typography-focused calendar utility for MBBS Phase III (Part 1).
+A streamlined, typography-focused calendar utility for MBBS Phase III/I (Part 1).
 
 ## Calendars Included
 - **General Schedule (Roll 1 to 202)**: Complete timetable of all 7 theory subjects (General Medicine, General Surgery, ENT, OBG, Pediatrics, Ophthalmology, Community Medicine).

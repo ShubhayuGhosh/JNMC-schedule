@@ -16,7 +16,7 @@ html = f"""<!DOCTYPE html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-  <title>MBBS Phase III Schedule</title>
+  <title>MBBS Phase III/I Schedule</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -262,7 +262,7 @@ html = f"""<!DOCTYPE html>
 
   <main class="card">
     <header>
-      <h1>MBBS Phase III Schedule</h1>
+      <h1>MBBS Phase III/I Schedule</h1>
       <p class="subtitle">Download the schedule files below and open it with your calendar app of choice</p>
     </header>
 
