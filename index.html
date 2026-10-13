@@ -54,8 +54,8 @@
       position: fixed;
       inset: 0;
       width: 100%;
-      height: 65vh;
-      background: radial-gradient(ellipse at center top, rgba(162, 188, 216, 0.10) 0%, rgba(30, 58, 138, 0.04) 50%, rgba(0, 3, 11, 0) 80%);
+      height: 60vh;
+      background: radial-gradient(ellipse at center top, rgba(162, 188, 216, 0.08) 0%, rgba(30, 58, 138, 0.03) 50%, rgba(0, 3, 11, 0) 80%);
       z-index: 1;
       pointer-events: none;
     }
@@ -360,215 +360,225 @@
 
   <script>
     const canvas = document.getElementById('gl-canvas');
-    const gl = canvas.getContext('webgl');
+    const gl = canvas.getContext('webgl2', {
+      alpha: true,
+      premultipliedAlpha: false,
+      antialias: false,
+      powerPreference: 'high-performance'
+    });
 
     if (gl) {
-      const vsSource = `
-        attribute vec2 position;
-        void main() {
-          gl_Position = vec4(position, 0.0, 1.0);
-        }
-      `;
+      const vsSource = `#version 300 es
+      precision highp float;
 
-      // Framer-calibrated Rings Concentric Dispersion Lens Shader
-      // Radial wave flow is continuous, origin is off-screen (no eye/pupil), and base tone never dips to black
-      const fsSource = `
-        precision highp float;
-        uniform vec2 u_resolution;
-        uniform float u_time;
-        uniform vec2 u_mouse;
+      in vec2 a_position;
+      in vec2 a_texCoord;
 
-        const int SAMPLES = 7;
-        const float EPHEMERAL_DRIP = 1.0;
+      out vec2 v_uv;
 
-        vec3 hash3(vec3 p) {
-            p = vec3(dot(p, vec3(127.1, 311.7, 74.7)),
-                     dot(p, vec3(269.5, 183.3, 246.1)),
-                     dot(p, vec3(113.5, 271.9, 124.6)));
-            return fract(sin(p) * 43758.5453123);
-        }
+      void main() {
+          v_uv = a_texCoord;
+          gl_Position = vec4(a_position, 0.0, 1.0);
+      }`;
 
-        vec3 seedRandom(float s) {
-            return hash3(vec3(s, s * 1.5 + 7.31, s * 2.7 + 13.37));
-        }
+      const fsSource = `#version 300 es
+      precision highp float;
 
-        // Luxury Ethereal Palette matched to Framer reference:
-        // Deep velvet midnight base, electric sapphire, cerulean cyan, champagne platinum
-        vec3 palette(float t, float yNorm) {
-            vec3 c0 = vec3(0.005, 0.015, 0.055); // Rich midnight navy base (never pitch black)
-            vec3 c1 = vec3(0.045, 0.160, 0.480); // Royal oceanic sapphire
-            vec3 c2 = vec3(0.200, 0.580, 0.820); // Luminous cerulean cyan
-            vec3 c3 = vec3(0.920, 0.880, 0.820); // Champagne platinum caustic highlight
-            
-            t = clamp(t, 0.0, 1.0);
-            vec3 base;
-            if (t < 0.42) {
-                float f = t / 0.42;
-                f = f * f * (3.0 - 2.0 * f);
-                base = mix(c0, c1, f);
-            } else if (t < 0.80) {
-                float f = (t - 0.42) / 0.38;
-                f = f * f * (3.0 - 2.0 * f);
-                base = mix(c1, c2, f);
-            } else {
-                float f = (t - 0.80) / 0.20;
-                f = f * f * (3.0 - 2.0 * f);
-                base = mix(c2, c3, f);
-            }
-            
-            // Reference top sky glow: soft silvery pearl and champagne light
-            float skyGlow = smoothstep(0.48, 1.05, yNorm);
-            vec3 skyTint = vec3(0.40, 0.46, 0.54) * skyGlow * 0.70;
-            base = mix(base, base + skyTint, skyGlow * 0.85);
-            
-            return base;
-        }
+      in vec2 v_uv;
+      out vec4 fragColor;
 
-        // Continuous multi-wave radiating flow:
-        // Ensures that as one radiant wave crest sweeps toward the top, the next is already rising from the bottom
-        float getGradientT(vec2 uv, float dist, float t, vec2 dir1, vec2 dir2, vec3 freqs, vec2 dir3) {
-            vec2 suv = uv * 1.0;
-            
-            float flow1 = dot(suv, dir1) + sin(dot(suv, dir2) * freqs.x + t * 0.7) * 0.28 + t * 0.18;
-            float flow2 = dot(suv, dir2.yx) + cos(dot(suv, dir1.yx) * freqs.y - t * 0.5) * 0.22;
-            
-            // Radiating wave trains outward from bottom
-            float waveA = sin(dist * 2.4 - t * 1.25) * 0.5 + 0.5;
-            float waveB = sin(dist * 1.7 - t * 0.85 + 1.5708) * 0.5 + 0.5;
-            
-            float grad = 0.52 * waveA + 0.48 * waveB;
-            grad += (sin(flow1 * 1.35) * 0.5 + 0.5) * 0.45;
-            grad += (cos(flow2 * 1.15) * 0.5 + 0.5) * 0.35;
-            grad += sin(dot(suv, dir3) * freqs.z + t * 2.2) * 0.28;
-            
-            return smoothstep(0.08, 1.95, grad);
-        }
+      #define NUM_COLORS 8
+      uniform vec4 u_colors[NUM_COLORS];
+      uniform int u_colors_length;
 
-        void applyRingLens(vec2 pp, vec2 fragCoord, vec2 r, float iorOffset, vec2 mouseOffset, out vec2 warpedUV, out float edgeFactor, out float distOut) {
-            float u_ringRadius = 2.0;
-            float u_ringSpacing = 0.46;
-            float u_ringWarpStrength = 1.30;
-            float u_lensScale = 4.8;
-            
-            float radiusSq = u_ringRadius * u_ringRadius;
-            
-            // Lens center placed below viewport bottom so the center eye circle is off-screen
-            vec2 centerPos = vec2(r.x * 0.5, -0.16 * r.y) + mouseOffset;
-            vec2 lensUV = (fragCoord - centerPos) / r.y * u_lensScale;
-            float dist = length(lensUV);
-            distOut = dist;
-            
-            float fw = 0.007 * u_ringSpacing;
-            float ringDist = mod(dist, u_ringSpacing) / u_ringSpacing;
-            float ringShifted = ringDist - 0.5;
-            float localR = ringShifted * 2.0;
-            
-            float sp = radiusSq - localR * localR;
-            float edgeSdf = abs(localR) - u_ringRadius;
-            float edgeAA = smoothstep(fw, -fw, edgeSdf);
-            
-            float lensAmount = smoothstep(0.0, 0.3, sp);
-            edgeFactor = (1.0 - smoothstep(0.0, radiusSq, sp)) * lensAmount * edgeAA;
-            
-            vec2 dir = lensUV / max(dist, 0.001);
-            warpedUV = pp;
-            if (sp > 0.0) {
-                float lens = sqrt(sp) / max(u_ringRadius, 0.001);
-                float baseWarp = mix(1.0, u_ringWarpStrength, lens);
-                float warpAmount = baseWarp * (1.0 + iorOffset);
-                float ringCenter = (floor(dist / u_ringSpacing) + 0.5) * u_ringSpacing;
-                vec2 offset = pp - dir * ringCenter;
-                warpedUV = dir * ringCenter + offset * warpAmount;
-            }
-        }
+      uniform vec2 u_resolution;
+      uniform float u_time;
+      uniform float u_speed;
+      uniform float u_seed;
+      uniform float u_ephemeralAmp;
+      uniform float u_lensScale;
+      uniform float u_ringSpacing;
+      uniform float u_ringRadius;
+      uniform float u_ringWarpStrength;
+      uniform float u_ringDispersion;
+      uniform float u_edgeDisp;
 
-        void main() {
-            vec2 fragCoord = gl_FragCoord.xy;
-            vec2 r = u_resolution;
-            vec2 p = (fragCoord * 2.0 - r) / r.y;
-            float yNorm = fragCoord.y / r.y;
-            
-            float u_speed = 0.28;
-            float t = u_time * u_speed;
-            
-            float u_seed = 47.0;
-            vec3 seedOff1 = seedRandom(u_seed);
-            vec3 seedOff2 = seedRandom(u_seed + 100.0);
-            
-            float angle1 = seedOff1.x * 6.28318;
-            float angle2 = seedOff1.y * 6.28318;
-            vec2 dir1 = vec2(cos(angle1), sin(angle1));
-            vec2 dir2 = vec2(cos(angle2), sin(angle2));
-            vec2 dir3 = dir1 + dir2;
-            vec3 freqs = vec3(
-                1.0 + seedOff1.z * 2.0,
-                1.0 + seedOff2.x * 1.5,
-                1.5 + seedOff2.y * 2.0
-            );
-            
-            float u_ringDispersion = 0.18;
-            vec3 ringIorOffsets = vec3(-1.0, 0.0, 1.0) * u_ringDispersion;
-            
-            float u_lensScale = 4.8;
-            float u_ephemeralAmp = 0.35;
-            float u_edgeDisp = 0.55;
-            
-            vec2 mouseOffset = (u_mouse - 0.5 * r) * 0.06;
-            
-            vec3 col = vec3(0.0);
-            
-            for (int i = 0; i < SAMPLES; i++) {
-                float ephemeral = float(i) / float(SAMPLES);
-                float sqEph = ephemeral * ephemeral;
-                
-                vec2 pt = p;
-                pt.x += u_ephemeralAmp * sqEph * sin(p.y * 2.0 + t);
-                pt.y += u_ephemeralAmp * sqEph * cos(p.x * 1.5 - t) * 0.5;
-                pt.y -= (1.0 - exp(-EPHEMERAL_DRIP * sqEph)) * abs(pt.y) * sign(pt.y) * 0.22;
-                
-                vec3 tint = smoothstep(1.0, 0.0, abs(3.0 * ephemeral - vec3(1.0, 1.5, 2.0)));
-                
-                vec3 gradTs = vec3(0.0);
-                vec3 edgeFactors = vec3(0.0);
-                
-                for (int c = 0; c < 3; c++) {
-                    float ior = (c == 0) ? ringIorOffsets.r : ((c == 1) ? ringIorOffsets.g : ringIorOffsets.b);
-                    vec2 pp = pt * u_lensScale;
-                    vec2 warpedUV;
-                    float edgeFactor;
-                    float distOut;
-                    applyRingLens(pp, fragCoord, r, ior, mouseOffset, warpedUV, edgeFactor, distOut);
-                    
-                    vec2 gradUV = warpedUV / u_lensScale;
-                    float gT = getGradientT(gradUV, distOut, t * 0.8, dir1, dir2, freqs, dir3);
-                    if (c == 0) { gradTs.r = gT; edgeFactors.r = edgeFactor; }
-                    else if (c == 1) { gradTs.g = gT; edgeFactors.g = edgeFactor; }
-                    else { gradTs.b = gT; edgeFactors.b = edgeFactor; }
-                }
-                
-                vec3 convergentColor = palette(gradTs.g, yNorm);
-                float edgeMix = max(max(edgeFactors.r, edgeFactors.g), edgeFactors.b);
-                
-                vec3 dispersedColor = vec3(
-                    palette(gradTs.r, yNorm).r,
-                    convergentColor.g,
-                    palette(gradTs.b, yNorm).b
-                );
-                
-                vec3 finalColor = mix(convergentColor, dispersedColor, edgeMix * 1.5);
-                vec3 rainbow = (gradTs - gradTs.g) * 1.8;
-                finalColor += rainbow * edgeMix * u_edgeDisp;
-                
-                col += tint * finalColor * (3.0 / float(SAMPLES));
-            }
-            
-            // Fine luxury micro-grain
-            float noise = fract(sin(dot(fragCoord, vec2(12.9898, 78.233))) * 43758.5453);
-            col += (noise - 0.5) * 0.010;
-            
-            gl_FragColor = vec4(col, 1.0);
-        }
-      `;
+      const int SAMPLES = 8;
+      const float EPHEMERAL_DRIP = 1.0;
+
+      // === PCG hash ===
+      uvec3 hash3(uvec3 v) {
+          v = v * 1664525u + 1013904223u;
+          v.x += v.y * v.z;
+          v.y += v.z * v.x;
+          v.z += v.x * v.y;
+          v ^= v >> 16u;
+          v.x += v.y * v.z;
+          v.y += v.z * v.x;
+          v.z += v.x * v.y;
+          return v;
+      }
+
+      uvec3 seed;
+      vec3 random3f() {
+          seed = hash3(seed);
+          return vec3(seed) / float(0xFFFFFFFFu);
+      }
+
+      vec3 seedRandom(float seedVal) {
+          uvec3 s = uvec3(
+              floatBitsToUint(seedVal),
+              floatBitsToUint(seedVal * 1.5 + 7.31),
+              floatBitsToUint(seedVal * 2.7 + 13.37)
+          );
+          s = hash3(s);
+          return vec3(s) / float(0xFFFFFFFFu);
+      }
+
+      // === PALETTE SAMPLING ===
+      vec3 getColor(int idx) {
+          if (u_colors_length < 1) return vec3(0.0);
+          int safeIdx = clamp(idx, 0, u_colors_length - 1);
+          return u_colors[safeIdx].rgb;
+      }
+
+      vec3 paletteN(float t, int count) {
+          if (count < 1) return vec3(0.0);
+          if (count < 2) return getColor(0);
+          t = clamp(t, 0.0, 1.0) * float(count - 1);
+          int idx = min(int(floor(t)), count - 2);
+          float localT = fract(t);
+          localT = localT * localT * (3.0 - 2.0 * localT);
+          return mix(getColor(idx), getColor(idx + 1), localT);
+      }
+
+      // === Gradient Flow ===
+      float getGradientT(vec2 uv, float t, vec2 dir1, vec2 dir2, vec3 freqs, vec2 dir3) {
+          vec2 suv = uv * 1.0;
+          
+          float flow = dot(suv, dir1) + sin(dot(suv, dir2) * freqs.x + t) * 0.3 + t * 0.2;
+          float flow2 = dot(suv, dir2.yx) + cos(dot(suv, dir1.yx) * freqs.y - t * 0.8) * 0.25;
+          
+          float gradT = sin(flow * 1.5) * 0.5 + 0.5;
+          gradT += cos(flow2 * 1.2) * 1.3;
+          gradT += sin(dot(suv, dir3) * freqs.z + t * 3.5) * 1.2;
+          
+          return smoothstep(0.0, 4.12, gradT);
+      }
+
+      // === RING LENS ===
+      void applyRingLens(vec2 pp, vec2 fragCoord, vec2 r, float iorOffset, out vec2 warpedUV, out float edgeFactor) {
+          float radiusSq = u_ringRadius * u_ringRadius;
+          
+          vec2 lensUV = (fragCoord - vec2(r.x * 0.5, 0.0)) / r.y * u_lensScale;
+          float dist = length(lensUV);
+          
+          float fw = fwidth(dist / u_ringSpacing) * u_ringSpacing;
+          
+          float ringDist = mod(dist, u_ringSpacing) / u_ringSpacing;
+          float ringShifted = ringDist - 0.5;
+          float localR = ringShifted * 2.0;
+          
+          float sp = radiusSq - localR * localR;
+          
+          float edgeSdf = abs(localR) - u_ringRadius;
+          float edgeAA = smoothstep(fw, -fw, edgeSdf);
+          
+          float lensAmount = smoothstep(0.0, 0.3, sp);
+          edgeFactor = (1.0 - smoothstep(0.0, radiusSq, sp)) * lensAmount * edgeAA;
+          
+          vec2 dir = lensUV / max(dist, 0.001);
+          
+          warpedUV = pp;
+          if (sp > 0.0) {
+              float lens = sqrt(sp) / max(u_ringRadius, 0.001);
+              float baseWarp = mix(1.0, u_ringWarpStrength, lens);
+              float warpAmount = baseWarp * (1.0 + iorOffset);
+              float ringCenter = (floor(dist / u_ringSpacing) + 0.5) * u_ringSpacing;
+              vec2 offset = pp - dir * ringCenter;
+              warpedUV = dir * ringCenter + offset * warpAmount;
+          }
+      }
+
+      void main() {
+          vec2 fragCoord = v_uv * u_resolution;
+          seed = uvec3(uvec2(fragCoord), uint(fract(u_time) * 1000.0));
+          
+          vec2 r = u_resolution;
+          vec2 p = (fragCoord * 2.0 - r) / r.y;
+          float t = u_time * u_speed;
+          
+          int colorCount = u_colors_length;
+          
+          if (colorCount < 1) {
+              fragColor = vec4(0.0, 0.0, 0.0, 1.0);
+              return;
+          }
+          
+          vec3 seedOff1 = seedRandom(u_seed);
+          vec3 seedOff2 = seedRandom(u_seed + 100.0);
+          
+          float angle1 = seedOff1.x * 6.28;
+          float angle2 = seedOff1.y * 6.28;
+          vec2 dir1 = vec2(cos(angle1), sin(angle1));
+          vec2 dir2 = vec2(cos(angle2), sin(angle2));
+          vec2 dir3 = dir1 + dir2;
+          vec3 freqs = vec3(
+              1.0 + seedOff1.z * 2.0,
+              1.0 + seedOff2.x * 1.5,
+              1.5 + seedOff2.y * 2.0
+          );
+          
+          float dice = random3f().x;
+          
+          vec3 ringIorOffsets = vec3(-1.0, 0.0, 1.0) * u_ringDispersion;
+          
+          vec3 col = vec3(0.0);
+          
+          for (int i = 0; i < SAMPLES; i++) {
+              float ephemeral = (float(i) + dice) / float(SAMPLES);
+              float sqEph = ephemeral * ephemeral;
+              
+              vec2 pt = p;
+              pt.x += u_ephemeralAmp * sqEph * sin(p.y * 2.0 + t);
+              pt.y += u_ephemeralAmp * sqEph * cos(p.x * 1.5 - t) * 0.5;
+              pt.y -= (1.0 - exp(-EPHEMERAL_DRIP * sqEph)) * abs(pt.y) * sign(pt.y) * 0.3;
+              
+              vec3 tint = smoothstep(1.0, 0.0, abs(3.0 * ephemeral - vec3(1.0, 1.5, 2.0)));
+              
+              vec3 gradTs = vec3(0.0);
+              vec3 edgeFactors = vec3(0.0);
+              
+              for (int c = 0; c < 3; c++) {
+                  vec2 pp = pt * u_lensScale;
+                  vec2 warpedUV;
+                  float edgeFactor;
+                  applyRingLens(pp, fragCoord, r, ringIorOffsets[c], warpedUV, edgeFactor);
+                  
+                  vec2 gradUV = warpedUV / u_lensScale;
+                  gradTs[c] = getGradientT(gradUV, t * 0.8, dir1, dir2, freqs, dir3);
+                  edgeFactors[c] = edgeFactor;
+              }
+              
+              vec3 convergentColor = paletteN(gradTs.g, colorCount);
+              float edgeMix = max(max(edgeFactors.r, edgeFactors.g), edgeFactors.b);
+              
+              vec3 dispersedColor = vec3(
+                  paletteN(gradTs.r, colorCount).r,
+                  convergentColor.g,
+                  paletteN(gradTs.b, colorCount).b
+              );
+              
+              vec3 finalColor = mix(convergentColor, dispersedColor, edgeMix * 2.0);
+              
+              vec3 rainbow = (gradTs - gradTs.g) * 3.0;
+              finalColor += rainbow * edgeMix * u_edgeDisp;
+              
+              col += tint * finalColor * (3.0 / float(SAMPLES));
+          }
+          
+          fragColor = vec4(col, 1.0);
+      }`;
 
       function createShader(gl, type, source) {
         const shader = gl.createShader(type);
@@ -598,59 +608,69 @@
          1, -1,
          1,  1
       ]), gl.STATIC_DRAW);
-
-      const posLoc = gl.getAttribLocation(prog, "position");
+      const posLoc = gl.getAttribLocation(prog, "a_position");
       gl.enableVertexAttribArray(posLoc);
       gl.vertexAttribPointer(posLoc, 2, gl.FLOAT, false, 0, 0);
 
-      const resLoc = gl.getUniformLocation(prog, "u_resolution");
-      const timeLoc = gl.getUniformLocation(prog, "u_time");
-      const mouseLoc = gl.getUniformLocation(prog, "u_mouse");
+      const texBuffer = gl.createBuffer();
+      gl.bindBuffer(gl.ARRAY_BUFFER, texBuffer);
+      gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([
+        0, 0,
+        1, 0,
+        0, 1,
+        0, 1,
+        1, 0,
+        1, 1
+      ]), gl.STATIC_DRAW);
+      const texLoc = gl.getAttribLocation(prog, "a_texCoord");
+      gl.enableVertexAttribArray(texLoc);
+      gl.vertexAttribPointer(texLoc, 2, gl.FLOAT, false, 0, 0);
 
-      let currentMouse = [window.innerWidth * 0.5, window.innerHeight * 0.5];
-      let targetMouse = [window.innerWidth * 0.5, window.innerHeight * 0.5];
+      const uRes = gl.getUniformLocation(prog, "u_resolution");
+      const uTime = gl.getUniformLocation(prog, "u_time");
+      const uSpeed = gl.getUniformLocation(prog, "u_speed");
+      const uSeed = gl.getUniformLocation(prog, "u_seed");
+      const uEph = gl.getUniformLocation(prog, "u_ephemeralAmp");
+      const uScale = gl.getUniformLocation(prog, "u_lensScale");
+      const uSpacing = gl.getUniformLocation(prog, "u_ringSpacing");
+      const uRadius = gl.getUniformLocation(prog, "u_ringRadius");
+      const uWarp = gl.getUniformLocation(prog, "u_ringWarpStrength");
+      const uDisp = gl.getUniformLocation(prog, "u_ringDispersion");
+      const uEdge = gl.getUniformLocation(prog, "u_edgeDisp");
+      const uColors = gl.getUniformLocation(prog, "u_colors");
+      const uColorsLen = gl.getUniformLocation(prog, "u_colors_length");
 
-      function updatePointer(x, y) {
-        targetMouse[0] = x;
-        targetMouse[1] = window.innerHeight - y;
-      }
+      gl.uniform1f(uSpeed, 0.2);
+      gl.uniform1f(uSeed, 0.0);
+      gl.uniform1f(uEph, 0.5);
+      gl.uniform1f(uScale, 4.4);
+      gl.uniform1f(uSpacing, 0.4);
+      gl.uniform1f(uRadius, 2.0);
+      gl.uniform1f(uWarp, 1.2);
+      gl.uniform1f(uDisp, 0.0);
+      gl.uniform1f(uEdge, 0.0);
 
-      window.addEventListener('mousemove', (e) => {
-        updatePointer(e.clientX, e.clientY);
-      });
-
-      window.addEventListener('touchstart', (e) => {
-        if (e.touches && e.touches.length > 0) {
-          updatePointer(e.touches[0].clientX, e.touches[0].clientY);
-        }
-      }, { passive: true });
-
-      window.addEventListener('touchmove', (e) => {
-        if (e.touches && e.touches.length > 0) {
-          updatePointer(e.touches[0].clientX, e.touches[0].clientY);
-        }
-      }, { passive: true });
+      gl.uniform1i(uColorsLen, 3);
+      const colorsData = new Float32Array(8 * 4);
+      colorsData.set([0.0 / 255.0, 3.0 / 255.0, 11.0 / 255.0, 1.0], 0);
+      colorsData.set([1.0, 1.0, 1.0, 1.0], 4);
+      colorsData.set([51.0 / 255.0, 65.0 / 255.0, 85.0 / 255.0, 1.0], 8);
+      gl.uniform4fv(uColors, colorsData);
 
       function resize() {
         const dpr = Math.min(window.devicePixelRatio || 1, 2);
-        canvas.width = window.innerWidth * dpr;
-        canvas.height = window.innerHeight * dpr;
+        canvas.width = Math.round(window.innerWidth * dpr);
+        canvas.height = Math.round(window.innerHeight * dpr);
         gl.viewport(0, 0, canvas.width, canvas.height);
       }
       window.addEventListener('resize', resize);
       resize();
 
       let startTime = performance.now();
-      function render() {
-        const elapsed = (performance.now() - startTime) * 0.001;
-        
-        currentMouse[0] += (targetMouse[0] - currentMouse[0]) * 0.04;
-        currentMouse[1] += (targetMouse[1] - currentMouse[1]) * 0.04;
-
-        gl.uniform2f(resLoc, canvas.width, canvas.height);
-        gl.uniform1f(timeLoc, elapsed);
-        gl.uniform2f(mouseLoc, currentMouse[0], currentMouse[1]);
-
+      function render(now) {
+        const elapsed = (now - startTime) * 0.001;
+        gl.uniform2f(uRes, canvas.width, canvas.height);
+        gl.uniform1f(uTime, elapsed);
         gl.drawArrays(gl.TRIANGLES, 0, 6);
         requestAnimationFrame(render);
       }
